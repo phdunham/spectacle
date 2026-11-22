@@ -1,11 +1,14 @@
 #import <Cocoa/Cocoa.h>
 
+@class SpectacleFilledButton;
 @class SpectaclePreferencesController;
 
 @interface SpectacleAppDelegate : NSObject <NSApplicationDelegate, NSMenuDelegate>
 
 @property (nonatomic, strong) IBOutlet NSMenu *statusItemMenu;
 @property (nonatomic, strong) IBOutlet NSWindow *accessiblityAccessDialogWindow;
+@property (nonatomic, strong) IBOutlet SpectacleFilledButton *openSystemSettingsButton;
+@property (nonatomic, strong) IBOutlet SpectacleFilledButton *quitButton;
 @property (nonatomic, strong) IBOutlet NSMenuItem *moveToCenterShortcutMenuItem;
 @property (nonatomic, strong) IBOutlet NSMenuItem *moveToFullscreenShortcutMenuItem;
 @property (nonatomic, strong) IBOutlet NSMenuItem *moveToLeftShortcutMenuItem;

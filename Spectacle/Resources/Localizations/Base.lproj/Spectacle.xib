@@ -16,6 +16,8 @@
         <customObject id="tMJ-JP-XRD" customClass="SpectacleAppDelegate">
             <connections>
                 <outlet property="accessiblityAccessDialogWindow" destination="aH5-eW-ySa" id="u6t-Fq-cCp"/>
+                <outlet property="openSystemSettingsButton" destination="9dg-wQ-O5z" id="oSS-bt-001"/>
+                <outlet property="quitButton" destination="nIS-kz-1R7" id="qSP-bt-001"/>
                 <outlet property="disableShortcutsForAnHourMenuItem" destination="qpo-5w-ZIY" id="9Bo-Nc-w85"/>
                 <outlet property="disableShortcutsForApplicationMenuItem" destination="msZ-id-Pvw" id="4dY-PO-sgY"/>
                 <outlet property="makeLargerShortcutMenuItem" destination="Yun-AA-OVD" id="7P4-V3-6Yd"/>
@@ -39,19 +41,12 @@
                 <outlet property="undoLastMoveShortcutMenuItem" destination="l9O-0B-fjp" id="gns-Zw-ZVc"/>
             </connections>
         </customObject>
-        <customObject id="qZ6-IG-VBZ" customClass="SUUpdater"/>
         <menu title="Spectacle Status Item" id="KsA-8w-wcl" propertyAccessControl="localizable">
             <items>
                 <menuItem title="About Spectacle" tag="-1" id="EA9-dx-Qfg">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="orderFrontStandardAboutPanel:" target="-2" id="P8D-am-ldh"/>
-                    </connections>
-                </menuItem>
-                <menuItem title="Check for Updates..." tag="-1" id="2sj-vF-eSL">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="checkForUpdates:" target="qZ6-IG-VBZ" id="cII-hj-ws3"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="880"/>
@@ -229,44 +224,46 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="MM0-lm-06Y">
                         <rect key="frame" x="129" y="295" width="522" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Grant access to this application in System Preferences." id="ruu-yJ-Q1F">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Grant access to this application in System Settings." id="ruu-yJ-Q1F">
                             <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" id="9dg-wQ-O5z">
-                        <rect key="frame" x="213" y="251" width="212" height="32"/>
+                    <button verticalHuggingPriority="750" id="9dg-wQ-O5z" customClass="SpectacleFilledButton">
+                        <rect key="frame" x="205" y="245" width="212" height="40"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Open System Preferences" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iPl-AT-Pei">
+                        <buttonCell key="cell" type="push" title="Open System Settings" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iPl-AT-Pei">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
                             <connections>
                                 <action selector="openSystemPreferences:" target="tMJ-JP-XRD" id="xfa-vh-epH"/>
                             </connections>
                         </buttonCell>
                     </button>
-                    <button verticalHuggingPriority="750" id="nIS-kz-1R7">
-                        <rect key="frame" x="425" y="251" width="147" height="32"/>
+                    <button verticalHuggingPriority="750" id="nIS-kz-1R7" customClass="SpectacleFilledButton">
+                        <rect key="frame" x="429" y="245" width="147" height="40"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Quit Spectacle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gMV-vD-CUe">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
                         </buttonCell>
                         <connections>
                             <action selector="terminate:" target="-2" id="bAO-EW-SfZ"/>
                         </connections>
                     </button>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="he4-Bj-XB4" propertyAccessControl="localizable">
-                        <rect key="frame" x="-27" y="-383" width="835" height="653"/>
+                    <customView id="he4-Bj-XB4" customClass="SpectacleAccessibilitySettingsIllustration">
+                        <rect key="frame" x="95" y="0.0" width="590" height="232"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="Security &amp; Privacy" id="zQN-Oe-PPv"/>
-                    </imageView>
+                    </customView>
                 </subviews>
             </view>
         </window>
     </objects>
-    <resources>
-        <image name="Security &amp; Privacy" width="780" height="654"/>
-    </resources>
 </document>

@@ -1,0 +1,110 @@
+# Spectacle project definition.
+#
+# The Xcode project is generated from this file with XcodeGen:
+#
+#     brew install xcodegen
+#     xcodegen generate
+#
+# Edit this file (not Spectacle.xcodeproj) when adding files, targets or build settings.
+name: Spectacle
+options:
+  bundleIdPrefix: com.divisiblebyzero
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+  groupSortPosition: top
+
+# Code signing lives in Configuration/Signing.xcconfig (ad hoc by default), which includes the
+# optional, git-ignored Configuration/Local.xcconfig for a personal signing identity.
+configFiles:
+  Debug: Configuration/Signing.xcconfig
+  Release: Configuration/Signing.xcconfig
+
+settings:
+  base:
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    CLANG_ENABLE_OBJC_ARC: YES
+    CLANG_ENABLE_MODULES: YES
+    GCC_C_LANGUAGE_STANDARD: gnu17
+    CLANG_WARN_STRICT_PROTOTYPES: YES
+    CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF: YES
+    CLANG_WARN_COMMA: YES
+    CLANG_WARN_UNREACHABLE_CODE: YES
+    GCC_WARN_UNDECLARED_SELECTOR: YES
+    GCC_WARN_UNUSED_FUNCTION: YES
+    GCC_WARN_UNUSED_VARIABLE: YES
+    GCC_WARN_64_TO_32_BIT_CONVERSION: YES
+    ENABLE_STRICT_OBJC_MSGSEND: YES
+  configs:
+    Debug:
+      ONLY_ACTIVE_ARCH: YES
+
+targets:
+  Spectacle:
+    type: application
+    platform: macOS
+    sources:
+      - path: Spectacle/Sources
+      - path: Spectacle/Supporting Files
+        excludes:
+          - Info.plist
+      - path: Spectacle/Resources/Images.xcassets
+      - path: Spectacle/Resources/Localizations
+      - path: Spectacle/Resources/Property Lists
+      - path: Spectacle/Resources/Window Position Calculations
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_NAME: Spectacle
+        PRODUCT_BUNDLE_IDENTIFIER: com.divisiblebyzero.Spectacle
+        INFOPLIST_FILE: Spectacle/Supporting Files/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: Spectacle
+        ENABLE_HARDENED_RUNTIME: YES
+        MARKETING_VERSION: "1.3.0"
+        CURRENT_PROJECT_VERSION: "1"
+        COMBINE_HIDPI_IMAGES: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+    postBuildScripts:
+      - name: Set build number from git
+        basedOnDependencyAnalysis: false
+        script: |
+          if command -v git >/dev/null 2>&1 && git -C "${SRCROOT}" rev-parse HEAD >/dev/null 2>&1; then
+            build_number=$(git -C "${SRCROOT}" rev-list HEAD --count)
+            /usr/libexec/PlistBuddy -c "Set :CFBundleVersion ${build_number}" "${TARGET_BUILD_DIR}/${INFOPLIST_PATH}"
+          fi
+
+  SpectacleTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: SpectacleTests
+    dependencies:
+      - target: Spectacle
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.divisiblebyzero.SpectacleTests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Spectacle.app/Contents/MacOS/Spectacle"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        HEADER_SEARCH_PATHS: "$(SRCROOT)/Spectacle/Sources"
+
+schemes:
+  Spectacle:
+    build:
+      targets:
+        Spectacle: all
+        SpectacleTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      coverageTargets:
+        - Spectacle
+      targets:
+        - name: SpectacleTests
+          randomExecutionOrder: true
+    archive:
+      config: Release

@@ -1,20 +1,46 @@
 #import "SpectacleShortcutJSONStorage.h"
 
+static NSURL *findShortcutsFileURL(NSError **error);
+
 @implementation SpectacleShortcutJSONStorage
+{
+  NSURL *_fileURL;
+}
+
+- (instancetype)init
+{
+  return [self initWithFileURL:nil];
+}
+
+- (instancetype)initWithFileURL:(NSURL *)fileURL
+{
+  if (self = [super init]) {
+    _fileURL = fileURL;
+  }
+  return self;
+}
+
+- (NSURL *)shortcutsFileURLWithError:(NSError **)error
+{
+  return _fileURL ?: findShortcutsFileURL(error);
+}
 
 - (NSArray<SpectacleShortcut *> *)loadShortcutsWithAction:(SpectacleShortcutAction)action
 {
   NSError *error;
-  NSURL *shortcutsFileURL = findShortcutsFileURL(&error);
+  NSURL *shortcutsFileURL = [self shortcutsFileURLWithError:&error];
   if (!shortcutsFileURL) {
     NSLog(@"Unable to locate the shortcuts file: %@", error.localizedDescription);
     return nil;
   }
   NSData *content = [NSData dataWithContentsOfURL:shortcutsFileURL];
+  if (!content) {
+    return nil;
+  }
   NSArray<NSDictionary *> *jsonArray = [NSJSONSerialization JSONObjectWithData:content
                                                                        options:0
                                                                          error:&error];
-  if (!jsonArray) {
+  if (![jsonArray isKindOfClass:[NSArray class]]) {
     NSLog(@"Deserializing shortcuts failed: %@", error.localizedDescription);
     return nil;
   }
@@ -24,15 +50,15 @@
 - (void)storeShortcuts:(NSArray<SpectacleShortcut *> *)shortcuts
 {
   NSError *error;
-  NSURL *shortcutsFileURL = findShortcutsFileURL(&error);
+  NSURL *shortcutsFileURL = [self shortcutsFileURLWithError:&error];
   if (!shortcutsFileURL) {
     NSLog(@"Unable to locate the shortcuts file: %@", error.localizedDescription);
     return;
   }
   NSData *contents = [NSJSONSerialization dataWithJSONObject:jsonObjectFromShortcuts(shortcuts)
-                                                     options:NSJSONWritingPrettyPrinted
+                                                     options:NSJSONWritingPrettyPrinted | NSJSONWritingSortedKeys
                                                        error:&error];
-  if (![contents writeToURL:shortcutsFileURL atomically:YES]) {
+  if (!contents || ![contents writeToURL:shortcutsFileURL atomically:YES]) {
     NSLog(@"Unable to store shortcuts at location: %@", [shortcutsFileURL path]);
   }
 }
@@ -40,7 +66,7 @@
 - (BOOL)isMigrationNeeded
 {
   NSError *error;
-  NSURL *shortcutsFileURL = findShortcutsFileURL(&error);
+  NSURL *shortcutsFileURL = [self shortcutsFileURLWithError:&error];
   if (!shortcutsFileURL) {
     NSLog(@"Unable to locate the shortcuts file: %@", error.localizedDescription);
     return YES;
@@ -79,6 +105,9 @@ static NSArray<NSDictionary *> *jsonObjectFromShortcuts(NSArray<SpectacleShortcu
 {
   NSMutableArray<NSDictionary *> *jsonArray = [NSMutableArray new];
   for (SpectacleShortcut *shortcut in shortcuts) {
+    if (!shortcut.shortcutName) {
+      continue;
+    }
     [jsonArray addObject:@{
                            @"shortcut_name" : shortcut.shortcutName,
                            @"shortcut_key_binding" : shortcut.shortcutKeyBinding ?: [NSNull null],
@@ -91,10 +120,19 @@ static NSArray<SpectacleShortcut *> *shortcutsFromJsonObject(NSArray<NSDictionar
 {
   NSMutableArray<SpectacleShortcut *> *shortcuts = [NSMutableArray new];
   for (NSDictionary *jsonObject in jsonArray) {
+    if (![jsonObject isKindOfClass:[NSDictionary class]]) {
+      continue;
+    }
     NSString *shortcutName = jsonObject[@"shortcut_name"];
     NSString *shortcutKeyBinding = jsonObject[@"shortcut_key_binding"];
+    if (![shortcutName isKindOfClass:[NSString class]]) {
+      continue;
+    }
+    if (![shortcutKeyBinding isKindOfClass:[NSString class]]) {
+      shortcutKeyBinding = nil;
+    }
     [shortcuts addObject:[[SpectacleShortcut alloc] initWithShortcutName:shortcutName
-                                                      shortcutKeyBinding:[shortcutKeyBinding isKindOfClass:[NSNull class]] ? nil : shortcutKeyBinding
+                                                      shortcutKeyBinding:shortcutKeyBinding
                                                           shortcutAction:action]];
   }
   return shortcuts;

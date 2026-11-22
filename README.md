@@ -1,10 +1,25 @@
-# Spectacle
-
-[![Build Status](https://travis-ci.org/eczarny/spectacle.svg?branch=master)](https://travis-ci.org/eczarny/spectacle)
+# Spectacle (unofficial fork)
 
 Easily organize windows without using a mouse.
 
-## Important Note
+> **This is an unofficial fork.** It is based on [eczarny/spectacle](https://github.com/eczarny/spectacle), which is **no longer maintained or supported** by its original author. This fork ([phdunham/spectacle](https://github.com/phdunham/spectacle)) is maintained for personal use and updated for current versions of macOS. Please don't report problems with this version to the original project. The app's About window says the same.
+
+## About this fork
+
+Changes from upstream Spectacle 1.2 (this fork is version 1.3.0):
+
+- Builds with current Xcode and the macOS SDK; requires **macOS 14 Sonoma or later** (tested on macOS 27).
+- No third-party dependencies: Carthage, Sparkle (whose update feed no longer exists), Specta, Expecta, OCHamcrest and OCMockito were removed. The tests use XCTest.
+- The Xcode project is generated from `project.yml` with [XcodeGen](https://github.com/yonaskolb/XcodeGen).
+- Fixed: windows of many apps (Chrome and other Chromium/Electron apps, Microsoft Office, Firefox, ...) ending up at the wrong size or position for Fullscreen, Left Half, etc. Spectacle now turns off the app's `AXEnhancedUserInterface` setting while it resizes the window, then turns it back on.
+- Fixed: changing a shortcut in Preferences, or using "Restore Defaults", disabled that shortcut until Spectacle was restarted.
+- "Launch Spectacle at login" uses `SMAppService` (the old API stopped working on macOS 13).
+- The accessibility prompt opens System Settings > Privacy & Security > Accessibility and closes itself once access is granted. Its buttons are now easy to see in Light and Dark Mode (blue "Open System Settings", grey "Quit Spectacle"; Return opens Settings, Escape quits). The old macOS 10.14 screenshot is replaced by a drawing of the current System Settings > Privacy & Security > Accessibility page, which switches between Light and Dark Mode with the system. To preview the dialog when access is already granted, run `open /Applications/Spectacle.app --args -SpectacleShowAccessibilityDialog YES`.
+- Fixed: on macOS 14 and later the Preferences window was covered by a huge white rounded shape, because the shortcut fields drew outside their own bounds.
+- The About window says this is an unofficial fork of the original project, which is no longer supported.
+- Several smaller fixes: crashes on unusual accessibility values or a corrupt shortcuts file, a memory leak in the shortcut conflict check, and a broken display ordering comparison.
+
+## Original note from the author
 
 **This project is not being actively maintained.** Unfortunately, after almost a decade of on-and-off development I can no longer dedicate the time needed to be a responsible maintainer of this project. Spectacle will remain available for download but please use at your own risk. The source code will continue to be free and open to anyone, so feel free to make Spectacle your own.
 
@@ -14,7 +29,7 @@ _Spectacle users have recommended [Rectangle](https://github.com/rxhanson/Rectan
 
 ## System requirements
 
-Spectacle [0.8.6][1] is the last version to support Mac OS X 10.7; future releases will only support 10.9 or greater. Folks wishing to stay on 10.7 should download [0.8.6][1]. Those looking for a version of Spectacle that supports 10.6 can still download [0.7][2].
+This fork requires macOS 14 Sonoma or later. (Upstream Spectacle [0.8.6][1] was the last version to support Mac OS X 10.7, and [0.7][2] the last to support 10.6.)
 
 ## Keyboard Shortcuts
 
@@ -81,19 +96,57 @@ To work around the limitations imposed on Terminal windows Spectacle will first 
 
 ### Spectacle does not work with all applications
 
-Most applications built with the Cocoa frameworks can be readily manipulated via the _OS X Accessibility Protocol_; allowing Spectacle to interact with nearly every window it encounters. Unfortunately this is not always the case. Spectacle will be unable to manipulate the windows of applications that build their user interfaces in unexpected ways.
+Most applications built with the Cocoa frameworks can be readily manipulated via the _macOS Accessibility API_; allowing Spectacle to interact with nearly every window it encounters. Unfortunately this is not always the case. Spectacle will be unable to manipulate the windows of applications that build their user interfaces in unexpected ways.
 
 ## Building and running
 
-Spectacle uses [Carthage][5]. Before building Spectacle in Xcode run:
+Requirements: Xcode 16 or later and [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`).
 
-    $ carthage bootstrap --platform Mac
+    $ xcodegen generate          # regenerate Spectacle.xcodeproj from project.yml
+    $ open Spectacle.xcodeproj   # then press ⌘R
 
-Once Carthage builds Spectacle's dependencies open the Xcode project:
+Or from the command line:
 
-    $ open Spectacle.xcodeproj
+    $ xcodebuild -project Spectacle.xcodeproj -scheme Spectacle -configuration Release -derivedDataPath build/DerivedData build
+    $ open build/DerivedData/Build/Products/Release/Spectacle.app
 
-After Xcode finishes loading the workspace press &#8984;R to run Spectacle.
+To install, quit Spectacle and copy the built app to /Applications:
+
+    $ cp -R build/DerivedData/Build/Products/Release/Spectacle.app /Applications/
+
+### Code signing and Accessibility access
+
+macOS ties Accessibility access to the app's code signature. By default the project signs ad hoc ("Sign to Run Locally", set in `Configuration/Signing.xcconfig`), so every rebuild looks like a new app. The "Spectacle" switch in System Settings then belongs to an older build, and Spectacle keeps asking for access even though the switch is on.
+
+To keep the same signature between builds, create `Configuration/Local.xcconfig` (git ignores it) with your own Apple Development identity:
+
+    CODE_SIGN_IDENTITY = Apple Development
+    DEVELOPMENT_TEAM = <your team ID>
+
+You can find your team ID with `security find-identity -v -p codesigning`, then `security find-certificate -c "Apple Development" -p | openssl x509 -noout -subject` (it is the `OU=` value).
+
+If Spectacle keeps asking for access although it is switched on: in System Settings > Privacy & Security > Accessibility, select Spectacle, remove it with "−", reopen Spectacle and switch it on again.
+
+### Other window managers
+
+Rectangle, Magnet and similar apps use many of the same default shortcuts (⌥⌘←, ⌥⌘F, ...). Whichever app registers a shortcut first gets it, so quit the other app or change its shortcuts.
+
+## Running the tests
+
+    $ xcodebuild test -project Spectacle.xcodeproj -scheme Spectacle -derivedDataPath build/DerivedData
+
+The suite (`SpectacleTests/`) covers:
+
+- every window calculation (halves, quarters, thirds, center, fullscreen, larger/smaller, next/previous display) and the cycling between 1/2, 2/3 and 1/3, on many screen sizes;
+- the full move flow (screen detection, coordinate conversion, calculation, window movers) for every placement action on every display of several multi-display layouts, including displays above, below and left of the main one, a portrait display, Dock positions and a notched menu bar;
+- windows that resist resizing (minimum sizes, Terminal-style size increments);
+- undo/redo history, kept separately per app;
+- shortcut parsing, display strings, storage, migration and registration;
+- Light and Dark Mode: the accessibility dialog and the Preferences window are loaded from their real nibs and checked for readable label colors, the default button, standard button styling, and shortcut fields that never draw outside their own bounds.
+
+One live test moves a real TextEdit window through the Accessibility API. It is skipped by default. To run it, give the test host (`build/DerivedData/Build/Products/Debug/Spectacle.app`) Accessibility access, then run:
+
+    $ TEST_RUNNER_SPECTACLE_LIVE_TESTS=1 xcodebuild test -project Spectacle.xcodeproj -scheme Spectacle -derivedDataPath build/DerivedData -only-testing:SpectacleTests/SpectacleLiveAccessibilityTests
 
 # License
 
@@ -105,4 +158,3 @@ Spectacle should be accompanied by a LICENSE file containing the license relevan
 [2]: https://s3.amazonaws.com/spectacle/downloads/Spectacle+0.7.zip
 [3]: http://support.apple.com/kb/ht1343
 [4]: https://developer.apple.com/library/mac/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXmodel.html
-[5]: https://github.com/Carthage/Carthage

@@ -3,832 +3,724 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07838603148BD517001E7BD7 /* SpectaclePreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07838602148BD517001E7BD7 /* SpectaclePreferencesController.m */; };
-		2D0759A71C71746500A17E80 /* SpectacleWindowPositionCalculationRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0759A61C71746500A17E80 /* SpectacleWindowPositionCalculationRegistry.m */; };
-		2D1AE52515D715F400EAC5BD /* SpectacleRegisteredShortcutValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1AE52415D715F400EAC5BD /* SpectacleRegisteredShortcutValidator.m */; };
-		2D20F0181CD18ED7003DDA5B /* SpectacleBottomHalfWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0081CD18ED7003DDA5B /* SpectacleBottomHalfWindowCalculationSpec.m */; };
-		2D20F0191CD18ED7003DDA5B /* SpectacleCenterWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0091CD18ED7003DDA5B /* SpectacleCenterWindowCalculationSpec.m */; };
-		2D20F01A1CD18ED7003DDA5B /* SpectacleFullscreenWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F00A1CD18ED7003DDA5B /* SpectacleFullscreenWindowCalculationSpec.m */; };
-		2D20F01B1CD18ED7003DDA5B /* SpectacleLargerWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F00B1CD18ED7003DDA5B /* SpectacleLargerWindowCalculationSpec.m */; };
-		2D20F01C1CD18ED7003DDA5B /* SpectacleLeftHalfWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F00C1CD18ED7003DDA5B /* SpectacleLeftHalfWindowCalculationSpec.m */; };
-		2D20F01D1CD18ED7003DDA5B /* SpectacleLowerLeftWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F00D1CD18ED7003DDA5B /* SpectacleLowerLeftWindowCalculationSpec.m */; };
-		2D20F01E1CD18ED7003DDA5B /* SpectacleLowerRightWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F00E1CD18ED7003DDA5B /* SpectacleLowerRightWindowCalculationSpec.m */; };
-		2D20F01F1CD18ED7003DDA5B /* SpectacleNextDisplayWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F00F1CD18ED7003DDA5B /* SpectacleNextDisplayWindowCalculationSpec.m */; };
-		2D20F0201CD18ED7003DDA5B /* SpectacleNextThirdWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0101CD18ED7003DDA5B /* SpectacleNextThirdWindowCalculationSpec.m */; };
-		2D20F0211CD18ED7003DDA5B /* SpectaclePreviousDisplayWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0111CD18ED7003DDA5B /* SpectaclePreviousDisplayWindowCalculationSpec.m */; };
-		2D20F0221CD18ED7003DDA5B /* SpectaclePreviousThirdWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0121CD18ED7003DDA5B /* SpectaclePreviousThirdWindowCalculationSpec.m */; };
-		2D20F0231CD18ED7003DDA5B /* SpectacleRightHalfWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0131CD18ED7003DDA5B /* SpectacleRightHalfWindowCalculationSpec.m */; };
-		2D20F0241CD18ED7003DDA5B /* SpectacleSmallerWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0141CD18ED7003DDA5B /* SpectacleSmallerWindowCalculationSpec.m */; };
-		2D20F0251CD18ED7003DDA5B /* SpectacleTopHalfWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0151CD18ED7003DDA5B /* SpectacleTopHalfWindowCalculationSpec.m */; };
-		2D20F0261CD18ED7003DDA5B /* SpectacleUpperLeftWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0161CD18ED7003DDA5B /* SpectacleUpperLeftWindowCalculationSpec.m */; };
-		2D20F0271CD18ED7003DDA5B /* SpectacleUpperRightWindowCalculationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0171CD18ED7003DDA5B /* SpectacleUpperRightWindowCalculationSpec.m */; };
-		2D20F0291CD1969D003DDA5B /* SpectacleWindowPositionManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F0281CD1969D003DDA5B /* SpectacleWindowPositionManagerSpec.m */; };
-		2D24ACB41CC723F600AB3984 /* SpectacleWindowAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D24ACB31CC723F600AB3984 /* SpectacleWindowAction.m */; };
-		2D24ACB71CC8728E00AB3984 /* SpectacleShortcutHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D24ACB61CC8728E00AB3984 /* SpectacleShortcutHolder.m */; };
-		2D2629461CCECB9E009D1ED0 /* SpectacleScreenDetectionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2629451CCECB9E009D1ED0 /* SpectacleScreenDetectionResult.m */; };
-		2D279ED416BB4A7800F6894A /* SpectacleHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D279ED316BB4A7800F6894A /* SpectacleHistory.m */; };
-		2D3A050D194956E100CD96E7 /* SpectacleAccessibilityElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A04FD194956E100CD96E7 /* SpectacleAccessibilityElement.m */; };
-		2D3A050E194956E100CD96E7 /* SpectacleShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A0500194956E100CD96E7 /* SpectacleShortcut.m */; };
-		2D3A050F194956E100CD96E7 /* SpectacleShortcutRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A0502194956E100CD96E7 /* SpectacleShortcutRecorder.m */; };
-		2D3A0511194956E100CD96E7 /* SpectacleShortcutTranslations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A0507194956E100CD96E7 /* SpectacleShortcutTranslations.m */; };
-		2D3A0512194956E100CD96E7 /* SpectacleShortcutValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A0509194956E100CD96E7 /* SpectacleShortcutValidation.m */; };
-		2D4F3ED014A27B4500C29D11 /* SpectacleScreenDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4F3ECF14A27B4500C29D11 /* SpectacleScreenDetector.m */; };
-		2D5565B1181EDB7F00EFB43A /* Security & Privacy System Preferences.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 2D5565B0181EDB7F00EFB43A /* Security & Privacy System Preferences.scpt */; };
-		2D5783F11BB63BDD00695771 /* SpectacleStandardWindowMover.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5783F01BB63BDD00695771 /* SpectacleStandardWindowMover.m */; };
-		2D58AE341D7D19AF00BFEEA2 /* SpectacleShortcutTranslationsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D58AE331D7D19AF00BFEEA2 /* SpectacleShortcutTranslationsSpec.m */; };
-		2D58AE361D7D2D5300BFEEA2 /* SpectacleShortcutSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D58AE351D7D2D5300BFEEA2 /* SpectacleShortcutSpec.m */; };
-		2D58CC391C7030B800E3DC74 /* Window Position Calculations in Resources */ = {isa = PBXBuildFile; fileRef = 2D58CC381C7030B800E3DC74 /* Window Position Calculations */; };
-		2D5A83051CDAFDEB00EBE80A /* SpectacleShortcutJSONStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A83041CDAFDEB00EBE80A /* SpectacleShortcutJSONStorage.m */; };
-		2D5A83091CDB020A00EBE80A /* SpectacleMigratingShortcutStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A83081CDB020A00EBE80A /* SpectacleMigratingShortcutStorage.m */; };
-		2D5A830F1CDC475B00EBE80A /* SpectacleDefaultShortcutHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A830E1CDC475B00EBE80A /* SpectacleDefaultShortcutHelpers.m */; };
-		2D5CCCE915E96F740009CC43 /* dsa_public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 2D5CCCE815E96F740009CC43 /* dsa_public.pem */; };
-		2D7146541CCC12A6003B8292 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7146521CCC12A6003B8292 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D71466B1CCC1715003B8292 /* Expecta.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D7146671CCC1715003B8292 /* Expecta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D71466C1CCC1715003B8292 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D7146681CCC1715003B8292 /* OCHamcrest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D71466D1CCC1715003B8292 /* OCMockito.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D7146691CCC1715003B8292 /* OCMockito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D71466E1CCC1715003B8292 /* Specta.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D71466A1CCC1715003B8292 /* Specta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D71466F1CCC171F003B8292 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7146671CCC1715003B8292 /* Expecta.framework */; };
-		2D7146701CCC171F003B8292 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7146681CCC1715003B8292 /* OCHamcrest.framework */; };
-		2D7146711CCC171F003B8292 /* OCMockito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7146691CCC1715003B8292 /* OCMockito.framework */; };
-		2D7146721CCC171F003B8292 /* Specta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D71466A1CCC1715003B8292 /* Specta.framework */; };
-		2D768E8D147ED51A00901E76 /* SpectacleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D768E8C147ED51A00901E76 /* SpectacleAppDelegate.m */; };
-		2D7752101B83E94C00C022EE /* Spectacle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC4E3D01AD84E5C0022ABF0 /* Spectacle.xib */; };
-		2D7752111B83E95000C022EE /* SpectaclePreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DC4E3D21AD84E5C0022ABF0 /* SpectaclePreferencesWindow.xib */; };
-		2D7C114A1B86C7CD00B81E11 /* SpectacleShortcutUserDefaultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C11491B86C7CD00B81E11 /* SpectacleShortcutUserDefaultsStorage.m */; };
-		2D7CF9EB1C6FED50004DC708 /* SpectacleWindowPositionCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7CF9EA1C6FED50004DC708 /* SpectacleWindowPositionCalculator.m */; };
-		2D8DA04D147E0FA0003BE1D3 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0706C0431191092B0068F04B /* Defaults.plist */; };
-		2D8DA056147E113D003BE1D3 /* SpectacleShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07678096118679C600614FB5 /* SpectacleShortcutManager.m */; };
-		2D8DA057147E113D003BE1D3 /* SpectacleUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BB542C1186662F0045663F /* SpectacleUtilities.m */; };
-		2D8DA058147E113D003BE1D3 /* SpectacleWindowPositionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EACFF118A4D5A0015FC8A /* SpectacleWindowPositionManager.m */; };
-		2D8DA05D147E113D003BE1D3 /* SpectacleHistoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CDA0E1221BAFF0099612C /* SpectacleHistoryItem.m */; };
-		2D8DA05E147E113D003BE1D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 077938E51184FADB0013BC14 /* main.m */; };
-		2D8E2C641C7AAD5A0074129C /* SpectacleJavaScriptEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E2C631C7AAD5A0074129C /* SpectacleJavaScriptEnvironment.m */; };
-		2D98D7311AE064B7007AD995 /* SpectacleWindowPositionCalculationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D98D7301AE064B7007AD995 /* SpectacleWindowPositionCalculationResult.m */; };
-		2DA23EFC1B7D736100C9E8EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA23EFB1B7D736100C9E8EF /* Images.xcassets */; };
-		2DAC59F01BB238D900C660ED /* SpectacleQuantizedWindowMover.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC59EF1BB238D900C660ED /* SpectacleQuantizedWindowMover.m */; };
-		2DAC59F31BB23BE200C660ED /* SpectacleBestEffortWindowMover.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC59F21BB23BE200C660ED /* SpectacleBestEffortWindowMover.m */; };
-		2DC4E3D41AD84E5C0022ABF0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC4E3CA1AD84E5C0022ABF0 /* Credits.rtf */; };
-		2DC4E3D51AD84E5C0022ABF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DC4E3CC1AD84E5C0022ABF0 /* InfoPlist.strings */; };
-		2DC4E3D61AD84E5C0022ABF0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DC4E3CE1AD84E5C0022ABF0 /* Localizable.strings */; };
-		2DC8A0171B85097900ABEBD5 /* SpectacleLoginItemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC8A0161B85097900ABEBD5 /* SpectacleLoginItemHelper.m */; };
-		2DE03E481D7B8F5A004E80D6 /* SpectacleShortcutKeyBindingsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE03E471D7B8F5A004E80D6 /* SpectacleShortcutKeyBindingsSpec.m */; };
-		2DE03E4B1D7B98D6004E80D6 /* SpectacleShortcutKeyBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE03E4A1D7B98D6004E80D6 /* SpectacleShortcutKeyBindings.m */; };
+		013832DA3799CE8E88B114BB /* SpectacleLowerLeftWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EE1748D92C6A127F3281EC /* SpectacleLowerLeftWindowCalculationTests.m */; };
+		038EA457AA762CF3AF09802D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46DE0C226CD5E4D08D3D6F14 /* InfoPlist.strings */; };
+		0ABE9FD8506E2B7CBEB2E6A4 /* SpectacleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E761D04241ADE33B87EB11F3 /* SpectacleAppDelegate.m */; };
+		0C33BDB4A09389A5BDCF34FB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F84D13F62D08975B1D28D54E /* Credits.rtf */; };
+		0E6DFBB668FBD5CDADE3E499 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBCB38E187FD562E9CCAF7FF /* Localizable.strings */; };
+		0F5A0A8B2D4071965B4A58ED /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 568E7270301ED748CAD64ADB /* Credits.rtf */; };
+		0FB09D63855684C5EFE45590 /* SpectacleTestDoubles.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAB93E1C891A7B05EF27EC0 /* SpectacleTestDoubles.m */; };
+		1243B29FD71A3289800F63C1 /* SpectacleRightHalfWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5403CD1C0AA544B0CE94DF3B /* SpectacleRightHalfWindowCalculationTests.m */; };
+		152673E112E5AF86489F92BB /* Window Position Calculations in Resources */ = {isa = PBXBuildFile; fileRef = FE2EB15DB1EE0A762F8FEFCB /* Window Position Calculations */; };
+		153942CBAD70BA455339BC03 /* SpectacleShortcutKeyBindingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DC9FDC20DBC027C67C26B4 /* SpectacleShortcutKeyBindingsTests.m */; };
+		159E10B5834EFE36CEE34261 /* SpectacleLoginItemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F82AE3136BEC22B90A667C /* SpectacleLoginItemHelper.m */; };
+		17B9364A431D6056AC93F98F /* SpectacleScreenDetectionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A0496C6837A1724D339A56D7 /* SpectacleScreenDetectionResult.m */; };
+		18F6623B55151F3B1559CCF5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F2D17CA7600D63984A9B2430 /* Credits.rtf */; };
+		1CC524CFD1833536AB891F4E /* SpectacleTestSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378A932560E4D45C3039945 /* SpectacleTestSupport.m */; };
+		1F42DF8A467D8902CB54F657 /* SpectacleNextDisplayWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EE7380FE01116D4E117EE9 /* SpectacleNextDisplayWindowCalculationTests.m */; };
+		24D1ABD9CB642EC958EC48DB /* SpectacleShortcutUserDefaultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 068BD6AD5D64BA1770CB5498 /* SpectacleShortcutUserDefaultsStorage.m */; };
+		25B15B7D52E583430912054A /* SpectacleTopHalfWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 381132E424CDF887439087BA /* SpectacleTopHalfWindowCalculationTests.m */; };
+		2806AB99A178957A2518A701 /* SpectacleScreenDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD88D46273BBD341279E999 /* SpectacleScreenDetector.m */; };
+		28277A6248B48BA70E3A2F7D /* SpectacleShortcutTranslations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5F2F063AD7AF9159BF59B3 /* SpectacleShortcutTranslations.m */; };
+		287CC19D41EC78F38FB21822 /* SpectacleAccessibilityElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BB7B0AC382F83CD229E540 /* SpectacleAccessibilityElement.m */; };
+		28A410D3584E7B5769EC0DF6 /* SpectacleWindowPositionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E40B1230435E3F6EA9034012 /* SpectacleWindowPositionManagerTests.m */; };
+		28D8A7AD69C8D53ECBFAC3B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B513013E518DF8D418AFE846 /* InfoPlist.strings */; };
+		330019AEE5A21285517A3231 /* SpectaclePreferencesWindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAF0CE2B62DF85003C0B8E /* SpectaclePreferencesWindowTests.m */; };
+		36699791C7B4DDB19A1FB84D /* SpectacleLiveAccessibilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1149A97EC5A180E629574A /* SpectacleLiveAccessibilityTests.m */; };
+		3912BB3833BABE3684E7311E /* SpectacleSmallerWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C49B5E740E212D6A5AAEA5B /* SpectacleSmallerWindowCalculationTests.m */; };
+		3BEE8E3559C56AE8E700A2DE /* SpectacleShortcutStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CCC5469AA6FF72416A6057 /* SpectacleShortcutStorageTests.m */; };
+		3C3FA157B58504BD469DA002 /* SpectacleShortcutKeyBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C3DC8887C1B8F1F1F5F44D /* SpectacleShortcutKeyBindings.m */; };
+		3C7AFF5280D4948710B70D68 /* SpectacleShortcutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B2E161B895000F66E7AB7 /* SpectacleShortcutTests.m */; };
+		429CBCC17AF093420F6E3FFD /* Spectacle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E73A5840690F24FBC11B8E2 /* Spectacle.xib */; };
+		451AA3C1D5B6B63142711167 /* SpectacleMigratingShortcutStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6D753A16126C657F253A06 /* SpectacleMigratingShortcutStorage.m */; };
+		454E96B7EC472B8D2EEAD93F /* SpectacleHistoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D57CEE65D0277CC2F6E9F367 /* SpectacleHistoryItem.m */; };
+		479AAF659C54BC7B7AD992E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B25AF6213C8E5DA2F6DC5541 /* Localizable.strings */; };
+		4B018F71A00C6F5325378674 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A180F32E30F5FEB5971BDA23 /* Localizable.strings */; };
+		515F1014E6F24795530768FD /* SpectacleWindowPositionCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5F17E38BEA4975FA76E872 /* SpectacleWindowPositionCalculator.m */; };
+		562DBBFFA2648F9FE4210E26 /* SpectacleWindowPositionCalculationRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C45C5539531096231169D3 /* SpectacleWindowPositionCalculationRegistry.m */; };
+		5C92781DB3BA3B35EEEFF21B /* SpectacleBottomHalfWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503DD823DD6E59430F5EB827 /* SpectacleBottomHalfWindowCalculationTests.m */; };
+		64C94FA98C7A0C966D935612 /* SpectacleAppearanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A051B043CB5ADC9A3179DFC /* SpectacleAppearanceTests.m */; };
+		65872E30604070F4C4942686 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17296C3552487A73C67B84E9 /* InfoPlist.strings */; };
+		68FAA04C9667DF495DFC766C /* SpectacleShortcutJSONStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4CFCE77AE75EE167978F4 /* SpectacleShortcutJSONStorage.m */; };
+		759A75D54F5C56C6CD009773 /* SpectacleAccessibilitySettingsIllustration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D06A8A83BECF727C9630092 /* SpectacleAccessibilitySettingsIllustration.m */; };
+		763CB165E2AD61AC53EC0B4D /* SpectacleDefaultShortcutsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5977E08F31D14041140BD103 /* SpectacleDefaultShortcutsTests.m */; };
+		7712A97DF13E215601764CFB /* SpectacleStandardWindowMover.m in Sources */ = {isa = PBXBuildFile; fileRef = 795A6FBA33953A41AB80DBBC /* SpectacleStandardWindowMover.m */; };
+		789A666645D8D5DEBEF003CB /* SpectacleWindowPositionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9A1E6D8B73E30F7409776 /* SpectacleWindowPositionManager.m */; };
+		7A52DC8363DA80F5B4CFB87A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 422ECFB3AC96BA29A10CF4D4 /* InfoPlist.strings */; };
+		7ADAE9EAAE228C92B6555512 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B55C46EC1117DC45AADA032 /* InfoPlist.strings */; };
+		7D564C17F1DC7EF64F16EEA7 /* SpectacleUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A70E168F3F0619B15A4486 /* SpectacleUtilities.m */; };
+		7E2897B216C4977ACE698D8E /* SpectaclePreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B335B66610B23B0C1E3D187 /* SpectaclePreferencesWindow.xib */; };
+		8119A12E1E7722DBFA746334 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C2A65C2D8FDC521447EA6CD5 /* Credits.rtf */; };
+		83EA318B530463D521AB2A89 /* SpectacleWindowAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7172FA3646CD3FC52697EA14 /* SpectacleWindowAction.m */; };
+		862D52D0DA1B0F855EE1FFF0 /* SpectaclePreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5371F224B104C58300AAE96F /* SpectaclePreferencesController.m */; };
+		87AFABD124F6981C43B9126B /* SpectacleLowerRightWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C063BF7F4654595E5166D7C1 /* SpectacleLowerRightWindowCalculationTests.m */; };
+		932422B8FAEE745AB4D9763A /* SpectacleFullscreenWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C5CE168C726D4CA31473F2 /* SpectacleFullscreenWindowCalculationTests.m */; };
+		9465AFD3342B667D9121B663 /* SpectacleCoordinateConversionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6DA7149392578D18AB9EA4 /* SpectacleCoordinateConversionTests.m */; };
+		9F67B95CB5707CA6DD5AD58D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97B071AAD0DB6CBDC4310C94 /* Localizable.strings */; };
+		A2F385153F2D189F61B4D160 /* SpectacleShortcutRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F665917ADEB15025FAE5707 /* SpectacleShortcutRecorder.m */; };
+		A653DAB701BBBD9F8C6F99FE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9D59C25D4E32CAA6E1D49F15 /* Credits.rtf */; };
+		A671BEA10FAFEE72945CA2A0 /* SpectacleNextThirdWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B9736DC3B7E445E09105CC /* SpectacleNextThirdWindowCalculationTests.m */; };
+		A891F828BC932CD276A599BC /* SpectaclePreviousDisplayWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 278D7325142BA3D362CBFF27 /* SpectaclePreviousDisplayWindowCalculationTests.m */; };
+		A8D65F5CE185B45FE57E3E67 /* SpectacleShortcutHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A741F1B0F3E7976E71174C /* SpectacleShortcutHolder.m */; };
+		ACD001137F7B2834EED6021D /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2E3CA8D6AD3457988A9F23 /* Defaults.plist */; };
+		B236F777023CA6E3A6D97E0D /* SpectacleShortcutValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = D64640ED6ABF7C4E60E64714 /* SpectacleShortcutValidation.m */; };
+		B4B9EE4C1B8DAE4EF6AA1548 /* SpectacleFilledButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3B7161BADFF66C17062AC6 /* SpectacleFilledButton.m */; };
+		B8DB693F3C2360F2717395E8 /* SpectacleLargerWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC05D34BEC80BBB7ECCFAA16 /* SpectacleLargerWindowCalculationTests.m */; };
+		BB4F13986800852FEB8C2EB6 /* SpectacleWindowPositionCalculationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0559935A0069D655DE47C5B6 /* SpectacleWindowPositionCalculationResult.m */; };
+		BF17372A2151F7A13FCCDE68 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF406A1BE250E4F53A89B887 /* Localizable.strings */; };
+		C7E106C54E4ED56706FF39B9 /* SpectacleHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2DC0C0F99AE2AB5DEB07A8 /* SpectacleHistory.m */; };
+		C9C2BC3E50822ACA0C97D7DB /* SpectacleShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF61A90D40C8528F14A984A /* SpectacleShortcut.m */; };
+		CDA021800B2EFE7080F8ED16 /* SpectacleShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3BA4093F950AC201A091E /* SpectacleShortcutManager.m */; };
+		D215FFDDE3F6FEEA1CE2C958 /* SpectacleAccessibilitySettingsIllustrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26178FE7CC4D9FFF0F8CEF /* SpectacleAccessibilitySettingsIllustrationTests.m */; };
+		D53564429F2D33F1BF633733 /* SpectacleRegisteredShortcutValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C3FB96627FD109E6BE5050 /* SpectacleRegisteredShortcutValidator.m */; };
+		D6030D2D0B1305CE63E9D8BF /* SpectacleScreenDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 449E090526395AAB8A5FC0A9 /* SpectacleScreenDetectorTests.m */; };
+		D7B03A241259AC3AEB2165AC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C11831247BC4D72392434BAA /* Credits.rtf */; };
+		D9532EF986A213B122758519 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B88B6947E8663E33252B3C6B /* InfoPlist.strings */; };
+		DC5109C85867058C03077F14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3363B8D408617CE2E2802F /* main.m */; };
+		DC6264C7188F0625289D498F /* SpectacleBestEffortWindowMover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB51813980A6E8DC9A0D7F /* SpectacleBestEffortWindowMover.m */; };
+		DF5A98BB0C1E2DFCAF8A5B99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CA33B4B80EB5BE5BE50E2F /* Images.xcassets */; };
+		DFC901EE7F2CE9B937FC4699 /* SpectacleCenterWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FC0E47D23D9EE1AC4633C4 /* SpectacleCenterWindowCalculationTests.m */; };
+		E15DEBBFD9525335D178FA1C /* SpectacleShortcutTranslationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 080C2DC40068883D803EDC43 /* SpectacleShortcutTranslationsTests.m */; };
+		E178211143375CA3D97EA009 /* SpectacleHistoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76994CDAC86B02C2486236F2 /* SpectacleHistoryTests.m */; };
+		E22C2E6D4BD7C9FB60C5A5E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C93F393D7623E6DF235C5ED8 /* Localizable.strings */; };
+		E235A00F05B90FD49A6D9292 /* SpectacleUpperLeftWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC1DCF27D9469F485EDDDD4 /* SpectacleUpperLeftWindowCalculationTests.m */; };
+		EA6F84E8EA4D2D2E7893F8C3 /* SpectacleWindowMoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE24B3CE41A90D6053DBDB /* SpectacleWindowMoverTests.m */; };
+		ECDF0F2DCBBF1DAF78CE9C54 /* SpectacleDefaultShortcutHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F681CEDE9C2A6AD30515F2 /* SpectacleDefaultShortcutHelpers.m */; };
+		EE930283B5B57E0F086957F6 /* SpectacleUpperRightWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4254A78322CAA32013B86A1 /* SpectacleUpperRightWindowCalculationTests.m */; };
+		F11AEBCEFAEC285613D43CE7 /* SpectacleQuantizedWindowMover.m in Sources */ = {isa = PBXBuildFile; fileRef = 17559C60868F19637B80F897 /* SpectacleQuantizedWindowMover.m */; };
+		F7F79B2FE3E5BE94A02BEB41 /* SpectacleWindowCalculationInvariantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E660B462413B8F2A53EE5 /* SpectacleWindowCalculationInvariantTests.m */; };
+		F91DEBF286E418A88C232952 /* SpectaclePreviousThirdWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DFB59DE443E5EF728C1A2 /* SpectaclePreviousThirdWindowCalculationTests.m */; };
+		FC62F0BC6CE2624B8E2593C5 /* SpectacleShortcutManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAAEC41CE31F340636AE5D8 /* SpectacleShortcutManagerTests.m */; };
+		FD039797E4FE60F2E1FAC9F4 /* SpectacleLeftHalfWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 080942810E668402D46B8088 /* SpectacleLeftHalfWindowCalculationTests.m */; };
+		FEF2A3FE87C3176005DF3990 /* SpectacleJavaScriptEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6340C41F42C3C8BF89E34655 /* SpectacleJavaScriptEnvironment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2DA5B7CC19F8BA79007EDE8E /* PBXContainerItemProxy */ = {
+		6E203DFE0C11823C52581196 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			containerPortal = 75BB82F433577027E2DA7E7A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2D1E1AAF147E06AD0021D73D;
+			remoteGlobalIDString = 6B26CEA434BD2809D64C8EEB;
 			remoteInfo = Spectacle;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		2D7146551CCC12A6003B8292 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2D7146541CCC12A6003B8292 /* Sparkle.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D7146661CCC16FD003B8292 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2D71466B1CCC1715003B8292 /* Expecta.framework in CopyFiles */,
-				2D71466C1CCC1715003B8292 /* OCHamcrest.framework in CopyFiles */,
-				2D71466D1CCC1715003B8292 /* OCMockito.framework in CopyFiles */,
-				2D71466E1CCC1715003B8292 /* Specta.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		0706C0431191092B0068F04B /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Defaults.plist; path = "Spectacle/Resources/Property Lists/Defaults.plist"; sourceTree = "<group>"; };
-		072EACFE118A4D5A0015FC8A /* SpectacleWindowPositionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SpectacleWindowPositionManager.h; path = Spectacle/Sources/SpectacleWindowPositionManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		072EACFF118A4D5A0015FC8A /* SpectacleWindowPositionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleWindowPositionManager.m; path = Spectacle/Sources/SpectacleWindowPositionManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		07678095118679C600614FB5 /* SpectacleShortcutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SpectacleShortcutManager.h; path = Spectacle/Sources/SpectacleShortcutManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		07678096118679C600614FB5 /* SpectacleShortcutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleShortcutManager.m; path = Spectacle/Sources/SpectacleShortcutManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		077938E51184FADB0013BC14 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = main.m; path = "Spectacle/Supporting Files/main.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		07838601148BD517001E7BD7 /* SpectaclePreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectaclePreferencesController.h; path = Spectacle/Sources/SpectaclePreferencesController.h; sourceTree = "<group>"; };
-		07838602148BD517001E7BD7 /* SpectaclePreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectaclePreferencesController.m; path = Spectacle/Sources/SpectaclePreferencesController.m; sourceTree = "<group>"; };
-		079CDA0D1221BAFF0099612C /* SpectacleHistoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleHistoryItem.h; path = Spectacle/Sources/SpectacleHistoryItem.h; sourceTree = "<group>"; };
-		079CDA0E1221BAFF0099612C /* SpectacleHistoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleHistoryItem.m; path = Spectacle/Sources/SpectacleHistoryItem.m; sourceTree = "<group>"; };
-		07BB542B1186662F0045663F /* SpectacleUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SpectacleUtilities.h; path = Spectacle/Sources/SpectacleUtilities.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		07BB542C1186662F0045663F /* SpectacleUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleUtilities.m; path = Spectacle/Sources/SpectacleUtilities.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D0759A51C71746500A17E80 /* SpectacleWindowPositionCalculationRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleWindowPositionCalculationRegistry.h; path = Spectacle/Sources/SpectacleWindowPositionCalculationRegistry.h; sourceTree = "<group>"; };
-		2D0759A61C71746500A17E80 /* SpectacleWindowPositionCalculationRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleWindowPositionCalculationRegistry.m; path = Spectacle/Sources/SpectacleWindowPositionCalculationRegistry.m; sourceTree = "<group>"; };
-		2D1AE52315D715F400EAC5BD /* SpectacleRegisteredShortcutValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SpectacleRegisteredShortcutValidator.h; path = Spectacle/Sources/SpectacleRegisteredShortcutValidator.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		2D1AE52415D715F400EAC5BD /* SpectacleRegisteredShortcutValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleRegisteredShortcutValidator.m; path = Spectacle/Sources/SpectacleRegisteredShortcutValidator.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D1E1AB0147E06AD0021D73D /* Spectacle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spectacle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D1E1AD2147E07E50021D73D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Spectacle/Supporting Files/Info.plist"; sourceTree = "<group>"; };
-		2D20F0081CD18ED7003DDA5B /* SpectacleBottomHalfWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleBottomHalfWindowCalculationSpec.m; path = Sources/SpectacleBottomHalfWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F0091CD18ED7003DDA5B /* SpectacleCenterWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleCenterWindowCalculationSpec.m; path = Sources/SpectacleCenterWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F00A1CD18ED7003DDA5B /* SpectacleFullscreenWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleFullscreenWindowCalculationSpec.m; path = Sources/SpectacleFullscreenWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F00B1CD18ED7003DDA5B /* SpectacleLargerWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleLargerWindowCalculationSpec.m; path = Sources/SpectacleLargerWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F00C1CD18ED7003DDA5B /* SpectacleLeftHalfWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleLeftHalfWindowCalculationSpec.m; path = Sources/SpectacleLeftHalfWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F00D1CD18ED7003DDA5B /* SpectacleLowerLeftWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleLowerLeftWindowCalculationSpec.m; path = Sources/SpectacleLowerLeftWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F00E1CD18ED7003DDA5B /* SpectacleLowerRightWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleLowerRightWindowCalculationSpec.m; path = Sources/SpectacleLowerRightWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F00F1CD18ED7003DDA5B /* SpectacleNextDisplayWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleNextDisplayWindowCalculationSpec.m; path = Sources/SpectacleNextDisplayWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F0101CD18ED7003DDA5B /* SpectacleNextThirdWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleNextThirdWindowCalculationSpec.m; path = Sources/SpectacleNextThirdWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F0111CD18ED7003DDA5B /* SpectaclePreviousDisplayWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectaclePreviousDisplayWindowCalculationSpec.m; path = Sources/SpectaclePreviousDisplayWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F0121CD18ED7003DDA5B /* SpectaclePreviousThirdWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectaclePreviousThirdWindowCalculationSpec.m; path = Sources/SpectaclePreviousThirdWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F0131CD18ED7003DDA5B /* SpectacleRightHalfWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleRightHalfWindowCalculationSpec.m; path = Sources/SpectacleRightHalfWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F0141CD18ED7003DDA5B /* SpectacleSmallerWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleSmallerWindowCalculationSpec.m; path = Sources/SpectacleSmallerWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F0151CD18ED7003DDA5B /* SpectacleTopHalfWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleTopHalfWindowCalculationSpec.m; path = Sources/SpectacleTopHalfWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F0161CD18ED7003DDA5B /* SpectacleUpperLeftWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleUpperLeftWindowCalculationSpec.m; path = Sources/SpectacleUpperLeftWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F0171CD18ED7003DDA5B /* SpectacleUpperRightWindowCalculationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleUpperRightWindowCalculationSpec.m; path = Sources/SpectacleUpperRightWindowCalculationSpec.m; sourceTree = "<group>"; };
-		2D20F0281CD1969D003DDA5B /* SpectacleWindowPositionManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleWindowPositionManagerSpec.m; path = Sources/SpectacleWindowPositionManagerSpec.m; sourceTree = "<group>"; };
-		2D2490DF1C7A5BD900A4282B /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = Spectacle/Resources/Localizations/fi.lproj/Spectacle.strings; sourceTree = "<group>"; };
-		2D2490E01C7A5BD900A4282B /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = Spectacle/Resources/Localizations/fi.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
-		2D2490E11C7A5BD900A4282B /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fi; path = Spectacle/Resources/Localizations/fi.lproj/Credits.rtf; sourceTree = "<group>"; };
-		2D2490E21C7A5BD900A4282B /* fi */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fi; path = Spectacle/Resources/Localizations/fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2D2490E31C7A5BD900A4282B /* fi */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fi; path = Spectacle/Resources/Localizations/fi.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2D24ACB31CC723F600AB3984 /* SpectacleWindowAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleWindowAction.m; path = Spectacle/Sources/SpectacleWindowAction.m; sourceTree = "<group>"; };
-		2D24ACB51CC8728E00AB3984 /* SpectacleShortcutHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutHolder.h; path = Spectacle/Sources/SpectacleShortcutHolder.h; sourceTree = "<group>"; };
-		2D24ACB61CC8728E00AB3984 /* SpectacleShortcutHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleShortcutHolder.m; path = Spectacle/Sources/SpectacleShortcutHolder.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D2629441CCECB9E009D1ED0 /* SpectacleScreenDetectionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleScreenDetectionResult.h; path = Spectacle/Sources/SpectacleScreenDetectionResult.h; sourceTree = "<group>"; };
-		2D2629451CCECB9E009D1ED0 /* SpectacleScreenDetectionResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleScreenDetectionResult.m; path = Spectacle/Sources/SpectacleScreenDetectionResult.m; sourceTree = "<group>"; };
-		2D279ED216BB4A7800F6894A /* SpectacleHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleHistory.h; path = Spectacle/Sources/SpectacleHistory.h; sourceTree = "<group>"; };
-		2D279ED316BB4A7800F6894A /* SpectacleHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleHistory.m; path = Spectacle/Sources/SpectacleHistory.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D2A61A31DC2CD9C00D86193 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Spectacle/Resources/Localizations/es.lproj/Spectacle.strings; sourceTree = "<group>"; };
-		2D2A61A41DC2CD9C00D86193 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Spectacle/Resources/Localizations/es.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
-		2D2A61A51DC2CD9C00D86193 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = es; path = Spectacle/Resources/Localizations/es.lproj/Credits.rtf; sourceTree = "<group>"; };
-		2D2A61A61DC2CD9C00D86193 /* es */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = es; path = Spectacle/Resources/Localizations/es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2D2A61A71DC2CD9C00D86193 /* es */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = es; path = Spectacle/Resources/Localizations/es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2D3A04FC194956E100CD96E7 /* SpectacleAccessibilityElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SpectacleAccessibilityElement.h; path = Spectacle/Sources/SpectacleAccessibilityElement.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		2D3A04FD194956E100CD96E7 /* SpectacleAccessibilityElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleAccessibilityElement.m; path = Spectacle/Sources/SpectacleAccessibilityElement.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D3A04FF194956E100CD96E7 /* SpectacleShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SpectacleShortcut.h; path = Spectacle/Sources/SpectacleShortcut.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		2D3A0500194956E100CD96E7 /* SpectacleShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleShortcut.m; path = Spectacle/Sources/SpectacleShortcut.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D3A0501194956E100CD96E7 /* SpectacleShortcutRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutRecorder.h; path = Spectacle/Sources/SpectacleShortcutRecorder.h; sourceTree = "<group>"; };
-		2D3A0502194956E100CD96E7 /* SpectacleShortcutRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleShortcutRecorder.m; path = Spectacle/Sources/SpectacleShortcutRecorder.m; sourceTree = "<group>"; };
-		2D3A0505194956E100CD96E7 /* SpectacleShortcutRecorderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutRecorderDelegate.h; path = Spectacle/Sources/SpectacleShortcutRecorderDelegate.h; sourceTree = "<group>"; };
-		2D3A0506194956E100CD96E7 /* SpectacleShortcutTranslations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutTranslations.h; path = Spectacle/Sources/SpectacleShortcutTranslations.h; sourceTree = "<group>"; };
-		2D3A0507194956E100CD96E7 /* SpectacleShortcutTranslations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleShortcutTranslations.m; path = Spectacle/Sources/SpectacleShortcutTranslations.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D3A0508194956E100CD96E7 /* SpectacleShortcutValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutValidation.h; path = Spectacle/Sources/SpectacleShortcutValidation.h; sourceTree = "<group>"; };
-		2D3A0509194956E100CD96E7 /* SpectacleShortcutValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleShortcutValidation.m; path = Spectacle/Sources/SpectacleShortcutValidation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D3A050A194956E100CD96E7 /* SpectacleShortcutValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutValidator.h; path = Spectacle/Sources/SpectacleShortcutValidator.h; sourceTree = "<group>"; };
-		2D4F3ECE14A27B4500C29D11 /* SpectacleScreenDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleScreenDetector.h; path = Spectacle/Sources/SpectacleScreenDetector.h; sourceTree = "<group>"; };
-		2D4F3ECF14A27B4500C29D11 /* SpectacleScreenDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleScreenDetector.m; path = Spectacle/Sources/SpectacleScreenDetector.m; sourceTree = "<group>"; };
-		2D5565B0181EDB7F00EFB43A /* Security & Privacy System Preferences.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Security & Privacy System Preferences.scpt"; path = "Spectacle/Resources/Scripts/Security & Privacy System Preferences.scpt"; sourceTree = "<group>"; };
-		2D5783EF1BB63BDD00695771 /* SpectacleStandardWindowMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleStandardWindowMover.h; path = Spectacle/Sources/SpectacleStandardWindowMover.h; sourceTree = "<group>"; };
-		2D5783F01BB63BDD00695771 /* SpectacleStandardWindowMover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleStandardWindowMover.m; path = Spectacle/Sources/SpectacleStandardWindowMover.m; sourceTree = "<group>"; };
-		2D58AE331D7D19AF00BFEEA2 /* SpectacleShortcutTranslationsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleShortcutTranslationsSpec.m; path = Sources/SpectacleShortcutTranslationsSpec.m; sourceTree = "<group>"; };
-		2D58AE351D7D2D5300BFEEA2 /* SpectacleShortcutSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleShortcutSpec.m; path = Sources/SpectacleShortcutSpec.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D58CC381C7030B800E3DC74 /* Window Position Calculations */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Window Position Calculations"; path = "Spectacle/Resources/Window Position Calculations"; sourceTree = "<group>"; };
-		2D5A83031CDAFDEB00EBE80A /* SpectacleShortcutJSONStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutJSONStorage.h; path = Spectacle/Sources/SpectacleShortcutJSONStorage.h; sourceTree = "<group>"; };
-		2D5A83041CDAFDEB00EBE80A /* SpectacleShortcutJSONStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleShortcutJSONStorage.m; path = Spectacle/Sources/SpectacleShortcutJSONStorage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D5A83071CDB020A00EBE80A /* SpectacleMigratingShortcutStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleMigratingShortcutStorage.h; path = Spectacle/Sources/SpectacleMigratingShortcutStorage.h; sourceTree = "<group>"; };
-		2D5A83081CDB020A00EBE80A /* SpectacleMigratingShortcutStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleMigratingShortcutStorage.m; path = Spectacle/Sources/SpectacleMigratingShortcutStorage.m; sourceTree = "<group>"; };
-		2D5A830C1CDC363B00EBE80A /* SpectacleShortcutStorageMigrationDestination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutStorageMigrationDestination.h; path = Spectacle/Sources/SpectacleShortcutStorageMigrationDestination.h; sourceTree = "<group>"; };
-		2D5A830D1CDC475B00EBE80A /* SpectacleDefaultShortcutHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleDefaultShortcutHelpers.h; path = Spectacle/Sources/SpectacleDefaultShortcutHelpers.h; sourceTree = "<group>"; };
-		2D5A830E1CDC475B00EBE80A /* SpectacleDefaultShortcutHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleDefaultShortcutHelpers.m; path = Spectacle/Sources/SpectacleDefaultShortcutHelpers.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D5CCCE815E96F740009CC43 /* dsa_public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_public.pem; path = Spectacle/Resources/Certificates/dsa_public.pem; sourceTree = "<group>"; };
-		2D7146521CCC12A6003B8292 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Carthage/Build/Mac/Sparkle.framework; sourceTree = "<group>"; };
-		2D7146671CCC1715003B8292 /* Expecta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Expecta.framework; path = ../Carthage/Build/Mac/Expecta.framework; sourceTree = "<group>"; };
-		2D7146681CCC1715003B8292 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = ../Carthage/Build/Mac/OCHamcrest.framework; sourceTree = "<group>"; };
-		2D7146691CCC1715003B8292 /* OCMockito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockito.framework; path = ../Carthage/Build/Mac/OCMockito.framework; sourceTree = "<group>"; };
-		2D71466A1CCC1715003B8292 /* Specta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Specta.framework; path = ../Carthage/Build/Mac/Specta.framework; sourceTree = "<group>"; };
-		2D768E8B147ED51A00901E76 /* SpectacleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = SpectacleAppDelegate.h; path = Spectacle/Sources/SpectacleAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		2D768E8C147ED51A00901E76 /* SpectacleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleAppDelegate.m; path = Spectacle/Sources/SpectacleAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2D7C11471B86C63A00B81E11 /* SpectacleShortcutStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutStorage.h; path = Spectacle/Sources/SpectacleShortcutStorage.h; sourceTree = "<group>"; };
-		2D7C11481B86C7CD00B81E11 /* SpectacleShortcutUserDefaultsStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutUserDefaultsStorage.h; path = Spectacle/Sources/SpectacleShortcutUserDefaultsStorage.h; sourceTree = "<group>"; };
-		2D7C11491B86C7CD00B81E11 /* SpectacleShortcutUserDefaultsStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleShortcutUserDefaultsStorage.m; path = Spectacle/Sources/SpectacleShortcutUserDefaultsStorage.m; sourceTree = "<group>"; };
-		2D7CF9E91C6FED50004DC708 /* SpectacleWindowPositionCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleWindowPositionCalculator.h; path = Spectacle/Sources/SpectacleWindowPositionCalculator.h; sourceTree = "<group>"; };
-		2D7CF9EA1C6FED50004DC708 /* SpectacleWindowPositionCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleWindowPositionCalculator.m; path = Spectacle/Sources/SpectacleWindowPositionCalculator.m; sourceTree = "<group>"; };
-		2D8E2C621C7AAD5A0074129C /* SpectacleJavaScriptEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleJavaScriptEnvironment.h; path = Spectacle/Sources/SpectacleJavaScriptEnvironment.h; sourceTree = "<group>"; };
-		2D8E2C631C7AAD5A0074129C /* SpectacleJavaScriptEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleJavaScriptEnvironment.m; path = Spectacle/Sources/SpectacleJavaScriptEnvironment.m; sourceTree = "<group>"; };
-		2D98D72C1ADDBBF6007AD995 /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = Spectacle/Resources/Localizations/fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2D98D72D1ADDBBF6007AD995 /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = Spectacle/Resources/Localizations/fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2D98D72E1ADDBBF6007AD995 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = Spectacle/Resources/Localizations/fr.lproj/Credits.rtf; sourceTree = "<group>"; };
-		2D98D72F1AE064B7007AD995 /* SpectacleWindowPositionCalculationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleWindowPositionCalculationResult.h; path = Spectacle/Sources/SpectacleWindowPositionCalculationResult.h; sourceTree = "<group>"; };
-		2D98D7301AE064B7007AD995 /* SpectacleWindowPositionCalculationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleWindowPositionCalculationResult.m; path = Spectacle/Sources/SpectacleWindowPositionCalculationResult.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		2DA23EFB1B7D736100C9E8EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Spectacle/Resources/Images.xcassets; sourceTree = "<group>"; };
-		2DA23EFD1B80FB6400C9E8EF /* it */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = it; path = Spectacle/Resources/Localizations/it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2DA23EFE1B80FF6F00C9E8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Spectacle/Resources/Localizations/Base.lproj/Spectacle.xib; sourceTree = "<group>"; };
-		2DA23EFF1B80FF6F00C9E8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Spectacle/Resources/Localizations/Base.lproj/SpectaclePreferencesWindow.xib; sourceTree = "<group>"; };
-		2DA23F031B81016B00C9E8EF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Spectacle/Resources/Localizations/fr.lproj/Spectacle.strings; sourceTree = "<group>"; };
-		2DA23F051B81017000C9E8EF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Spectacle/Resources/Localizations/fr.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
-		2DA23F071B8109D400C9E8EF /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Spectacle/Resources/Localizations/it.lproj/Spectacle.strings; sourceTree = "<group>"; };
-		2DA23F091B8109D900C9E8EF /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Spectacle/Resources/Localizations/it.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
-		2DA5B7C619F8BA79007EDE8E /* SpectacleSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectacleSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DA5B7C919F8BA79007EDE8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
-		2DAC59E81BB234F500C660ED /* SpectacleWindowMover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpectacleWindowMover.h; path = Spectacle/Sources/SpectacleWindowMover.h; sourceTree = "<group>"; };
-		2DAC59EE1BB238D900C660ED /* SpectacleQuantizedWindowMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleQuantizedWindowMover.h; path = Spectacle/Sources/SpectacleQuantizedWindowMover.h; sourceTree = "<group>"; };
-		2DAC59EF1BB238D900C660ED /* SpectacleQuantizedWindowMover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleQuantizedWindowMover.m; path = Spectacle/Sources/SpectacleQuantizedWindowMover.m; sourceTree = "<group>"; };
-		2DAC59F11BB23BE200C660ED /* SpectacleBestEffortWindowMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleBestEffortWindowMover.h; path = Spectacle/Sources/SpectacleBestEffortWindowMover.h; sourceTree = "<group>"; };
-		2DAC59F21BB23BE200C660ED /* SpectacleBestEffortWindowMover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleBestEffortWindowMover.m; path = Spectacle/Sources/SpectacleBestEffortWindowMover.m; sourceTree = "<group>"; };
-		2DAC59F51BB241DE00C660ED /* SpectacleWindowAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpectacleWindowAction.h; path = Spectacle/Sources/SpectacleWindowAction.h; sourceTree = "<group>"; };
-		2DB075441CD041A5001CE204 /* SpectacleMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleMacros.h; path = Spectacle/Sources/SpectacleMacros.h; sourceTree = "<group>"; };
-		2DC4E3CB1AD84E5C0022ABF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Spectacle/Resources/Localizations/en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		2DC4E3CD1AD84E5C0022ABF0 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = Spectacle/Resources/Localizations/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2DC4E3CF1AD84E5C0022ABF0 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = Spectacle/Resources/Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2DC4E3D91AD84E7F0022ABF0 /* it */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = it; path = Spectacle/Resources/Localizations/it.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2DC4E3DA1AD84E7F0022ABF0 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = it; path = Spectacle/Resources/Localizations/it.lproj/Credits.rtf; sourceTree = "<group>"; };
-		2DC8A0151B85097900ABEBD5 /* SpectacleLoginItemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleLoginItemHelper.h; path = Spectacle/Sources/SpectacleLoginItemHelper.h; sourceTree = "<group>"; };
-		2DC8A0161B85097900ABEBD5 /* SpectacleLoginItemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleLoginItemHelper.m; path = Spectacle/Sources/SpectacleLoginItemHelper.m; sourceTree = "<group>"; };
-		2DE03E471D7B8F5A004E80D6 /* SpectacleShortcutKeyBindingsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpectacleShortcutKeyBindingsSpec.m; path = Sources/SpectacleShortcutKeyBindingsSpec.m; sourceTree = "<group>"; };
-		2DE03E491D7B98D6004E80D6 /* SpectacleShortcutKeyBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectacleShortcutKeyBindings.h; path = Spectacle/Sources/SpectacleShortcutKeyBindings.h; sourceTree = "<group>"; };
-		2DE03E4A1D7B98D6004E80D6 /* SpectacleShortcutKeyBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = SpectacleShortcutKeyBindings.m; path = Spectacle/Sources/SpectacleShortcutKeyBindings.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		574F6A1A1C57BE40001A5679 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = Spectacle/Resources/Localizations/pt.lproj/Spectacle.strings; sourceTree = "<group>"; };
-		574F6A1B1C57BE40001A5679 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = Spectacle/Resources/Localizations/pt.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
-		574F6A1C1C57BE40001A5679 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = pt; path = Spectacle/Resources/Localizations/pt.lproj/Credits.rtf; sourceTree = "<group>"; };
-		574F6A1D1C57BE40001A5679 /* pt */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = pt; path = Spectacle/Resources/Localizations/pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		574F6A1E1C57BE40001A5679 /* pt */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = pt; path = Spectacle/Resources/Localizations/pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0163BA6F360106FEFF836B38 /* Spectacle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spectacle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CA33B4B80EB5BE5BE50E2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		043B101E2C580D1E86CF3131 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
+		0559935A0069D655DE47C5B6 /* SpectacleWindowPositionCalculationResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowPositionCalculationResult.m; sourceTree = "<group>"; };
+		068BD6AD5D64BA1770CB5498 /* SpectacleShortcutUserDefaultsStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutUserDefaultsStorage.m; sourceTree = "<group>"; };
+		080942810E668402D46B8088 /* SpectacleLeftHalfWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLeftHalfWindowCalculationTests.m; sourceTree = "<group>"; };
+		080C2DC40068883D803EDC43 /* SpectacleShortcutTranslationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutTranslationsTests.m; sourceTree = "<group>"; };
+		0849527FDA60FDDF9A2299A9 /* SpectacleShortcut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcut.h; sourceTree = "<group>"; };
+		0AA7527A8D9A72E8BFFB91ED /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
+		0C1149A97EC5A180E629574A /* SpectacleLiveAccessibilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLiveAccessibilityTests.m; sourceTree = "<group>"; };
+		0C57324634C4A480FD55C9FD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
+		0CF4CFCE77AE75EE167978F4 /* SpectacleShortcutJSONStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutJSONStorage.m; sourceTree = "<group>"; };
+		0DD3BA4093F950AC201A091E /* SpectacleShortcutManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutManager.m; sourceTree = "<group>"; };
+		0E969837671C95835B5F5D50 /* SpectacleJavaScriptEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleJavaScriptEnvironment.h; sourceTree = "<group>"; };
+		0F665917ADEB15025FAE5707 /* SpectacleShortcutRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutRecorder.m; sourceTree = "<group>"; };
+		10949450B9E3A92AFBB88A9D /* SpectacleScreenDetectionResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleScreenDetectionResult.h; sourceTree = "<group>"; };
+		10C3DC8887C1B8F1F1F5F44D /* SpectacleShortcutKeyBindings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutKeyBindings.m; sourceTree = "<group>"; };
+		17296C3552487A73C67B84E9 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17559C60868F19637B80F897 /* SpectacleQuantizedWindowMover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleQuantizedWindowMover.m; sourceTree = "<group>"; };
+		19026AEA4E65D1167774548B /* SpectacleQuantizedWindowMover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleQuantizedWindowMover.h; sourceTree = "<group>"; };
+		1F26178FE7CC4D9FFF0F8CEF /* SpectacleAccessibilitySettingsIllustrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleAccessibilitySettingsIllustrationTests.m; sourceTree = "<group>"; };
+		22ACE3786CE832929BA27435 /* SpectacleWindowMover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowMover.h; sourceTree = "<group>"; };
+		2378A932560E4D45C3039945 /* SpectacleTestSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleTestSupport.m; sourceTree = "<group>"; };
+		25C074D423AB8EEA90E6C8D9 /* SpectacleHistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleHistory.h; sourceTree = "<group>"; };
+		278D7325142BA3D362CBFF27 /* SpectaclePreviousDisplayWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectaclePreviousDisplayWindowCalculationTests.m; sourceTree = "<group>"; };
+		2D5F2F063AD7AF9159BF59B3 /* SpectacleShortcutTranslations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutTranslations.m; sourceTree = "<group>"; };
+		2E3E660B462413B8F2A53EE5 /* SpectacleWindowCalculationInvariantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowCalculationInvariantTests.m; sourceTree = "<group>"; };
+		381132E424CDF887439087BA /* SpectacleTopHalfWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleTopHalfWindowCalculationTests.m; sourceTree = "<group>"; };
+		3D06A8A83BECF727C9630092 /* SpectacleAccessibilitySettingsIllustration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleAccessibilitySettingsIllustration.m; sourceTree = "<group>"; };
+		422ECFB3AC96BA29A10CF4D4 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43C45C5539531096231169D3 /* SpectacleWindowPositionCalculationRegistry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowPositionCalculationRegistry.m; sourceTree = "<group>"; };
+		449E090526395AAB8A5FC0A9 /* SpectacleScreenDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleScreenDetectorTests.m; sourceTree = "<group>"; };
+		44C5CE168C726D4CA31473F2 /* SpectacleFullscreenWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleFullscreenWindowCalculationTests.m; sourceTree = "<group>"; };
+		4593C0E36D557B2B426D31E7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Spectacle.strings; sourceTree = "<group>"; };
+		46DE0C226CD5E4D08D3D6F14 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		48CC5ADA3F1F12BDFEC61F60 /* SpectacleTestDoubles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleTestDoubles.h; sourceTree = "<group>"; };
+		4BAAEC41CE31F340636AE5D8 /* SpectacleShortcutManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutManagerTests.m; sourceTree = "<group>"; };
+		4BCB0A3E184CD8DA22F47180 /* SpectacleShortcutRecorderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutRecorderDelegate.h; sourceTree = "<group>"; };
+		4BEAF0CE2B62DF85003C0B8E /* SpectaclePreferencesWindowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectaclePreferencesWindowTests.m; sourceTree = "<group>"; };
+		4D668DB0DBC2B6A12CF5CF0A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Spectacle.strings; sourceTree = "<group>"; };
+		503DD823DD6E59430F5EB827 /* SpectacleBottomHalfWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleBottomHalfWindowCalculationTests.m; sourceTree = "<group>"; };
+		5371F224B104C58300AAE96F /* SpectaclePreferencesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectaclePreferencesController.m; sourceTree = "<group>"; };
+		5403CD1C0AA544B0CE94DF3B /* SpectacleRightHalfWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleRightHalfWindowCalculationTests.m; sourceTree = "<group>"; };
+		54489635299FB83852061B49 /* SpectacleFilledButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleFilledButton.h; sourceTree = "<group>"; };
+		568E7270301ED748CAD64ADB /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = pt.lproj/Credits.rtf; sourceTree = "<group>"; };
+		570B4F28D096386390FD5E62 /* SpectacleShortcutJSONStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutJSONStorage.h; sourceTree = "<group>"; };
+		5977E08F31D14041140BD103 /* SpectacleDefaultShortcutsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleDefaultShortcutsTests.m; sourceTree = "<group>"; };
+		5BBE83A3A22BE7054590CCAC /* SpectacleMigratingShortcutStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleMigratingShortcutStorage.h; sourceTree = "<group>"; };
+		5E2DC0C0F99AE2AB5DEB07A8 /* SpectacleHistory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleHistory.m; sourceTree = "<group>"; };
+		5EB6EF12A0BEE8167E72A8AF /* SpectacleLoginItemHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleLoginItemHelper.h; sourceTree = "<group>"; };
+		60EE7380FE01116D4E117EE9 /* SpectacleNextDisplayWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleNextDisplayWindowCalculationTests.m; sourceTree = "<group>"; };
+		62C9042D0C2E232300810424 /* SpectacleShortcutUserDefaultsStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutUserDefaultsStorage.h; sourceTree = "<group>"; };
+		6340C41F42C3C8BF89E34655 /* SpectacleJavaScriptEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleJavaScriptEnvironment.m; sourceTree = "<group>"; };
+		69EE1748D92C6A127F3281EC /* SpectacleLowerLeftWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLowerLeftWindowCalculationTests.m; sourceTree = "<group>"; };
+		6B129BA0DA220573701EB50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Spectacle.xib; sourceTree = "<group>"; };
+		6C3B7161BADFF66C17062AC6 /* SpectacleFilledButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleFilledButton.m; sourceTree = "<group>"; };
+		7172FA3646CD3FC52697EA14 /* SpectacleWindowAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowAction.m; sourceTree = "<group>"; };
+		72C3FB96627FD109E6BE5050 /* SpectacleRegisteredShortcutValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleRegisteredShortcutValidator.m; sourceTree = "<group>"; };
+		75CA60E504AE652FBD0633BD /* SpectacleHistoryItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleHistoryItem.h; sourceTree = "<group>"; };
+		76994CDAC86B02C2486236F2 /* SpectacleHistoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleHistoryTests.m; sourceTree = "<group>"; };
+		795A6FBA33953A41AB80DBBC /* SpectacleStandardWindowMover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleStandardWindowMover.m; sourceTree = "<group>"; };
+		7C49B5E740E212D6A5AAEA5B /* SpectacleSmallerWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleSmallerWindowCalculationTests.m; sourceTree = "<group>"; };
+		7C87570813A12D5FBCC54870 /* SpectacleShortcutHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutHolder.h; sourceTree = "<group>"; };
+		7EA04214EAB04EE6AD54ACF0 /* SpectacleStandardWindowMover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleStandardWindowMover.h; sourceTree = "<group>"; };
+		8A051B043CB5ADC9A3179DFC /* SpectacleAppearanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleAppearanceTests.m; sourceTree = "<group>"; };
+		8DCB51813980A6E8DC9A0D7F /* SpectacleBestEffortWindowMover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleBestEffortWindowMover.m; sourceTree = "<group>"; };
+		90189DEFFCF4DAD7B582E74B /* SpectacleTestSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleTestSupport.h; sourceTree = "<group>"; };
+		90FC0E47D23D9EE1AC4633C4 /* SpectacleCenterWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleCenterWindowCalculationTests.m; sourceTree = "<group>"; };
+		97B071AAD0DB6CBDC4310C94 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9B55C46EC1117DC45AADA032 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C4B2E161B895000F66E7AB7 /* SpectacleShortcutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutTests.m; sourceTree = "<group>"; };
+		9C6F68F65F087C4B1345380C /* SpectacleShortcutStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutStorage.h; sourceTree = "<group>"; };
+		9D59C25D4E32CAA6E1D49F15 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9ECB1E914180C6DDBCA22461 /* SpectacleWindowPositionCalculationRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowPositionCalculationRegistry.h; sourceTree = "<group>"; };
+		A0496C6837A1724D339A56D7 /* SpectacleScreenDetectionResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleScreenDetectionResult.m; sourceTree = "<group>"; };
+		A05D582E80CB51CA95D3AA14 /* SpectacleShortcutRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutRecorder.h; sourceTree = "<group>"; };
+		A180F32E30F5FEB5971BDA23 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A28C6BB2409F08D685B460F9 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Spectacle.strings; sourceTree = "<group>"; };
+		A4FFD5A5D62EC5FB1EC1D061 /* SpectacleWindowPositionCalculationResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowPositionCalculationResult.h; sourceTree = "<group>"; };
+		A72DFB59DE443E5EF728C1A2 /* SpectaclePreviousThirdWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectaclePreviousThirdWindowCalculationTests.m; sourceTree = "<group>"; };
+		AAD88D46273BBD341279E999 /* SpectacleScreenDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleScreenDetector.m; sourceTree = "<group>"; };
+		ADAB76DE9E7DBAB460FB6BDA /* SpectacleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectacleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3363B8D408617CE2E2802F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF2E3CA8D6AD3457988A9F23 /* Defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Defaults.plist; sourceTree = "<group>"; };
+		AFF61A90D40C8528F14A984A /* SpectacleShortcut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcut.m; sourceTree = "<group>"; };
+		B25AF6213C8E5DA2F6DC5541 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B25D5033DF66EFDA6E79A4B3 /* SpectacleDefaultShortcutHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleDefaultShortcutHelpers.h; sourceTree = "<group>"; };
+		B4254A78322CAA32013B86A1 /* SpectacleUpperRightWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleUpperRightWindowCalculationTests.m; sourceTree = "<group>"; };
+		B513013E518DF8D418AFE846 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5DBA44F9C92A705A07FBC40 /* SpectacleShortcutManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutManager.h; sourceTree = "<group>"; };
+		B88B6947E8663E33252B3C6B /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B961121E4EFB5D3110B01C8B /* SpectacleShortcutTranslations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutTranslations.h; sourceTree = "<group>"; };
+		BA1531A02E9884B287E4E39C /* SpectacleAccessibilityElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleAccessibilityElement.h; sourceTree = "<group>"; };
+		BBAB93E1C891A7B05EF27EC0 /* SpectacleTestDoubles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleTestDoubles.m; sourceTree = "<group>"; };
+		BC05D34BEC80BBB7ECCFAA16 /* SpectacleLargerWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLargerWindowCalculationTests.m; sourceTree = "<group>"; };
+		C063BF7F4654595E5166D7C1 /* SpectacleLowerRightWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLowerRightWindowCalculationTests.m; sourceTree = "<group>"; };
+		C07CD4A3D99DD888787C03BC /* SpectacleWindowAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowAction.h; sourceTree = "<group>"; };
+		C0F681CEDE9C2A6AD30515F2 /* SpectacleDefaultShortcutHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleDefaultShortcutHelpers.m; sourceTree = "<group>"; };
+		C11831247BC4D72392434BAA /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C19A9092BAE8942FE3BA88D0 /* SpectacleScreenDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleScreenDetector.h; sourceTree = "<group>"; };
+		C2A65C2D8FDC521447EA6CD5 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = it.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C7A741F1B0F3E7976E71174C /* SpectacleShortcutHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutHolder.m; sourceTree = "<group>"; };
+		C7CCC5469AA6FF72416A6057 /* SpectacleShortcutStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutStorageTests.m; sourceTree = "<group>"; };
+		C93F393D7623E6DF235C5ED8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC2ACC6B84215E0B50523F36 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
+		CD5F17E38BEA4975FA76E872 /* SpectacleWindowPositionCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowPositionCalculator.m; sourceTree = "<group>"; };
+		CF6D753A16126C657F253A06 /* SpectacleMigratingShortcutStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleMigratingShortcutStorage.m; sourceTree = "<group>"; };
+		CF6DA7149392578D18AB9EA4 /* SpectacleCoordinateConversionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleCoordinateConversionTests.m; sourceTree = "<group>"; };
+		D0A70E168F3F0619B15A4486 /* SpectacleUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleUtilities.m; sourceTree = "<group>"; };
+		D1D5539C658325F6864604F5 /* SpectacleWindowPositionCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowPositionCalculator.h; sourceTree = "<group>"; };
+		D27D6DE9DA55A83B3A759EB4 /* SpectacleShortcutValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutValidator.h; sourceTree = "<group>"; };
+		D2B9736DC3B7E445E09105CC /* SpectacleNextThirdWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleNextThirdWindowCalculationTests.m; sourceTree = "<group>"; };
+		D33193467F0D3A6B328DE343 /* SpectacleShortcutKeyBindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutKeyBindings.h; sourceTree = "<group>"; };
+		D3651AFBA5AF00814BF75215 /* SpectacleUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleUtilities.h; sourceTree = "<group>"; };
+		D3BCE189BDAE014AE1900ADB /* SpectacleShortcutStorageMigrationDestination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutStorageMigrationDestination.h; sourceTree = "<group>"; };
+		D57CEE65D0277CC2F6E9F367 /* SpectacleHistoryItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleHistoryItem.m; sourceTree = "<group>"; };
+		D64640ED6ABF7C4E60E64714 /* SpectacleShortcutValidation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutValidation.m; sourceTree = "<group>"; };
+		D8F82AE3136BEC22B90A667C /* SpectacleLoginItemHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLoginItemHelper.m; sourceTree = "<group>"; };
+		DAFA49070DBFFEA12B64EEF5 /* SpectacleWindowPositionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowPositionManager.h; sourceTree = "<group>"; };
+		DF0B9761B3D708BAAFAC32F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SpectaclePreferencesWindow.xib; sourceTree = "<group>"; };
+		DF260C5F74AEE1DED5D894E1 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
+		DF406A1BE250E4F53A89B887 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFA0AEA63C90762AE46958D2 /* SpectaclePreferencesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectaclePreferencesController.h; sourceTree = "<group>"; };
+		E0AE24B3CE41A90D6053DBDB /* SpectacleWindowMoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowMoverTests.m; sourceTree = "<group>"; };
+		E40B1230435E3F6EA9034012 /* SpectacleWindowPositionManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowPositionManagerTests.m; sourceTree = "<group>"; };
+		E44EAD397F4F36F178FC2693 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Spectacle.strings; sourceTree = "<group>"; };
+		E761D04241ADE33B87EB11F3 /* SpectacleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleAppDelegate.m; sourceTree = "<group>"; };
+		E7DC9FDC20DBC027C67C26B4 /* SpectacleShortcutKeyBindingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutKeyBindingsTests.m; sourceTree = "<group>"; };
+		EAC961239B0E3DDA6CBD6E99 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		EC8C64A8CC08B2FDC51C7A5D /* SpectacleShortcutValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutValidation.h; sourceTree = "<group>"; };
+		ECE9A1E6D8B73E30F7409776 /* SpectacleWindowPositionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowPositionManager.m; sourceTree = "<group>"; };
+		ED604653CAC4A6F05A0898F5 /* SpectacleMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleMacros.h; sourceTree = "<group>"; };
+		F2D17CA7600D63984A9B2430 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = es.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F6616830EA93F3ACB07CEA0C /* SpectacleBestEffortWindowMover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleBestEffortWindowMover.h; sourceTree = "<group>"; };
+		F6CC8F6B6CB2175E7C229173 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Spectacle.strings; sourceTree = "<group>"; };
+		F7486833C4C67402072D4727 /* SpectacleRegisteredShortcutValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleRegisteredShortcutValidator.h; sourceTree = "<group>"; };
+		F7BB7B0AC382F83CD229E540 /* SpectacleAccessibilityElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleAccessibilityElement.m; sourceTree = "<group>"; };
+		F84D13F62D08975B1D28D54E /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = fi.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FB0942BE90918AF30CC521FB /* SpectacleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleAppDelegate.h; sourceTree = "<group>"; };
+		FBCB38E187FD562E9CCAF7FF /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD40506FE9CC225F9B702D89 /* SpectacleAccessibilitySettingsIllustration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleAccessibilitySettingsIllustration.h; sourceTree = "<group>"; };
+		FDC1DCF27D9469F485EDDDD4 /* SpectacleUpperLeftWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleUpperLeftWindowCalculationTests.m; sourceTree = "<group>"; };
+		FE2EB15DB1EE0A762F8FEFCB /* Window Position Calculations */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Window Position Calculations"; path = "Spectacle/Resources/Window Position Calculations"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		2D1E1AAD147E06AD0021D73D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DA5B7C319F8BA79007EDE8E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D71466F1CCC171F003B8292 /* Expecta.framework in Frameworks */,
-				2D7146701CCC171F003B8292 /* OCHamcrest.framework in Frameworks */,
-				2D7146711CCC171F003B8292 /* OCMockito.framework in Frameworks */,
-				2D7146721CCC171F003B8292 /* Specta.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		0747DAE81183AABB00F75DD2 /* Preferences */ = {
+		244F8162BFC463981F5C89BF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2DC8A0151B85097900ABEBD5 /* SpectacleLoginItemHelper.h */,
-				2DC8A0161B85097900ABEBD5 /* SpectacleLoginItemHelper.m */,
-				07838601148BD517001E7BD7 /* SpectaclePreferencesController.h */,
-				07838602148BD517001E7BD7 /* SpectaclePreferencesController.m */,
+				AE3363B8D408617CE2E2802F /* main.m */,
 			);
-			name = Preferences;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0747DAE91183AAC100F75DD2 /* Accessibility API */ = {
+		3D1FAE5F1418E67CD2D858F0 /* SpectacleTests */ = {
 			isa = PBXGroup;
 			children = (
-				2D3A04FC194956E100CD96E7 /* SpectacleAccessibilityElement.h */,
-				2D3A04FD194956E100CD96E7 /* SpectacleAccessibilityElement.m */,
+				1F26178FE7CC4D9FFF0F8CEF /* SpectacleAccessibilitySettingsIllustrationTests.m */,
+				8A051B043CB5ADC9A3179DFC /* SpectacleAppearanceTests.m */,
+				503DD823DD6E59430F5EB827 /* SpectacleBottomHalfWindowCalculationTests.m */,
+				90FC0E47D23D9EE1AC4633C4 /* SpectacleCenterWindowCalculationTests.m */,
+				CF6DA7149392578D18AB9EA4 /* SpectacleCoordinateConversionTests.m */,
+				5977E08F31D14041140BD103 /* SpectacleDefaultShortcutsTests.m */,
+				44C5CE168C726D4CA31473F2 /* SpectacleFullscreenWindowCalculationTests.m */,
+				76994CDAC86B02C2486236F2 /* SpectacleHistoryTests.m */,
+				BC05D34BEC80BBB7ECCFAA16 /* SpectacleLargerWindowCalculationTests.m */,
+				080942810E668402D46B8088 /* SpectacleLeftHalfWindowCalculationTests.m */,
+				0C1149A97EC5A180E629574A /* SpectacleLiveAccessibilityTests.m */,
+				69EE1748D92C6A127F3281EC /* SpectacleLowerLeftWindowCalculationTests.m */,
+				C063BF7F4654595E5166D7C1 /* SpectacleLowerRightWindowCalculationTests.m */,
+				60EE7380FE01116D4E117EE9 /* SpectacleNextDisplayWindowCalculationTests.m */,
+				D2B9736DC3B7E445E09105CC /* SpectacleNextThirdWindowCalculationTests.m */,
+				4BEAF0CE2B62DF85003C0B8E /* SpectaclePreferencesWindowTests.m */,
+				278D7325142BA3D362CBFF27 /* SpectaclePreviousDisplayWindowCalculationTests.m */,
+				A72DFB59DE443E5EF728C1A2 /* SpectaclePreviousThirdWindowCalculationTests.m */,
+				5403CD1C0AA544B0CE94DF3B /* SpectacleRightHalfWindowCalculationTests.m */,
+				449E090526395AAB8A5FC0A9 /* SpectacleScreenDetectorTests.m */,
+				E7DC9FDC20DBC027C67C26B4 /* SpectacleShortcutKeyBindingsTests.m */,
+				4BAAEC41CE31F340636AE5D8 /* SpectacleShortcutManagerTests.m */,
+				C7CCC5469AA6FF72416A6057 /* SpectacleShortcutStorageTests.m */,
+				9C4B2E161B895000F66E7AB7 /* SpectacleShortcutTests.m */,
+				080C2DC40068883D803EDC43 /* SpectacleShortcutTranslationsTests.m */,
+				7C49B5E740E212D6A5AAEA5B /* SpectacleSmallerWindowCalculationTests.m */,
+				48CC5ADA3F1F12BDFEC61F60 /* SpectacleTestDoubles.h */,
+				BBAB93E1C891A7B05EF27EC0 /* SpectacleTestDoubles.m */,
+				90189DEFFCF4DAD7B582E74B /* SpectacleTestSupport.h */,
+				2378A932560E4D45C3039945 /* SpectacleTestSupport.m */,
+				381132E424CDF887439087BA /* SpectacleTopHalfWindowCalculationTests.m */,
+				FDC1DCF27D9469F485EDDDD4 /* SpectacleUpperLeftWindowCalculationTests.m */,
+				B4254A78322CAA32013B86A1 /* SpectacleUpperRightWindowCalculationTests.m */,
+				2E3E660B462413B8F2A53EE5 /* SpectacleWindowCalculationInvariantTests.m */,
+				E0AE24B3CE41A90D6053DBDB /* SpectacleWindowMoverTests.m */,
+				E40B1230435E3F6EA9034012 /* SpectacleWindowPositionManagerTests.m */,
 			);
-			name = "Accessibility API";
+			path = SpectacleTests;
 			sourceTree = "<group>";
 		};
-		0747DAEB1183AAE700F75DD2 /* Property Lists */ = {
+		4B3A6D037B713ACEB09F32DD /* Spectacle */ = {
 			isa = PBXGroup;
 			children = (
-				0706C0431191092B0068F04B /* Defaults.plist */,
+				E937DF1022892A4ED8F86DC8 /* Resources */,
+				5543C2B6A1249A2FC4DFD112 /* Sources */,
+				244F8162BFC463981F5C89BF /* Supporting Files */,
 			);
-			name = "Property Lists";
+			path = Spectacle;
 			sourceTree = "<group>";
 		};
-		089C166AFE841209C02AAC07 /* Spectacle */ = {
+		5543C2B6A1249A2FC4DFD112 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				2D89B5731B8133E900F9FC1C /* Spectacle */,
-				2DA5B7C719F8BA79007EDE8E /* SpectacleSpecs */,
-				19C28FB8FE9D52D311CA2CBB /* Products */,
+				BA1531A02E9884B287E4E39C /* SpectacleAccessibilityElement.h */,
+				F7BB7B0AC382F83CD229E540 /* SpectacleAccessibilityElement.m */,
+				FD40506FE9CC225F9B702D89 /* SpectacleAccessibilitySettingsIllustration.h */,
+				3D06A8A83BECF727C9630092 /* SpectacleAccessibilitySettingsIllustration.m */,
+				FB0942BE90918AF30CC521FB /* SpectacleAppDelegate.h */,
+				E761D04241ADE33B87EB11F3 /* SpectacleAppDelegate.m */,
+				F6616830EA93F3ACB07CEA0C /* SpectacleBestEffortWindowMover.h */,
+				8DCB51813980A6E8DC9A0D7F /* SpectacleBestEffortWindowMover.m */,
+				B25D5033DF66EFDA6E79A4B3 /* SpectacleDefaultShortcutHelpers.h */,
+				C0F681CEDE9C2A6AD30515F2 /* SpectacleDefaultShortcutHelpers.m */,
+				54489635299FB83852061B49 /* SpectacleFilledButton.h */,
+				6C3B7161BADFF66C17062AC6 /* SpectacleFilledButton.m */,
+				25C074D423AB8EEA90E6C8D9 /* SpectacleHistory.h */,
+				5E2DC0C0F99AE2AB5DEB07A8 /* SpectacleHistory.m */,
+				75CA60E504AE652FBD0633BD /* SpectacleHistoryItem.h */,
+				D57CEE65D0277CC2F6E9F367 /* SpectacleHistoryItem.m */,
+				0E969837671C95835B5F5D50 /* SpectacleJavaScriptEnvironment.h */,
+				6340C41F42C3C8BF89E34655 /* SpectacleJavaScriptEnvironment.m */,
+				5EB6EF12A0BEE8167E72A8AF /* SpectacleLoginItemHelper.h */,
+				D8F82AE3136BEC22B90A667C /* SpectacleLoginItemHelper.m */,
+				ED604653CAC4A6F05A0898F5 /* SpectacleMacros.h */,
+				5BBE83A3A22BE7054590CCAC /* SpectacleMigratingShortcutStorage.h */,
+				CF6D753A16126C657F253A06 /* SpectacleMigratingShortcutStorage.m */,
+				DFA0AEA63C90762AE46958D2 /* SpectaclePreferencesController.h */,
+				5371F224B104C58300AAE96F /* SpectaclePreferencesController.m */,
+				19026AEA4E65D1167774548B /* SpectacleQuantizedWindowMover.h */,
+				17559C60868F19637B80F897 /* SpectacleQuantizedWindowMover.m */,
+				F7486833C4C67402072D4727 /* SpectacleRegisteredShortcutValidator.h */,
+				72C3FB96627FD109E6BE5050 /* SpectacleRegisteredShortcutValidator.m */,
+				10949450B9E3A92AFBB88A9D /* SpectacleScreenDetectionResult.h */,
+				A0496C6837A1724D339A56D7 /* SpectacleScreenDetectionResult.m */,
+				C19A9092BAE8942FE3BA88D0 /* SpectacleScreenDetector.h */,
+				AAD88D46273BBD341279E999 /* SpectacleScreenDetector.m */,
+				0849527FDA60FDDF9A2299A9 /* SpectacleShortcut.h */,
+				AFF61A90D40C8528F14A984A /* SpectacleShortcut.m */,
+				7C87570813A12D5FBCC54870 /* SpectacleShortcutHolder.h */,
+				C7A741F1B0F3E7976E71174C /* SpectacleShortcutHolder.m */,
+				570B4F28D096386390FD5E62 /* SpectacleShortcutJSONStorage.h */,
+				0CF4CFCE77AE75EE167978F4 /* SpectacleShortcutJSONStorage.m */,
+				D33193467F0D3A6B328DE343 /* SpectacleShortcutKeyBindings.h */,
+				10C3DC8887C1B8F1F1F5F44D /* SpectacleShortcutKeyBindings.m */,
+				B5DBA44F9C92A705A07FBC40 /* SpectacleShortcutManager.h */,
+				0DD3BA4093F950AC201A091E /* SpectacleShortcutManager.m */,
+				A05D582E80CB51CA95D3AA14 /* SpectacleShortcutRecorder.h */,
+				0F665917ADEB15025FAE5707 /* SpectacleShortcutRecorder.m */,
+				4BCB0A3E184CD8DA22F47180 /* SpectacleShortcutRecorderDelegate.h */,
+				9C6F68F65F087C4B1345380C /* SpectacleShortcutStorage.h */,
+				D3BCE189BDAE014AE1900ADB /* SpectacleShortcutStorageMigrationDestination.h */,
+				B961121E4EFB5D3110B01C8B /* SpectacleShortcutTranslations.h */,
+				2D5F2F063AD7AF9159BF59B3 /* SpectacleShortcutTranslations.m */,
+				62C9042D0C2E232300810424 /* SpectacleShortcutUserDefaultsStorage.h */,
+				068BD6AD5D64BA1770CB5498 /* SpectacleShortcutUserDefaultsStorage.m */,
+				EC8C64A8CC08B2FDC51C7A5D /* SpectacleShortcutValidation.h */,
+				D64640ED6ABF7C4E60E64714 /* SpectacleShortcutValidation.m */,
+				D27D6DE9DA55A83B3A759EB4 /* SpectacleShortcutValidator.h */,
+				7EA04214EAB04EE6AD54ACF0 /* SpectacleStandardWindowMover.h */,
+				795A6FBA33953A41AB80DBBC /* SpectacleStandardWindowMover.m */,
+				D3651AFBA5AF00814BF75215 /* SpectacleUtilities.h */,
+				D0A70E168F3F0619B15A4486 /* SpectacleUtilities.m */,
+				C07CD4A3D99DD888787C03BC /* SpectacleWindowAction.h */,
+				7172FA3646CD3FC52697EA14 /* SpectacleWindowAction.m */,
+				22ACE3786CE832929BA27435 /* SpectacleWindowMover.h */,
+				9ECB1E914180C6DDBCA22461 /* SpectacleWindowPositionCalculationRegistry.h */,
+				43C45C5539531096231169D3 /* SpectacleWindowPositionCalculationRegistry.m */,
+				A4FFD5A5D62EC5FB1EC1D061 /* SpectacleWindowPositionCalculationResult.h */,
+				0559935A0069D655DE47C5B6 /* SpectacleWindowPositionCalculationResult.m */,
+				D1D5539C658325F6864604F5 /* SpectacleWindowPositionCalculator.h */,
+				CD5F17E38BEA4975FA76E872 /* SpectacleWindowPositionCalculator.m */,
+				DAFA49070DBFFEA12B64EEF5 /* SpectacleWindowPositionManager.h */,
+				ECE9A1E6D8B73E30F7409776 /* SpectacleWindowPositionManager.m */,
 			);
-			name = Spectacle;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		089C1671FE841209C02AAC07 /* Frameworks */ = {
+		7AD3FBDC1D2FD58D48284A43 /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
-				2D7146521CCC12A6003B8292 /* Sparkle.framework */,
+				3E73A5840690F24FBC11B8E2 /* Spectacle.xib */,
+				6B335B66610B23B0C1E3D187 /* SpectaclePreferencesWindow.xib */,
+				C11831247BC4D72392434BAA /* Credits.rtf */,
+				F2D17CA7600D63984A9B2430 /* Credits.rtf */,
+				F84D13F62D08975B1D28D54E /* Credits.rtf */,
+				9D59C25D4E32CAA6E1D49F15 /* Credits.rtf */,
+				C2A65C2D8FDC521447EA6CD5 /* Credits.rtf */,
+				568E7270301ED748CAD64ADB /* Credits.rtf */,
+				B88B6947E8663E33252B3C6B /* InfoPlist.strings */,
+				46DE0C226CD5E4D08D3D6F14 /* InfoPlist.strings */,
+				9B55C46EC1117DC45AADA032 /* InfoPlist.strings */,
+				422ECFB3AC96BA29A10CF4D4 /* InfoPlist.strings */,
+				17296C3552487A73C67B84E9 /* InfoPlist.strings */,
+				B513013E518DF8D418AFE846 /* InfoPlist.strings */,
+				FBCB38E187FD562E9CCAF7FF /* Localizable.strings */,
+				DF406A1BE250E4F53A89B887 /* Localizable.strings */,
+				B25AF6213C8E5DA2F6DC5541 /* Localizable.strings */,
+				A180F32E30F5FEB5971BDA23 /* Localizable.strings */,
+				C93F393D7623E6DF235C5ED8 /* Localizable.strings */,
+				97B071AAD0DB6CBDC4310C94 /* Localizable.strings */,
 			);
-			name = Frameworks;
+			path = Localizations;
 			sourceTree = "<group>";
 		};
-		089C167CFE841241C02AAC07 /* Resources */ = {
+		8A9075D38E6C1DF6D40C09AC = {
 			isa = PBXGroup;
 			children = (
-				2D5CCCE715E96F4F0009CC43 /* Certificates */,
-				0747DAEB1183AAE700F75DD2 /* Property Lists */,
-				2DB2DC22181ECFCF0008A192 /* Scripts */,
-				2DC4E3CA1AD84E5C0022ABF0 /* Credits.rtf */,
-				2DA23EFB1B7D736100C9E8EF /* Images.xcassets */,
-				2DC4E3CC1AD84E5C0022ABF0 /* InfoPlist.strings */,
-				2DC4E3CE1AD84E5C0022ABF0 /* Localizable.strings */,
-				2DC4E3D01AD84E5C0022ABF0 /* Spectacle.xib */,
-				2DC4E3D21AD84E5C0022ABF0 /* SpectaclePreferencesWindow.xib */,
+				AC26E0F200755F2B949EE7FE /* Configuration */,
+				4B3A6D037B713ACEB09F32DD /* Spectacle */,
+				3D1FAE5F1418E67CD2D858F0 /* SpectacleTests */,
+				F9603C51C9B60674857BE43E /* Products */,
 			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
-		08FB77AFFE84173DC02AAC07 /* Sources */ = {
+		AC26E0F200755F2B949EE7FE /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				0747DAE81183AABB00F75DD2 /* Preferences */,
-				2DC8A0131B84E1AF00ABEBD5 /* Shortcuts */,
-				2DC8A0141B84E24500ABEBD5 /* Window Management */,
-				2D768E8B147ED51A00901E76 /* SpectacleAppDelegate.h */,
-				2D768E8C147ED51A00901E76 /* SpectacleAppDelegate.m */,
-				2DB075441CD041A5001CE204 /* SpectacleMacros.h */,
-				07BB542B1186662F0045663F /* SpectacleUtilities.h */,
-				07BB542C1186662F0045663F /* SpectacleUtilities.m */,
+				EAC961239B0E3DDA6CBD6E99 /* Signing.xcconfig */,
 			);
-			name = Sources;
+			path = Configuration;
 			sourceTree = "<group>";
 		};
-		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+		E85EEE8EBF62F205F317CA5D /* Property Lists */ = {
 			isa = PBXGroup;
 			children = (
-				2D1E1AB0147E06AD0021D73D /* Spectacle.app */,
-				2DA5B7C619F8BA79007EDE8E /* SpectacleSpecs.xctest */,
+				AF2E3CA8D6AD3457988A9F23 /* Defaults.plist */,
+			);
+			path = "Property Lists";
+			sourceTree = "<group>";
+		};
+		E937DF1022892A4ED8F86DC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7AD3FBDC1D2FD58D48284A43 /* Localizations */,
+				E85EEE8EBF62F205F317CA5D /* Property Lists */,
+				03CA33B4B80EB5BE5BE50E2F /* Images.xcassets */,
+				FE2EB15DB1EE0A762F8FEFCB /* Window Position Calculations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F9603C51C9B60674857BE43E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0163BA6F360106FEFF836B38 /* Spectacle.app */,
+				ADAB76DE9E7DBAB460FB6BDA /* SpectacleTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2D5CCCE715E96F4F0009CC43 /* Certificates */ = {
-			isa = PBXGroup;
-			children = (
-				2D5CCCE815E96F740009CC43 /* dsa_public.pem */,
-			);
-			name = Certificates;
-			sourceTree = "<group>";
-		};
-		2D7146611CCC1381003B8292 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2D7146671CCC1715003B8292 /* Expecta.framework */,
-				2D7146681CCC1715003B8292 /* OCHamcrest.framework */,
-				2D7146691CCC1715003B8292 /* OCMockito.framework */,
-				2D71466A1CCC1715003B8292 /* Specta.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2D7C11441B86829300B81E11 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				2D20F0081CD18ED7003DDA5B /* SpectacleBottomHalfWindowCalculationSpec.m */,
-				2D20F0091CD18ED7003DDA5B /* SpectacleCenterWindowCalculationSpec.m */,
-				2D20F00A1CD18ED7003DDA5B /* SpectacleFullscreenWindowCalculationSpec.m */,
-				2D20F00B1CD18ED7003DDA5B /* SpectacleLargerWindowCalculationSpec.m */,
-				2D20F00C1CD18ED7003DDA5B /* SpectacleLeftHalfWindowCalculationSpec.m */,
-				2D20F00D1CD18ED7003DDA5B /* SpectacleLowerLeftWindowCalculationSpec.m */,
-				2D20F00E1CD18ED7003DDA5B /* SpectacleLowerRightWindowCalculationSpec.m */,
-				2D20F00F1CD18ED7003DDA5B /* SpectacleNextDisplayWindowCalculationSpec.m */,
-				2D20F0101CD18ED7003DDA5B /* SpectacleNextThirdWindowCalculationSpec.m */,
-				2D20F0111CD18ED7003DDA5B /* SpectaclePreviousDisplayWindowCalculationSpec.m */,
-				2D20F0121CD18ED7003DDA5B /* SpectaclePreviousThirdWindowCalculationSpec.m */,
-				2D20F0131CD18ED7003DDA5B /* SpectacleRightHalfWindowCalculationSpec.m */,
-				2DE03E471D7B8F5A004E80D6 /* SpectacleShortcutKeyBindingsSpec.m */,
-				2D58AE351D7D2D5300BFEEA2 /* SpectacleShortcutSpec.m */,
-				2D58AE331D7D19AF00BFEEA2 /* SpectacleShortcutTranslationsSpec.m */,
-				2D20F0141CD18ED7003DDA5B /* SpectacleSmallerWindowCalculationSpec.m */,
-				2D20F0151CD18ED7003DDA5B /* SpectacleTopHalfWindowCalculationSpec.m */,
-				2D20F0161CD18ED7003DDA5B /* SpectacleUpperLeftWindowCalculationSpec.m */,
-				2D20F0171CD18ED7003DDA5B /* SpectacleUpperRightWindowCalculationSpec.m */,
-				2D20F0281CD1969D003DDA5B /* SpectacleWindowPositionManagerSpec.m */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		2D7C11461B86C61800B81E11 /* Shortcut Storage */ = {
-			isa = PBXGroup;
-			children = (
-				2D5A83071CDB020A00EBE80A /* SpectacleMigratingShortcutStorage.h */,
-				2D5A83081CDB020A00EBE80A /* SpectacleMigratingShortcutStorage.m */,
-				2D7C11471B86C63A00B81E11 /* SpectacleShortcutStorage.h */,
-				2D5A830C1CDC363B00EBE80A /* SpectacleShortcutStorageMigrationDestination.h */,
-				2D5A83031CDAFDEB00EBE80A /* SpectacleShortcutJSONStorage.h */,
-				2D5A83041CDAFDEB00EBE80A /* SpectacleShortcutJSONStorage.m */,
-				2D7C11481B86C7CD00B81E11 /* SpectacleShortcutUserDefaultsStorage.h */,
-				2D7C11491B86C7CD00B81E11 /* SpectacleShortcutUserDefaultsStorage.m */,
-			);
-			name = "Shortcut Storage";
-			sourceTree = "<group>";
-		};
-		2D7CF9E81C6FEC2E004DC708 /* Window Position Calculator */ = {
-			isa = PBXGroup;
-			children = (
-				2D58CC381C7030B800E3DC74 /* Window Position Calculations */,
-				2D8E2C621C7AAD5A0074129C /* SpectacleJavaScriptEnvironment.h */,
-				2D8E2C631C7AAD5A0074129C /* SpectacleJavaScriptEnvironment.m */,
-				2D98D72F1AE064B7007AD995 /* SpectacleWindowPositionCalculationResult.h */,
-				2D98D7301AE064B7007AD995 /* SpectacleWindowPositionCalculationResult.m */,
-				2D7CF9E91C6FED50004DC708 /* SpectacleWindowPositionCalculator.h */,
-				2D7CF9EA1C6FED50004DC708 /* SpectacleWindowPositionCalculator.m */,
-				2D0759A51C71746500A17E80 /* SpectacleWindowPositionCalculationRegistry.h */,
-				2D0759A61C71746500A17E80 /* SpectacleWindowPositionCalculationRegistry.m */,
-			);
-			name = "Window Position Calculator";
-			sourceTree = "<group>";
-		};
-		2D89B5731B8133E900F9FC1C /* Spectacle */ = {
-			isa = PBXGroup;
-			children = (
-				089C167CFE841241C02AAC07 /* Resources */,
-				08FB77AFFE84173DC02AAC07 /* Sources */,
-				32DBCFA10370C40200C91783 /* Supporting Files */,
-				089C1671FE841209C02AAC07 /* Frameworks */,
-			);
-			name = Spectacle;
-			sourceTree = "<group>";
-		};
-		2D89B5741B81340B00F9FC1C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2DA5B7C919F8BA79007EDE8E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2DA5B7C719F8BA79007EDE8E /* SpectacleSpecs */ = {
-			isa = PBXGroup;
-			children = (
-				2D7C11441B86829300B81E11 /* Sources */,
-				2D89B5741B81340B00F9FC1C /* Supporting Files */,
-				2D7146611CCC1381003B8292 /* Frameworks */,
-			);
-			path = SpectacleSpecs;
-			sourceTree = "<group>";
-		};
-		2DAC59EA1BB2364700C660ED /* Window Movement History */ = {
-			isa = PBXGroup;
-			children = (
-				2D279ED216BB4A7800F6894A /* SpectacleHistory.h */,
-				2D279ED316BB4A7800F6894A /* SpectacleHistory.m */,
-				079CDA0D1221BAFF0099612C /* SpectacleHistoryItem.h */,
-				079CDA0E1221BAFF0099612C /* SpectacleHistoryItem.m */,
-			);
-			name = "Window Movement History";
-			sourceTree = "<group>";
-		};
-		2DAC59F41BB23DAD00C660ED /* Window Movers */ = {
-			isa = PBXGroup;
-			children = (
-				2DAC59F11BB23BE200C660ED /* SpectacleBestEffortWindowMover.h */,
-				2DAC59F21BB23BE200C660ED /* SpectacleBestEffortWindowMover.m */,
-				2DAC59EE1BB238D900C660ED /* SpectacleQuantizedWindowMover.h */,
-				2DAC59EF1BB238D900C660ED /* SpectacleQuantizedWindowMover.m */,
-				2D5783EF1BB63BDD00695771 /* SpectacleStandardWindowMover.h */,
-				2D5783F01BB63BDD00695771 /* SpectacleStandardWindowMover.m */,
-				2DAC59E81BB234F500C660ED /* SpectacleWindowMover.h */,
-			);
-			name = "Window Movers";
-			sourceTree = "<group>";
-		};
-		2DB2DC22181ECFCF0008A192 /* Scripts */ = {
-			isa = PBXGroup;
-			children = (
-				2D5565B0181EDB7F00EFB43A /* Security & Privacy System Preferences.scpt */,
-			);
-			name = Scripts;
-			sourceTree = "<group>";
-		};
-		2DC8A0111B84E17400ABEBD5 /* Shortcut Management */ = {
-			isa = PBXGroup;
-			children = (
-				07678095118679C600614FB5 /* SpectacleShortcutManager.h */,
-				07678096118679C600614FB5 /* SpectacleShortcutManager.m */,
-				2D1AE52315D715F400EAC5BD /* SpectacleRegisteredShortcutValidator.h */,
-				2D1AE52415D715F400EAC5BD /* SpectacleRegisteredShortcutValidator.m */,
-			);
-			name = "Shortcut Management";
-			sourceTree = "<group>";
-		};
-		2DC8A0121B84E18400ABEBD5 /* Shortcut Recorder */ = {
-			isa = PBXGroup;
-			children = (
-				2D3A0501194956E100CD96E7 /* SpectacleShortcutRecorder.h */,
-				2D3A0502194956E100CD96E7 /* SpectacleShortcutRecorder.m */,
-				2D3A0505194956E100CD96E7 /* SpectacleShortcutRecorderDelegate.h */,
-			);
-			name = "Shortcut Recorder";
-			sourceTree = "<group>";
-		};
-		2DC8A0131B84E1AF00ABEBD5 /* Shortcuts */ = {
-			isa = PBXGroup;
-			children = (
-				2DC8A0111B84E17400ABEBD5 /* Shortcut Management */,
-				2DC8A0121B84E18400ABEBD5 /* Shortcut Recorder */,
-				2D7C11461B86C61800B81E11 /* Shortcut Storage */,
-				2D5A830D1CDC475B00EBE80A /* SpectacleDefaultShortcutHelpers.h */,
-				2D5A830E1CDC475B00EBE80A /* SpectacleDefaultShortcutHelpers.m */,
-				2D3A04FF194956E100CD96E7 /* SpectacleShortcut.h */,
-				2D3A0500194956E100CD96E7 /* SpectacleShortcut.m */,
-				2D24ACB51CC8728E00AB3984 /* SpectacleShortcutHolder.h */,
-				2D24ACB61CC8728E00AB3984 /* SpectacleShortcutHolder.m */,
-				2DE03E491D7B98D6004E80D6 /* SpectacleShortcutKeyBindings.h */,
-				2DE03E4A1D7B98D6004E80D6 /* SpectacleShortcutKeyBindings.m */,
-				2D3A0506194956E100CD96E7 /* SpectacleShortcutTranslations.h */,
-				2D3A0507194956E100CD96E7 /* SpectacleShortcutTranslations.m */,
-				2D3A050A194956E100CD96E7 /* SpectacleShortcutValidator.h */,
-				2D3A0508194956E100CD96E7 /* SpectacleShortcutValidation.h */,
-				2D3A0509194956E100CD96E7 /* SpectacleShortcutValidation.m */,
-			);
-			name = Shortcuts;
-			sourceTree = "<group>";
-		};
-		2DC8A0141B84E24500ABEBD5 /* Window Management */ = {
-			isa = PBXGroup;
-			children = (
-				0747DAE91183AAC100F75DD2 /* Accessibility API */,
-				2DAC59EA1BB2364700C660ED /* Window Movement History */,
-				2DAC59F41BB23DAD00C660ED /* Window Movers */,
-				2D7CF9E81C6FEC2E004DC708 /* Window Position Calculator */,
-				2D2629441CCECB9E009D1ED0 /* SpectacleScreenDetectionResult.h */,
-				2D2629451CCECB9E009D1ED0 /* SpectacleScreenDetectionResult.m */,
-				2D4F3ECE14A27B4500C29D11 /* SpectacleScreenDetector.h */,
-				2D4F3ECF14A27B4500C29D11 /* SpectacleScreenDetector.m */,
-				2DAC59F51BB241DE00C660ED /* SpectacleWindowAction.h */,
-				2D24ACB31CC723F600AB3984 /* SpectacleWindowAction.m */,
-				072EACFE118A4D5A0015FC8A /* SpectacleWindowPositionManager.h */,
-				072EACFF118A4D5A0015FC8A /* SpectacleWindowPositionManager.m */,
-			);
-			name = "Window Management";
-			sourceTree = "<group>";
-		};
-		32DBCFA10370C40200C91783 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2D1E1AD2147E07E50021D73D /* Info.plist */,
-				077938E51184FADB0013BC14 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D1E1AAF147E06AD0021D73D /* Spectacle */ = {
+		3A7CE4E385B5C2B7FEE62CAD /* SpectacleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D1E1ACB147E06AD0021D73D /* Build configuration list for PBXNativeTarget "Spectacle" */;
+			buildConfigurationList = C52E49E35A57EE57D3DF080D /* Build configuration list for PBXNativeTarget "SpectacleTests" */;
 			buildPhases = (
-				2D1E1AAC147E06AD0021D73D /* Sources */,
-				2D1E1AAD147E06AD0021D73D /* Frameworks */,
-				2D1E1AAE147E06AD0021D73D /* Resources */,
-				2DC25F9D19FF3F93009591A9 /* Update CFBundleVersion */,
-				2D7146551CCC12A6003B8292 /* Embed Frameworks */,
+				FB24E5CB9F93F0D8FFC965A8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20FE56BC6DDB9C107CDE4790 /* PBXTargetDependency */,
+			);
+			name = SpectacleTests;
+			packageProductDependencies = (
+			);
+			productName = SpectacleTests;
+			productReference = ADAB76DE9E7DBAB460FB6BDA /* SpectacleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B26CEA434BD2809D64C8EEB /* Spectacle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49B6B95E939690E005BD1C79 /* Build configuration list for PBXNativeTarget "Spectacle" */;
+			buildPhases = (
+				EC7EC763F6ACE04D50BA7424 /* Sources */,
+				74B2C54D0308B29E3793949F /* Resources */,
+				C665A5B826A2FC02C8FF655E /* Set build number from git */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Spectacle;
+			packageProductDependencies = (
+			);
 			productName = Spectacle;
-			productReference = 2D1E1AB0147E06AD0021D73D /* Spectacle.app */;
+			productReference = 0163BA6F360106FEFF836B38 /* Spectacle.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2DA5B7C519F8BA79007EDE8E /* SpectacleSpecs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2DA5B7D019F8BA79007EDE8E /* Build configuration list for PBXNativeTarget "SpectacleSpecs" */;
-			buildPhases = (
-				2DA5B7C219F8BA79007EDE8E /* Sources */,
-				2DA5B7C319F8BA79007EDE8E /* Frameworks */,
-				2DA5B7C419F8BA79007EDE8E /* Resources */,
-				2D7146661CCC16FD003B8292 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2DA5B7CD19F8BA79007EDE8E /* PBXTargetDependency */,
-			);
-			name = SpectacleSpecs;
-			productName = SpectacleSpecs;
-			productReference = 2DA5B7C619F8BA79007EDE8E /* SpectacleSpecs.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		089C1669FE841209C02AAC07 /* Project object */ = {
+		75BB82F433577027E2DA7E7A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1120;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					2DA5B7C519F8BA79007EDE8E = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 2D1E1AAF147E06AD0021D73D;
+					3A7CE4E385B5C2B7FEE62CAD = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					6B26CEA434BD2809D64C8EEB = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "Spectacle" */;
-			compatibilityVersion = "Xcode 6.3";
+			buildConfigurationList = 37FD501537EA7EA84619D715 /* Build configuration list for PBXProject "Spectacle" */;
 			developmentRegion = en;
-			hasScannedForEncodings = 1;
+			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				it,
-				fr,
 				Base,
-				pt,
-				fi,
+				en,
 				es,
+				fi,
+				fr,
+				it,
+				pt,
 			);
-			mainGroup = 089C166AFE841209C02AAC07 /* Spectacle */;
+			mainGroup = 8A9075D38E6C1DF6D40C09AC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F9603C51C9B60674857BE43E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D1E1AAF147E06AD0021D73D /* Spectacle */,
-				2DA5B7C519F8BA79007EDE8E /* SpectacleSpecs */,
+				6B26CEA434BD2809D64C8EEB /* Spectacle */,
+				3A7CE4E385B5C2B7FEE62CAD /* SpectacleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2D1E1AAE147E06AD0021D73D /* Resources */ = {
+		74B2C54D0308B29E3793949F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DC4E3D41AD84E5C0022ABF0 /* Credits.rtf in Resources */,
-				2D8DA04D147E0FA0003BE1D3 /* Defaults.plist in Resources */,
-				2D5CCCE915E96F740009CC43 /* dsa_public.pem in Resources */,
-				2DA23EFC1B7D736100C9E8EF /* Images.xcassets in Resources */,
-				2DC4E3D51AD84E5C0022ABF0 /* InfoPlist.strings in Resources */,
-				2DC4E3D61AD84E5C0022ABF0 /* Localizable.strings in Resources */,
-				2D5565B1181EDB7F00EFB43A /* Security & Privacy System Preferences.scpt in Resources */,
-				2D7752101B83E94C00C022EE /* Spectacle.xib in Resources */,
-				2D7752111B83E95000C022EE /* SpectaclePreferencesWindow.xib in Resources */,
-				2D58CC391C7030B800E3DC74 /* Window Position Calculations in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DA5B7C419F8BA79007EDE8E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D7B03A241259AC3AEB2165AC /* Credits.rtf in Resources */,
+				18F6623B55151F3B1559CCF5 /* Credits.rtf in Resources */,
+				8119A12E1E7722DBFA746334 /* Credits.rtf in Resources */,
+				A653DAB701BBBD9F8C6F99FE /* Credits.rtf in Resources */,
+				0C33BDB4A09389A5BDCF34FB /* Credits.rtf in Resources */,
+				0F5A0A8B2D4071965B4A58ED /* Credits.rtf in Resources */,
+				ACD001137F7B2834EED6021D /* Defaults.plist in Resources */,
+				DF5A98BB0C1E2DFCAF8A5B99 /* Images.xcassets in Resources */,
+				D9532EF986A213B122758519 /* InfoPlist.strings in Resources */,
+				038EA457AA762CF3AF09802D /* InfoPlist.strings in Resources */,
+				65872E30604070F4C4942686 /* InfoPlist.strings in Resources */,
+				7A52DC8363DA80F5B4CFB87A /* InfoPlist.strings in Resources */,
+				7ADAE9EAAE228C92B6555512 /* InfoPlist.strings in Resources */,
+				28D8A7AD69C8D53ECBFAC3B9 /* InfoPlist.strings in Resources */,
+				0E6DFBB668FBD5CDADE3E499 /* Localizable.strings in Resources */,
+				BF17372A2151F7A13FCCDE68 /* Localizable.strings in Resources */,
+				E22C2E6D4BD7C9FB60C5A5E0 /* Localizable.strings in Resources */,
+				4B018F71A00C6F5325378674 /* Localizable.strings in Resources */,
+				479AAF659C54BC7B7AD992E3 /* Localizable.strings in Resources */,
+				9F67B95CB5707CA6DD5AD58D /* Localizable.strings in Resources */,
+				429CBCC17AF093420F6E3FFD /* Spectacle.xib in Resources */,
+				7E2897B216C4977ACE698D8E /* SpectaclePreferencesWindow.xib in Resources */,
+				152673E112E5AF86489F92BB /* Window Position Calculations in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2DC25F9D19FF3F93009591A9 /* Update CFBundleVersion */ = {
+		C665A5B826A2FC02C8FF655E /* Set build number from git */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 			);
-			name = "Update CFBundleVersion";
+			name = "Set build number from git";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# See: http://tgoode.com/2014/06/05/sensible-way-increment-bundle-version-cfbundleversion-xcode/\nbranch=${1:-'master'}\nbuild_number=$(expr $(git rev-list $branch --count) - $(git rev-list HEAD...$branch --count))\necho \"Updating build number to $build_number using branch: $branch\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_number\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+			shellScript = "if command -v git >/dev/null 2>&1 && git -C \"${SRCROOT}\" rev-parse HEAD >/dev/null 2>&1; then\n  build_number=$(git -C \"${SRCROOT}\" rev-list HEAD --count)\n  /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${build_number}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2D1E1AAC147E06AD0021D73D /* Sources */ = {
+		EC7EC763F6ACE04D50BA7424 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8DA05E147E113D003BE1D3 /* main.m in Sources */,
-				2D3A050D194956E100CD96E7 /* SpectacleAccessibilityElement.m in Sources */,
-				2D768E8D147ED51A00901E76 /* SpectacleAppDelegate.m in Sources */,
-				2DAC59F31BB23BE200C660ED /* SpectacleBestEffortWindowMover.m in Sources */,
-				2D5A830F1CDC475B00EBE80A /* SpectacleDefaultShortcutHelpers.m in Sources */,
-				2D279ED416BB4A7800F6894A /* SpectacleHistory.m in Sources */,
-				2D8DA05D147E113D003BE1D3 /* SpectacleHistoryItem.m in Sources */,
-				2D8E2C641C7AAD5A0074129C /* SpectacleJavaScriptEnvironment.m in Sources */,
-				2DC8A0171B85097900ABEBD5 /* SpectacleLoginItemHelper.m in Sources */,
-				2D5A83091CDB020A00EBE80A /* SpectacleMigratingShortcutStorage.m in Sources */,
-				07838603148BD517001E7BD7 /* SpectaclePreferencesController.m in Sources */,
-				2DAC59F01BB238D900C660ED /* SpectacleQuantizedWindowMover.m in Sources */,
-				2D1AE52515D715F400EAC5BD /* SpectacleRegisteredShortcutValidator.m in Sources */,
-				2D2629461CCECB9E009D1ED0 /* SpectacleScreenDetectionResult.m in Sources */,
-				2D4F3ED014A27B4500C29D11 /* SpectacleScreenDetector.m in Sources */,
-				2D3A050E194956E100CD96E7 /* SpectacleShortcut.m in Sources */,
-				2D24ACB71CC8728E00AB3984 /* SpectacleShortcutHolder.m in Sources */,
-				2D5A83051CDAFDEB00EBE80A /* SpectacleShortcutJSONStorage.m in Sources */,
-				2DE03E4B1D7B98D6004E80D6 /* SpectacleShortcutKeyBindings.m in Sources */,
-				2D8DA056147E113D003BE1D3 /* SpectacleShortcutManager.m in Sources */,
-				2D3A050F194956E100CD96E7 /* SpectacleShortcutRecorder.m in Sources */,
-				2D3A0511194956E100CD96E7 /* SpectacleShortcutTranslations.m in Sources */,
-				2D7C114A1B86C7CD00B81E11 /* SpectacleShortcutUserDefaultsStorage.m in Sources */,
-				2D3A0512194956E100CD96E7 /* SpectacleShortcutValidation.m in Sources */,
-				2D5783F11BB63BDD00695771 /* SpectacleStandardWindowMover.m in Sources */,
-				2D8DA057147E113D003BE1D3 /* SpectacleUtilities.m in Sources */,
-				2D24ACB41CC723F600AB3984 /* SpectacleWindowAction.m in Sources */,
-				2D0759A71C71746500A17E80 /* SpectacleWindowPositionCalculationRegistry.m in Sources */,
-				2D98D7311AE064B7007AD995 /* SpectacleWindowPositionCalculationResult.m in Sources */,
-				2D7CF9EB1C6FED50004DC708 /* SpectacleWindowPositionCalculator.m in Sources */,
-				2D8DA058147E113D003BE1D3 /* SpectacleWindowPositionManager.m in Sources */,
+				287CC19D41EC78F38FB21822 /* SpectacleAccessibilityElement.m in Sources */,
+				759A75D54F5C56C6CD009773 /* SpectacleAccessibilitySettingsIllustration.m in Sources */,
+				0ABE9FD8506E2B7CBEB2E6A4 /* SpectacleAppDelegate.m in Sources */,
+				DC6264C7188F0625289D498F /* SpectacleBestEffortWindowMover.m in Sources */,
+				ECDF0F2DCBBF1DAF78CE9C54 /* SpectacleDefaultShortcutHelpers.m in Sources */,
+				B4B9EE4C1B8DAE4EF6AA1548 /* SpectacleFilledButton.m in Sources */,
+				C7E106C54E4ED56706FF39B9 /* SpectacleHistory.m in Sources */,
+				454E96B7EC472B8D2EEAD93F /* SpectacleHistoryItem.m in Sources */,
+				FEF2A3FE87C3176005DF3990 /* SpectacleJavaScriptEnvironment.m in Sources */,
+				159E10B5834EFE36CEE34261 /* SpectacleLoginItemHelper.m in Sources */,
+				451AA3C1D5B6B63142711167 /* SpectacleMigratingShortcutStorage.m in Sources */,
+				862D52D0DA1B0F855EE1FFF0 /* SpectaclePreferencesController.m in Sources */,
+				F11AEBCEFAEC285613D43CE7 /* SpectacleQuantizedWindowMover.m in Sources */,
+				D53564429F2D33F1BF633733 /* SpectacleRegisteredShortcutValidator.m in Sources */,
+				17B9364A431D6056AC93F98F /* SpectacleScreenDetectionResult.m in Sources */,
+				2806AB99A178957A2518A701 /* SpectacleScreenDetector.m in Sources */,
+				C9C2BC3E50822ACA0C97D7DB /* SpectacleShortcut.m in Sources */,
+				A8D65F5CE185B45FE57E3E67 /* SpectacleShortcutHolder.m in Sources */,
+				68FAA04C9667DF495DFC766C /* SpectacleShortcutJSONStorage.m in Sources */,
+				3C3FA157B58504BD469DA002 /* SpectacleShortcutKeyBindings.m in Sources */,
+				CDA021800B2EFE7080F8ED16 /* SpectacleShortcutManager.m in Sources */,
+				A2F385153F2D189F61B4D160 /* SpectacleShortcutRecorder.m in Sources */,
+				28277A6248B48BA70E3A2F7D /* SpectacleShortcutTranslations.m in Sources */,
+				24D1ABD9CB642EC958EC48DB /* SpectacleShortcutUserDefaultsStorage.m in Sources */,
+				B236F777023CA6E3A6D97E0D /* SpectacleShortcutValidation.m in Sources */,
+				7712A97DF13E215601764CFB /* SpectacleStandardWindowMover.m in Sources */,
+				7D564C17F1DC7EF64F16EEA7 /* SpectacleUtilities.m in Sources */,
+				83EA318B530463D521AB2A89 /* SpectacleWindowAction.m in Sources */,
+				562DBBFFA2648F9FE4210E26 /* SpectacleWindowPositionCalculationRegistry.m in Sources */,
+				BB4F13986800852FEB8C2EB6 /* SpectacleWindowPositionCalculationResult.m in Sources */,
+				515F1014E6F24795530768FD /* SpectacleWindowPositionCalculator.m in Sources */,
+				789A666645D8D5DEBEF003CB /* SpectacleWindowPositionManager.m in Sources */,
+				DC5109C85867058C03077F14 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2DA5B7C219F8BA79007EDE8E /* Sources */ = {
+		FB24E5CB9F93F0D8FFC965A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D20F0181CD18ED7003DDA5B /* SpectacleBottomHalfWindowCalculationSpec.m in Sources */,
-				2D20F0191CD18ED7003DDA5B /* SpectacleCenterWindowCalculationSpec.m in Sources */,
-				2D20F01A1CD18ED7003DDA5B /* SpectacleFullscreenWindowCalculationSpec.m in Sources */,
-				2D20F01B1CD18ED7003DDA5B /* SpectacleLargerWindowCalculationSpec.m in Sources */,
-				2D20F01C1CD18ED7003DDA5B /* SpectacleLeftHalfWindowCalculationSpec.m in Sources */,
-				2D20F01D1CD18ED7003DDA5B /* SpectacleLowerLeftWindowCalculationSpec.m in Sources */,
-				2D20F01E1CD18ED7003DDA5B /* SpectacleLowerRightWindowCalculationSpec.m in Sources */,
-				2D20F01F1CD18ED7003DDA5B /* SpectacleNextDisplayWindowCalculationSpec.m in Sources */,
-				2D20F0201CD18ED7003DDA5B /* SpectacleNextThirdWindowCalculationSpec.m in Sources */,
-				2D20F0211CD18ED7003DDA5B /* SpectaclePreviousDisplayWindowCalculationSpec.m in Sources */,
-				2D20F0221CD18ED7003DDA5B /* SpectaclePreviousThirdWindowCalculationSpec.m in Sources */,
-				2D20F0231CD18ED7003DDA5B /* SpectacleRightHalfWindowCalculationSpec.m in Sources */,
-				2DE03E481D7B8F5A004E80D6 /* SpectacleShortcutKeyBindingsSpec.m in Sources */,
-				2D58AE361D7D2D5300BFEEA2 /* SpectacleShortcutSpec.m in Sources */,
-				2D58AE341D7D19AF00BFEEA2 /* SpectacleShortcutTranslationsSpec.m in Sources */,
-				2D20F0241CD18ED7003DDA5B /* SpectacleSmallerWindowCalculationSpec.m in Sources */,
-				2D20F0251CD18ED7003DDA5B /* SpectacleTopHalfWindowCalculationSpec.m in Sources */,
-				2D20F0261CD18ED7003DDA5B /* SpectacleUpperLeftWindowCalculationSpec.m in Sources */,
-				2D20F0271CD18ED7003DDA5B /* SpectacleUpperRightWindowCalculationSpec.m in Sources */,
-				2D20F0291CD1969D003DDA5B /* SpectacleWindowPositionManagerSpec.m in Sources */,
+				D215FFDDE3F6FEEA1CE2C958 /* SpectacleAccessibilitySettingsIllustrationTests.m in Sources */,
+				64C94FA98C7A0C966D935612 /* SpectacleAppearanceTests.m in Sources */,
+				5C92781DB3BA3B35EEEFF21B /* SpectacleBottomHalfWindowCalculationTests.m in Sources */,
+				DFC901EE7F2CE9B937FC4699 /* SpectacleCenterWindowCalculationTests.m in Sources */,
+				9465AFD3342B667D9121B663 /* SpectacleCoordinateConversionTests.m in Sources */,
+				763CB165E2AD61AC53EC0B4D /* SpectacleDefaultShortcutsTests.m in Sources */,
+				932422B8FAEE745AB4D9763A /* SpectacleFullscreenWindowCalculationTests.m in Sources */,
+				E178211143375CA3D97EA009 /* SpectacleHistoryTests.m in Sources */,
+				B8DB693F3C2360F2717395E8 /* SpectacleLargerWindowCalculationTests.m in Sources */,
+				FD039797E4FE60F2E1FAC9F4 /* SpectacleLeftHalfWindowCalculationTests.m in Sources */,
+				36699791C7B4DDB19A1FB84D /* SpectacleLiveAccessibilityTests.m in Sources */,
+				013832DA3799CE8E88B114BB /* SpectacleLowerLeftWindowCalculationTests.m in Sources */,
+				87AFABD124F6981C43B9126B /* SpectacleLowerRightWindowCalculationTests.m in Sources */,
+				1F42DF8A467D8902CB54F657 /* SpectacleNextDisplayWindowCalculationTests.m in Sources */,
+				A671BEA10FAFEE72945CA2A0 /* SpectacleNextThirdWindowCalculationTests.m in Sources */,
+				330019AEE5A21285517A3231 /* SpectaclePreferencesWindowTests.m in Sources */,
+				A891F828BC932CD276A599BC /* SpectaclePreviousDisplayWindowCalculationTests.m in Sources */,
+				F91DEBF286E418A88C232952 /* SpectaclePreviousThirdWindowCalculationTests.m in Sources */,
+				1243B29FD71A3289800F63C1 /* SpectacleRightHalfWindowCalculationTests.m in Sources */,
+				D6030D2D0B1305CE63E9D8BF /* SpectacleScreenDetectorTests.m in Sources */,
+				153942CBAD70BA455339BC03 /* SpectacleShortcutKeyBindingsTests.m in Sources */,
+				FC62F0BC6CE2624B8E2593C5 /* SpectacleShortcutManagerTests.m in Sources */,
+				3BEE8E3559C56AE8E700A2DE /* SpectacleShortcutStorageTests.m in Sources */,
+				3C7AFF5280D4948710B70D68 /* SpectacleShortcutTests.m in Sources */,
+				E15DEBBFD9525335D178FA1C /* SpectacleShortcutTranslationsTests.m in Sources */,
+				3912BB3833BABE3684E7311E /* SpectacleSmallerWindowCalculationTests.m in Sources */,
+				0FB09D63855684C5EFE45590 /* SpectacleTestDoubles.m in Sources */,
+				1CC524CFD1833536AB891F4E /* SpectacleTestSupport.m in Sources */,
+				25B15B7D52E583430912054A /* SpectacleTopHalfWindowCalculationTests.m in Sources */,
+				E235A00F05B90FD49A6D9292 /* SpectacleUpperLeftWindowCalculationTests.m in Sources */,
+				EE930283B5B57E0F086957F6 /* SpectacleUpperRightWindowCalculationTests.m in Sources */,
+				F7F79B2FE3E5BE94A02BEB41 /* SpectacleWindowCalculationInvariantTests.m in Sources */,
+				EA6F84E8EA4D2D2E7893F8C3 /* SpectacleWindowMoverTests.m in Sources */,
+				28A410D3584E7B5769EC0DF6 /* SpectacleWindowPositionManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2DA5B7CD19F8BA79007EDE8E /* PBXTargetDependency */ = {
+		20FE56BC6DDB9C107CDE4790 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D1E1AAF147E06AD0021D73D /* Spectacle */;
-			targetProxy = 2DA5B7CC19F8BA79007EDE8E /* PBXContainerItemProxy */;
+			target = 6B26CEA434BD2809D64C8EEB /* Spectacle */;
+			targetProxy = 6E203DFE0C11823C52581196 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2DC4E3CA1AD84E5C0022ABF0 /* Credits.rtf */ = {
+		3E73A5840690F24FBC11B8E2 /* Spectacle.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2DC4E3CB1AD84E5C0022ABF0 /* en */,
-				2D98D72E1ADDBBF6007AD995 /* fr */,
-				2DC4E3DA1AD84E7F0022ABF0 /* it */,
-				574F6A1C1C57BE40001A5679 /* pt */,
-				2D2490E11C7A5BD900A4282B /* fi */,
-				2D2A61A51DC2CD9C00D86193 /* es */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		2DC4E3CC1AD84E5C0022ABF0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DC4E3CD1AD84E5C0022ABF0 /* en */,
-				2D98D72C1ADDBBF6007AD995 /* fr */,
-				2DA23EFD1B80FB6400C9E8EF /* it */,
-				574F6A1D1C57BE40001A5679 /* pt */,
-				2D2490E21C7A5BD900A4282B /* fi */,
-				2D2A61A61DC2CD9C00D86193 /* es */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2DC4E3CE1AD84E5C0022ABF0 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DC4E3CF1AD84E5C0022ABF0 /* en */,
-				2D98D72D1ADDBBF6007AD995 /* fr */,
-				2DC4E3D91AD84E7F0022ABF0 /* it */,
-				574F6A1E1C57BE40001A5679 /* pt */,
-				2D2490E31C7A5BD900A4282B /* fi */,
-				2D2A61A71DC2CD9C00D86193 /* es */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		2DC4E3D01AD84E5C0022ABF0 /* Spectacle.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DA23EFE1B80FF6F00C9E8EF /* Base */,
-				2DA23F031B81016B00C9E8EF /* fr */,
-				2DA23F071B8109D400C9E8EF /* it */,
-				574F6A1A1C57BE40001A5679 /* pt */,
-				2D2490DF1C7A5BD900A4282B /* fi */,
-				2D2A61A31DC2CD9C00D86193 /* es */,
+				6B129BA0DA220573701EB50E /* Base */,
+				4593C0E36D557B2B426D31E7 /* es */,
+				E44EAD397F4F36F178FC2693 /* fi */,
+				4D668DB0DBC2B6A12CF5CF0A /* fr */,
+				F6CC8F6B6CB2175E7C229173 /* it */,
+				A28C6BB2409F08D685B460F9 /* pt */,
 			);
 			name = Spectacle.xib;
 			sourceTree = "<group>";
 		};
-		2DC4E3D21AD84E5C0022ABF0 /* SpectaclePreferencesWindow.xib */ = {
+		6B335B66610B23B0C1E3D187 /* SpectaclePreferencesWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2DA23EFF1B80FF6F00C9E8EF /* Base */,
-				2DA23F051B81017000C9E8EF /* fr */,
-				2DA23F091B8109D900C9E8EF /* it */,
-				574F6A1B1C57BE40001A5679 /* pt */,
-				2D2490E01C7A5BD900A4282B /* fi */,
-				2D2A61A41DC2CD9C00D86193 /* es */,
+				DF0B9761B3D708BAAFAC32F3 /* Base */,
+				CC2ACC6B84215E0B50523F36 /* es */,
+				DF260C5F74AEE1DED5D894E1 /* fi */,
+				0C57324634C4A480FD55C9FD /* fr */,
+				0AA7527A8D9A72E8BFFB91ED /* it */,
+				043B101E2C580D1E86CF3131 /* pt */,
 			);
 			name = SpectaclePreferencesWindow.xib;
 			sourceTree = "<group>";
@@ -836,21 +728,25 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1DBD214D08BA80EA00186707 /* Debug */ = {
+		24FA4B1AF517F4B87E4FA295 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC961239B0E3DDA6CBD6E99 /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -859,52 +755,62 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		1DBD214E08BA80EA00186707 /* Release */ = {
+		4159C585CF1C678D41F9B045 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC961239B0E3DDA6CBD6E99 /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -913,130 +819,135 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		47B8E0C38D5E1F60A57FFF4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Spectacle;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Spectacle/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divisiblebyzero.Spectacle;
+				PRODUCT_NAME = Spectacle;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		2D1E1ACC147E06AD0021D73D /* Debug */ = {
+		543D81AEF2D4C09E2109EDDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = Spectacle;
-				CODE_SIGN_IDENTITY = "-";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Spectacle/Sources";
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
-				INFOPLIST_FILE = "Spectacle/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.divisiblebyzero.Spectacle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		2D1E1ACD147E06AD0021D73D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = Spectacle;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = "Spectacle/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.divisiblebyzero.Spectacle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.divisiblebyzero.SpectacleTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spectacle.app/Contents/MacOS/Spectacle";
 			};
 			name = Release;
 		};
-		2DA5B7CE19F8BA79007EDE8E /* Debug */ = {
+		A0F64CF709F3CED7F0764A65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spectacle.app/Contents/MacOS/Spectacle";
+				ASSETCATALOG_COMPILER_APPICON_NAME = Spectacle;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = "SpectacleSpecs/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.divisiblebyzero.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Spectacle/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divisiblebyzero.Spectacle;
+				PRODUCT_NAME = Spectacle;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		2DA5B7CF19F8BA79007EDE8E /* Release */ = {
+		A8CCA2C449FCD9F3F5376FA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spectacle.app/Contents/MacOS/Spectacle";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Spectacle/Sources";
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
-				INFOPLIST_FILE = "SpectacleSpecs/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.divisiblebyzero.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.divisiblebyzero.SpectacleTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spectacle.app/Contents/MacOS/Spectacle";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "Spectacle" */ = {
+		37FD501537EA7EA84619D715 /* Build configuration list for PBXProject "Spectacle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DBD214D08BA80EA00186707 /* Debug */,
-				1DBD214E08BA80EA00186707 /* Release */,
+				24FA4B1AF517F4B87E4FA295 /* Debug */,
+				4159C585CF1C678D41F9B045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		2D1E1ACB147E06AD0021D73D /* Build configuration list for PBXNativeTarget "Spectacle" */ = {
+		49B6B95E939690E005BD1C79 /* Build configuration list for PBXNativeTarget "Spectacle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D1E1ACC147E06AD0021D73D /* Debug */,
-				2D1E1ACD147E06AD0021D73D /* Release */,
+				A0F64CF709F3CED7F0764A65 /* Debug */,
+				47B8E0C38D5E1F60A57FFF4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		2DA5B7D019F8BA79007EDE8E /* Build configuration list for PBXNativeTarget "SpectacleSpecs" */ = {
+		C52E49E35A57EE57D3DF080D /* Build configuration list for PBXNativeTarget "SpectacleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2DA5B7CE19F8BA79007EDE8E /* Debug */,
-				2DA5B7CF19F8BA79007EDE8E /* Release */,
+				A8CCA2C449FCD9F3F5376FA2 /* Debug */,
+				543D81AEF2D4C09E2109EDDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+	rootObject = 75BB82F433577027E2DA7E7A /* Project object */;
 }

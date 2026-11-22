@@ -38,7 +38,7 @@ static EventHotKeyID currentShortcutID = {
       NSLog(@"Unable to add shortcut %@ as it already exists.", shortcutName);
       continue;
     }
-    currentShortcutID.id = ++currentShortcutID.id;
+    ++currentShortcutID.id;
     shortcutHolder = [[SpectacleShortcutHolder alloc] initWithShortcutID:currentShortcutID shortcut:shortcut];
     _registeredShortcutsByName[shortcutName] = _areShorcutsEnabled ? [self registerEventHotKey:shortcutHolder] : shortcutHolder;
   }
@@ -53,16 +53,19 @@ static EventHotKeyID currentShortcutID = {
     NSLog(@"Unable to update shortcut %@ as it does not exists.", shortcutName);
     return;
   }
-  if (_areShorcutsEnabled && [self unregisterEventHotKey:shortcutHolder]) {
+  // unregisterEventHotKey: returns YES on success. Earlier releases tested the result the wrong
+  // way round, so every update (changing a shortcut in Preferences, or "Restore Defaults")
+  // unregistered the existing hot key and then gave up, leaving that shortcut dead until the
+  // next launch. The new hot key was also registered with the *old* key combination.
+  if (_areShorcutsEnabled && ![self unregisterEventHotKey:shortcutHolder]) {
     NSLog(@"Unable to unregister event hot key for shortcut: %@", shortcutName);
     return;
   }
-  SpectacleShortcutHolder *registeredShortcutHolder = _areShorcutsEnabled ? [self registerEventHotKey:shortcutHolder] : shortcutHolder;
-  _registeredShortcutsByName[shortcutName] = [registeredShortcutHolder
-                                              copyWithShortcut:
-                                              [shortcut
-                                               copyWithShortcutAction:
-                                               shortcut.shortcutAction ?: shortcutHolder.shortcut.shortcutAction]];
+  SpectacleShortcut *updatedShortcut = [shortcut copyWithShortcutAction:shortcut.shortcutAction ?: shortcutHolder.shortcut.shortcutAction];
+  SpectacleShortcutHolder *updatedShortcutHolder = [[SpectacleShortcutHolder alloc] initWithShortcutID:shortcutHolder.shortcutID
+                                                                                               shortcut:updatedShortcut
+                                                                                            shortcutRef:NULL];
+  _registeredShortcutsByName[shortcutName] = _areShorcutsEnabled ? [self registerEventHotKey:updatedShortcutHolder] : updatedShortcutHolder;
   [self storeShortcuts];
 }
 
@@ -138,9 +141,16 @@ static EventHotKeyID currentShortcutID = {
     return;
   }
   for (SpectacleShortcutHolder *shortcutHolder in _registeredShortcutsByName.allValues) {
-    [self unregisterEventHotKey:shortcutHolder];
+    if ([self unregisterEventHotKey:shortcutHolder]) {
+      _registeredShortcutsByName[shortcutHolder.shortcut.shortcutName] = [shortcutHolder copyWithShortcutRef:NULL];
+    }
   }
   _areShorcutsEnabled = NO;
+}
+
+- (BOOL)areShortcutsEnabled
+{
+  return _areShorcutsEnabled;
 }
 
 - (void)installApplicationEventHandler
