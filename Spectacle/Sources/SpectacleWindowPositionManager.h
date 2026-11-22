@@ -26,6 +26,9 @@ typedef void (^SpectacleFailureFeedback)(void);
 
 SPECTACLE_INIT_AND_NEW_UNAVAILABLE
 
+/// The window mover chain used by the application: standard -> quantized -> best effort.
++ (id<SpectacleWindowMover>)defaultWindowMover;
+
 - (void)moveFrontmostWindowElement:(SpectacleAccessibilityElement *)frontmostWindowElement
                             action:(SpectacleWindowAction *)action
                            screens:(NSArray<NSScreen *> *)screens
@@ -36,5 +39,8 @@ SPECTACLE_INIT_AND_NEW_UNAVAILABLE
 
 - (void)undoLastWindowAction;
 - (void)redoLastWindowAction;
+
+- (void)undoLastWindowActionWithScreens:(NSArray<NSScreen *> *)screens mainScreen:(NSScreen *)mainScreen;
+- (void)redoLastWindowActionWithScreens:(NSArray<NSScreen *> *)screens mainScreen:(NSScreen *)mainScreen;
 
 @end

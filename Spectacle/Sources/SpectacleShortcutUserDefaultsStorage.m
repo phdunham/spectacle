@@ -4,6 +4,9 @@
 
 + (void)initialize
 {
+  if (self != [SpectacleShortcutUserDefaultsStorage class]) {
+    return;
+  }
   [NSKeyedUnarchiver setClass:[SpectacleShortcut class] forClassName:@"SpectacleHotKey"];
   [NSKeyedUnarchiver setClass:[SpectacleShortcut class] forClassName:@"ZeroKitHotKey"];
   [NSKeyedUnarchiver setClass:[SpectacleShortcut class] forClassName:@"ZKHotKey"];
@@ -23,7 +26,10 @@
 {
   NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
   for (SpectacleShortcut *shortcut in shortcuts) {
-    NSData *shortcutData = [NSKeyedArchiver archivedDataWithRootObject:shortcut];
+    NSData *shortcutData = [NSKeyedArchiver archivedDataWithRootObject:shortcut requiringSecureCoding:NO error:nil];
+    if (!shortcutData) {
+      continue;
+    }
     NSString *shortcutName = shortcut.shortcutName;
     if (![shortcutData isEqualToData:[userDefaults dataForKey:shortcutName]]) {
       [userDefaults setObject:shortcutData forKey:shortcutName];
@@ -65,8 +71,14 @@
 {
   NSMutableArray<SpectacleShortcut *> *shortcuts = [NSMutableArray new];
   for (NSData *shortcutData in dictionary.allValues) {
-    SpectacleShortcut *shortcut = [NSKeyedUnarchiver unarchiveObjectWithData:shortcutData];
-    [shortcuts addObject:[shortcut copyWithShortcutAction:action]];
+    // Shortcuts written by old releases use plain NSCoding, so secure coding cannot be required.
+    NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingFromData:shortcutData error:nil];
+    unarchiver.requiresSecureCoding = NO;
+    SpectacleShortcut *shortcut = [unarchiver decodeObjectForKey:NSKeyedArchiveRootObjectKey];
+    [unarchiver finishDecoding];
+    if ([shortcut isKindOfClass:[SpectacleShortcut class]]) {
+      [shortcuts addObject:[shortcut copyWithShortcutAction:action]];
+    }
   }
   return shortcuts;
 }

@@ -17,5 +17,8 @@ DerivedData
 *.ipa
 *.xcuserstate
 
-Carthage/Build
-Carthage/Checkouts
+# macOS
+.DS_Store
+
+# Personal code signing settings
+Configuration/Local.xcconfig

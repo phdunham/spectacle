@@ -27,4 +27,6 @@ SPECTACLE_INIT_AND_NEW_UNAVAILABLE
 - (void)registerShortcuts;
 - (void)unregisterShortcuts;
 
+@property (nonatomic, readonly) BOOL areShortcutsEnabled;
+
 @end

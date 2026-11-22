@@ -25,11 +25,12 @@
 - (BOOL)isShortcutValid:(SpectacleShortcut *)shortcut error:(NSError **)error
 {
   CFArrayRef shortcuts = NULL;
-  if (CopySymbolicHotKeys(&shortcuts)) {
-    return YES;
+  if (CopySymbolicHotKeys(&shortcuts) != noErr || shortcuts == NULL) {
+    return [self isShortcutValidAccordingToValidators:shortcut error:error];
   }
-  for (CFIndex i = 0; i < CFArrayGetCount(shortcuts); i++) {
-    CFDictionaryRef shortcutDictionary = (CFDictionaryRef)CFArrayGetValueAtIndex(shortcuts, i);
+  NSArray *symbolicHotKeys = CFBridgingRelease(shortcuts);
+  for (CFIndex i = 0; i < (CFIndex)symbolicHotKeys.count; i++) {
+    CFDictionaryRef shortcutDictionary = (__bridge CFDictionaryRef)symbolicHotKeys[i];
     if (!shortcutDictionary || (CFGetTypeID(shortcutDictionary) != CFDictionaryGetTypeID())) {
       continue;
     }
@@ -49,6 +50,11 @@
       return NO;
     }
   }
+  return [self isShortcutValidAccordingToValidators:shortcut error:error];
+}
+
+- (BOOL)isShortcutValidAccordingToValidators:(SpectacleShortcut *)shortcut error:(NSError **)error
+{
   for (id<SpectacleShortcutValidator> validator in _validators) {
     if ([validator conformsToProtocol:@protocol(SpectacleShortcutValidator)]
         && ![validator isShortcutValid:shortcut shortcutManager:_shortcutManager]) {
@@ -82,7 +88,10 @@
 static NSInteger keyCodeFromDictionary(CFDictionaryRef dictionary)
 {
   CFNumberRef keyCodeFromDictionary = (CFNumberRef)CFDictionaryGetValue(dictionary, kHISymbolicHotKeyCode);
-  NSInteger keyCode = 0;
+  NSInteger keyCode = -1;
+  if (keyCodeFromDictionary == NULL) {
+    return keyCode;
+  }
   CFNumberGetValue(keyCodeFromDictionary, kCFNumberLongType, &keyCode);
   return keyCode;
 }
@@ -91,6 +100,9 @@ static NSUInteger modifiersFromDictionary(CFDictionaryRef dictionary)
 {
   CFNumberRef modifiersFromDictionary = (CFNumberRef)CFDictionaryGetValue(dictionary, kHISymbolicHotKeyModifiers);
   NSUInteger modifiers = 0;
+  if (modifiersFromDictionary == NULL) {
+    return modifiers;
+  }
   CFNumberGetValue(modifiersFromDictionary, kCFNumberLongType, &modifiers);
   return modifiers;
 }

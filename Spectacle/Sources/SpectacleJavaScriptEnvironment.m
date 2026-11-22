@@ -24,8 +24,16 @@
 
 - (void)evaluateBundledScripts
 {
-  NSArray<NSString *> *scriptPaths = [[NSBundle mainBundle] pathsForResourcesOfType:@"js"
-                                                                        inDirectory:@"Window Position Calculations"];
+  // Look the scripts up next to this class (the app bundle) rather than the main bundle, and
+  // evaluate them in a stable order: helper modules are referenced lazily, but a predictable
+  // order makes failures reproducible.
+  NSBundle *bundle = [NSBundle bundleForClass:[SpectacleJavaScriptEnvironment class]];
+  NSArray<NSString *> *scriptPaths = [[bundle pathsForResourcesOfType:@"js"
+                                                          inDirectory:@"Window Position Calculations"]
+                                      sortedArrayUsingSelector:@selector(compare:)];
+  if (scriptPaths.count == 0) {
+    NSLog(@"No window position calculation scripts were found in %@", bundle.bundlePath);
+  }
   [scriptPaths enumerateObjectsUsingBlock:^(NSString *scriptPath, NSUInteger index, BOOL *stop) {
     NSString *script = loadScriptAtPath(scriptPath);
     if (script) {

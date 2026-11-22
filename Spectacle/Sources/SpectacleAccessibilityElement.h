@@ -1,4 +1,5 @@
-#import <Carbon/Carbon.h>
+#import <AppKit/AppKit.h>
+#import <ApplicationServices/ApplicationServices.h>
 
 @interface SpectacleAccessibilityElement : NSObject
 
@@ -16,6 +17,13 @@
 - (void)setRectOfElement:(CGRect)rect;
 
 + (CGRect)normalizeCoordinatesOfRect:(CGRect)rect frameOfScreen:(CGRect)frameOfScreen;
+
+/// The frame of the primary screen (the one containing the menu bar), in Cocoa coordinates.
++ (CGRect)frameOfPrimaryScreen;
+
+/// Overrides the primary screen frame used for coordinate conversion. Pass CGRectNull to use the
+/// real primary screen again. Intended for unit tests.
++ (void)setPrimaryScreenFrameOverride:(CGRect)frame;
 
 - (BOOL)isSheet;
 - (BOOL)isSystemDialog;

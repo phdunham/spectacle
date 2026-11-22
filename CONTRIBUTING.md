@@ -1,36 +1,66 @@
 # Contributing
 
-Contributions come in many forms. Creating an issue that documents a previously unreported defect is just as important as sending a pull request. Spectacle can only be great when the folks that use it are passionate about its quality.
+This repository ([phdunham/spectacle](https://github.com/phdunham/spectacle)) is an **unofficial, personally maintained fork** of [eczarny/spectacle](https://github.com/eczarny/spectacle). The original project is no longer maintained or supported, so please don't open issues or pull requests there for problems with this fork; open them here instead.
 
-Before you start working on your contribution to Spectacle please keep reading. For even more information read [Contributing to Open Source on GitHub][1].
+The fork is maintained for personal use. Issues and pull requests are welcome, but there is no promise of support or of a timely response.
 
 ## Issues
 
-Before creating a new issue check and make sure somebody hasn't already beat you to it. _Please take this time to also review Spectacle's [common issues][2]_. If your defect or feature request doesn't already exist feel free to create a new issue. When creating a new issue take the time to be as clear and descriptive as possible.
+Before opening an issue, check that it hasn't been reported already and read the [common issues](README.md#common-issues) in the README. Please include:
 
-Here are a few things to keep in mind when creating an issue for a potential defect:
+* the Spectacle version (shown in the About window, e.g. 1.3.0) and how you built or installed it;
+* the macOS version;
+* the app whose window misbehaved, and the shortcut you used;
+* your display setup if more than one display is involved (sizes and how they are arranged);
+* any relevant Spectacle output from the Console app (search for "Spectacle").
 
-* What version of Spectacle did you use when encountering the defect?
-* What version of OS X did you use when encountering the defect?
-* Was there any relevant Spectacle output in the [Console][3]?
+Screenshots or screen recordings help a lot.
 
-Including screenshots or videos are extremely helpful so please include them if you can. Diagrams can also be highly valuable when describing a new feature in a feature request.
+If Spectacle keeps asking for Accessibility access although it is switched on in System Settings, see [Code signing and Accessibility access](README.md#code-signing-and-accessibility-access) first.
 
-## Pull Requests
+## Development setup
 
-1. Fork the repository and create your branch from `master`
-2. Add tests if your changes can and should be tested
-3. Run the test suite and confirm that all tests pass
-4. Rebase your changes on top of the most recent changes from `master`
+Requirements: macOS 14 or later, Xcode 16 or later, and [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`). There are no other dependencies.
 
-## Coding Style
+`Spectacle.xcodeproj` is generated from `project.yml`. When you add, remove or rename files, or change build settings, edit `project.yml` and run:
 
-To help make it easier maintain Spectacle please match the existing coding style as much as possible. This make it easier to both understand and merge your contributions. Only use two __spaces__ for indentation.
+    $ xcodegen generate
+
+Commit both `project.yml` and the regenerated project.
+
+Code signing is ad hoc by default. To use your own Apple Development certificate (so Accessibility access survives rebuilds), create `Configuration/Local.xcconfig`, which git ignores; see the README.
+
+## Tests
+
+Run the whole suite before opening a pull request:
+
+    $ xcodebuild test -project Spectacle.xcodeproj -scheme Spectacle -derivedDataPath build/DerivedData
+
+The tests use XCTest and live in `SpectacleTests/`. They run hosted in the app, but Spectacle skips its normal start-up (hot keys, status item, permission dialog) while tests run. Some guidelines:
+
+* **Window placement:** add a case to the calculation tests for new math, and to `SpectacleWindowPositionManagerTests` for anything that changes where windows end up. Those tests run the real pipeline with fake screens (`SpectacleFakeScreen`) and fake windows (`SpectacleFakeWindowElement`, which can simulate minimum sizes and size increments).
+* **Coordinates:** expectations are easiest to write in Cocoa coordinates (bottom-left origin, like `NSScreen.visibleFrame`) and convert with `SPTAccessibilityRect`.
+* **Global state:** tests that set `+[SpectacleAccessibilityElement setPrimaryScreenFrameOverride:]` must reset it in `tearDown`. Never write to the user's real defaults or `~/Library/Application Support/Spectacle`; `SpectacleShortcutJSONStorage` accepts a file URL for tests.
+* **Light and Dark Mode:** UI changes should keep `SpectacleAppearanceTests`, `SpectaclePreferencesWindowTests` and `SpectacleAccessibilitySettingsIllustrationTests` passing, and add to them where it makes sense. Prefer system or dynamic colors over fixed ones. Custom views must draw from their own bounds, not the rect passed to `drawRect:` (macOS 14 and later no longer clip views to their bounds by default).
+* **Real windows:** `SpectacleLiveAccessibilityTests` moves a real TextEdit window and is skipped unless you opt in; see the README for how to run it. Run it when you change how windows are moved (`SpectacleAccessibilityElement`, the window movers).
+
+Each bug fix should come with a test that fails without the fix.
+
+## Pull requests
+
+1. Create a branch from `main`.
+2. Add tests for your change.
+3. Run the test suite and make sure it passes, with no new build warnings.
+4. Rebase on the latest `main` before opening the pull request, and describe what you changed and how you tested it (including which macOS version).
+
+## Coding style
+
+Match the existing Objective-C style: two spaces for indentation, braces on their own line for methods, and descriptive names (`SpectacleWindowPositionManager`, `moveFrontmostWindowElement:action:`). New source files go in `Spectacle/Sources/` with a `Spectacle` prefix. Avoid APIs deprecated in the current macOS SDK.
+
+## Versioning
+
+The version is `MARKETING_VERSION` in `project.yml` (1.3.0 is the first release of this fork; the original's last release was 1.2). Use 1.3.x for fixes and 1.4.0 for new features. The build number is set automatically from the number of git commits.
 
 ## License
 
-By contributing to Spectacle you agree that your contributions will be licensed under its MIT license.
-
-[1]: https://guides.github.com/activities/contributing-to-open-source/#contributing
-[2]: https://github.com/eczarny/spectacle#common-issues
-[3]: https://en.wikipedia.org/wiki/Console_(OS_X)
+By contributing you agree that your contributions are licensed under the project's MIT license (see LICENSE.md). The original code is copyright © Eric Czarny.

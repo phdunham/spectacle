@@ -5,6 +5,8 @@
 
 @implementation SpectacleScreenDetector
 
+static NSComparisonResult compareCoordinates(CGFloat a, CGFloat b);
+
 - (SpectacleScreenDetectionResult *)screenWithAction:(SpectacleWindowAction *)action
                               frontmostWindowElement:(SpectacleAccessibilityElement *)frontmostWindowElement
                                              screens:(NSArray<NSScreen *> *)screens
@@ -51,7 +53,7 @@
 {
   CGRect intersectionOfRectAndFrameOfScreen = CGRectIntersection(rect, frameOfScreen);
   CGFloat result = 0.0f;
-  if (!CGRectIsNull(intersectionOfRectAndFrameOfScreen)) {
+  if (!CGRectIsNull(intersectionOfRectAndFrameOfScreen) && computeAreaOfRect(rect) > 0.0) {
     result = computeAreaOfRect(intersectionOfRectAndFrameOfScreen) / computeAreaOfRect(rect);
   }
   return result;
@@ -96,15 +98,27 @@
     } else if (CGPointEqualToPoint(screenTwo.frame.origin, CGPointMake(0, 0))) {
       return NSOrderedDescending;
     }
-    return (NSComparisonResult)(screenTwo.frame.origin.y - screenOne.frame.origin.y);
+    return compareCoordinates(screenTwo.frame.origin.y, screenOne.frame.origin.y);
   }] sortedArrayWithOptions:NSSortStable usingComparator:^(NSScreen *screenOne, NSScreen *screenTwo) {
     if (CGPointEqualToPoint(screenOne.frame.origin, CGPointMake(0, 0))) {
       return NSOrderedAscending;
     } else if (CGPointEqualToPoint(screenTwo.frame.origin, CGPointMake(0, 0))) {
       return NSOrderedDescending;
     }
-    return (NSComparisonResult)(screenTwo.frame.origin.x - screenOne.frame.origin.x);
+    return compareCoordinates(screenTwo.frame.origin.x, screenOne.frame.origin.x);
   }];
+}
+
+// The original implementation cast the raw difference of two coordinates to NSComparisonResult,
+// which is only defined for -1, 0 and 1 (and truncated fractional differences to "same").
+static NSComparisonResult compareCoordinates(CGFloat a, CGFloat b)
+{
+  if (a < b) {
+    return NSOrderedAscending;
+  } else if (a > b) {
+    return NSOrderedDescending;
+  }
+  return NSOrderedSame;
 }
 
 static CGFloat computeAreaOfRect(CGRect rect)

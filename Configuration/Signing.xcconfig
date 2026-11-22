@@ -1,0 +1,13 @@
+// Code signing defaults: ad-hoc ("Sign to Run Locally"), which needs no Apple account but makes
+// macOS treat every build as a new app, so Accessibility access has to be granted again.
+//
+// For a stable signature, create Configuration/Local.xcconfig (ignored by git) with e.g.:
+//
+//   CODE_SIGN_IDENTITY = Apple Development
+//   DEVELOPMENT_TEAM = <your team ID>
+//
+CODE_SIGN_IDENTITY = -
+CODE_SIGN_STYLE = Manual
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"

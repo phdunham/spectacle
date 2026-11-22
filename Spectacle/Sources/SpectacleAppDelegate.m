@@ -1,9 +1,8 @@
 #import "SpectacleAppDelegate.h"
 
-#import <Sparkle/Sparkle.h>
-
 #import "SpectacleAccessibilityElement.h"
 #import "SpectacleDefaultShortcutHelpers.h"
+#import "SpectacleFilledButton.h"
 #import "SpectacleMigratingShortcutStorage.h"
 #import "SpectaclePreferencesController.h"
 #import "SpectacleScreenDetector.h"
@@ -29,8 +28,34 @@
   BOOL _shortcutsAreDisabledForAnHour;
 }
 
+- (void)awakeFromNib
+{
+  [super awakeFromNib];
+  [self styleAccessibilityAccessDialog];
+}
+
+- (void)styleAccessibilityAccessDialog
+{
+  // Standard push buttons were nearly invisible on the dark dialog in Dark Mode (and macOS 26+
+  // ignores bezelColor), so these buttons paint their own fill: the accent color for the main
+  // action and grey for Quit, both with white titles.
+  self.openSystemSettingsButton.fillColor = NSColor.controlAccentColor;
+  self.quitButton.fillColor = NSColor.systemGrayColor;
+}
+
+static BOOL SpectacleIsRunningUnitTests(void)
+{
+  return NSProcessInfo.processInfo.environment[@"XCTestConfigurationFilePath"] != nil
+    || NSClassFromString(@"XCTestCase") != nil;
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
+  // When hosting the unit tests, do not register global hot keys, install a status item or
+  // block on the accessibility dialog; the tests exercise the components directly.
+  if (SpectacleIsRunningUnitTests()) {
+    return;
+  }
   NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
   NSNotificationCenter *workspaceNotificationCenter = [NSWorkspace sharedWorkspace].notificationCenter;
   [notificationCenter addObserver:self
@@ -94,7 +119,7 @@
   _shortcutManager = [[SpectacleShortcutManager alloc] initWithShortcutStorage:_shortcutStorage];
   SpectacleWindowPositionCalculator *windowPositionCalculator = [[SpectacleWindowPositionCalculator alloc] initWithErrorHandler:^(NSString *errorMessage) {
     NSAlert *alert = [NSAlert new];
-    alert.alertStyle = NSWarningAlertStyle;
+    alert.alertStyle = NSAlertStyleWarning;
     alert.messageText = @"Encountered an unexpected error";
     alert.informativeText = errorMessage;
     [alert runModal];
@@ -108,15 +133,15 @@
   _shortcutsAreDisabledForAnHour = NO;
   [self manageShortcuts];
   [self disableShortcutsIfFrontmostApplicationIsBlacklistedOrDisabled];
-  BOOL automaticallyChecksForUpdates = [userDefaults boolForKey:@"AutomaticUpdateCheckEnabled"];
   BOOL statusItemEnabled = [userDefaults boolForKey:@"StatusItemEnabled"];
   if (statusItemEnabled) {
     [self enableStatusItem];
   }
-  [[SUUpdater sharedUpdater] setAutomaticallyChecksForUpdates:automaticallyChecksForUpdates];
   [self updateShortcutMenuItems];
-  if (!AXIsProcessTrustedWithOptions(NULL)) {
-    [[NSApplication sharedApplication] runModalForWindow:self.accessiblityAccessDialogWindow];
+  // Launch with "-SpectacleShowAccessibilityDialog YES" to see the dialog even when access has
+  // already been granted (useful for checking how it looks).
+  if (!AXIsProcessTrustedWithOptions(NULL) || [userDefaults boolForKey:@"SpectacleShowAccessibilityDialog"]) {
+    [self waitForAccessibilityAccess];
   }
 }
 
@@ -240,12 +265,12 @@
 
 - (IBAction)disableOrEnableShortcutsForAnHour:(id)sender
 {
-  NSInteger newMenuItemState = NSMixedState;
+  NSInteger newMenuItemState = NSControlStateValueMixed;
   if (_shortcutsAreDisabledForAnHour) {
     _shortcutsAreDisabledForAnHour = NO;
     [_disableShortcutsForAnHourTimer invalidate];
     [self enableShortcutsIfPermitted];
-    newMenuItemState = NSOffState;
+    newMenuItemState = NSControlStateValueOff;
   } else {
     _shortcutsAreDisabledForAnHour = YES;
     _disableShortcutsForAnHourTimer = [NSTimer scheduledTimerWithTimeInterval:3600
@@ -254,7 +279,7 @@
                                                                      userInfo:nil
                                                                       repeats:NO];
     [_shortcutManager unregisterShortcuts];
-    newMenuItemState = NSOnState;
+    newMenuItemState = NSControlStateValueOn;
   }
   self.disableShortcutsForAnHourMenuItem.state = newMenuItemState;
 }
@@ -265,25 +290,46 @@
   if ([_disabledApplications containsObject:frontmostApplication.bundleIdentifier]) {
     [_disabledApplications removeObject:frontmostApplication.bundleIdentifier];
     [self enableShortcutsIfPermitted];
-    self.disableShortcutsForApplicationMenuItem.state = NSOffState;
+    self.disableShortcutsForApplicationMenuItem.state = NSControlStateValueOff;
   } else {
     [_disabledApplications addObject:frontmostApplication.bundleIdentifier];
     [_shortcutManager unregisterShortcuts];
-    self.disableShortcutsForApplicationMenuItem.state = NSOnState;
+    self.disableShortcutsForApplicationMenuItem.state = NSControlStateValueOn;
   }
   [NSUserDefaults.standardUserDefaults setObject:_disabledApplications.allObjects forKey:@"DisabledApplications"];
 }
 
 - (IBAction)openSystemPreferences:(id)sender
 {
-  NSURL *preferencePaneURL = [NSURL fileURLWithPath:[SpectacleUtilities pathForPreferencePaneNamed:@"Security"]];
-  NSBundle *applicationBundle = NSBundle.mainBundle;
-  NSURL *scriptURL = [applicationBundle URLForResource:@"Security & Privacy System Preferences" withExtension:@"scpt"];
-  [[NSApplication sharedApplication] stopModal];
-  [self.accessiblityAccessDialogWindow orderOut:self];
-  if (![[[NSAppleScript alloc] initWithContentsOfURL:scriptURL error:nil] executeAndReturnError:nil]) {
-    [[NSWorkspace sharedWorkspace] openURL:preferencePaneURL];
+  // Ask macOS to add Spectacle to the Accessibility list (it will appear switched off), then
+  // open System Settings > Privacy & Security > Accessibility so the user can switch it on.
+  NSDictionary *options = @{(__bridge NSString *)kAXTrustedCheckOptionPrompt: @NO};
+  AXIsProcessTrustedWithOptions((__bridge CFDictionaryRef)options);
+  NSURL *accessibilitySettingsURL =
+    [NSURL URLWithString:@"x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"];
+  [[NSWorkspace sharedWorkspace] openURL:accessibilitySettingsURL];
+}
+
+- (void)waitForAccessibilityAccess
+{
+  // Dismiss the dialog automatically as soon as access is granted in System Settings.
+  NSTimer *timer = [NSTimer timerWithTimeInterval:1.0 repeats:YES block:^(NSTimer *timer) {
+    if (AXIsProcessTrustedWithOptions(NULL)) {
+      [timer invalidate];
+      [[NSApplication sharedApplication] stopModal];
+      [self.accessiblityAccessDialogWindow orderOut:self];
+    }
+  }];
+  if (![NSUserDefaults.standardUserDefaults boolForKey:@"SpectacleShowAccessibilityDialog"]) {
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSModalPanelRunLoopMode];
   }
+  // Spectacle has no Dock icon, so it is not active when launched from Finder; bring the dialog
+  // to the front and make it key so it receives Return/Escape and is drawn as active.
+  [[NSApplication sharedApplication] activate];
+  [self.accessiblityAccessDialogWindow center];
+  [self.accessiblityAccessDialogWindow makeKeyAndOrderFront:self];
+  [[NSApplication sharedApplication] runModalForWindow:self.accessiblityAccessDialogWindow];
+  [timer invalidate];
 }
 
 - (void)dealloc
@@ -310,10 +356,9 @@
   _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
   NSImage *statusImage = [NSBundle.mainBundle imageForResource:@"Spectacle Status Item"];
   [statusImage setTemplate:YES];
-  _statusItem.highlightMode = YES;
-  _statusItem.image = statusImage;
+  _statusItem.button.image = statusImage;
   _statusItem.menu = _statusItemMenu;
-  _statusItem.toolTip = [@"Spectacle " stringByAppendingString:SpectacleUtilities.applicationVersion];
+  _statusItem.button.toolTip = [@"Spectacle " stringByAppendingString:SpectacleUtilities.applicationVersion];
 }
 
 - (void)disableStatusItem
@@ -392,9 +437,9 @@
       [NSString stringWithFormat:NSLocalizedString(@"MenuItemTitleDisableShortcutsForApplication", @"The menu item title that displays the application to disable shortcuts for"), frontmostApplication.localizedName];
   }
   if ([_disabledApplications containsObject:frontmostApplication.bundleIdentifier]) {
-    self.disableShortcutsForApplicationMenuItem.state = NSOnState;
+    self.disableShortcutsForApplicationMenuItem.state = NSControlStateValueOn;
   } else {
-    self.disableShortcutsForApplicationMenuItem.state = NSOffState;
+    self.disableShortcutsForApplicationMenuItem.state = NSControlStateValueOff;
   }
 }
 
@@ -402,7 +447,7 @@
 {
   NSMenuItem *menuItem = notification.userInfo[@"MenuItem"];
   if (menuItem.tag == -1) {
-    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+    [[NSApplication sharedApplication] activate];
   }
 }
 

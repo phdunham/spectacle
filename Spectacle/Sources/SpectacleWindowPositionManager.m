@@ -47,9 +47,14 @@
              windowPositionCalculator:windowPositionCalculator
                       sharedWorkspace:sharedWorkspace
                       failureFeedback:^() { NSBeep(); }
-                          windowMover:[SpectacleStandardWindowMover newWithInnerWindowMover:
-                                       [SpectacleQuantizedWindowMover newWithInnerWindowMover:
-                                        [SpectacleBestEffortWindowMover new]]]];
+                          windowMover:[SpectacleWindowPositionManager defaultWindowMover]];
+}
+
++ (id<SpectacleWindowMover>)defaultWindowMover
+{
+  return [SpectacleStandardWindowMover newWithInnerWindowMover:
+          [SpectacleQuantizedWindowMover newWithInnerWindowMover:
+           [SpectacleBestEffortWindowMover new]]];
 }
 
 - (void)moveFrontmostWindowElement:(SpectacleAccessibilityElement *)frontmostWindowElement
@@ -134,18 +139,28 @@
 
 - (void)undoLastWindowAction
 {
-  [self moveWithHistoryItem:[self historyForCurrentApplication].previousHistoryItem
-                     action:kSpectacleWindowActionUndo
-                    screens:[NSScreen screens]
-                 mainScreen:[NSScreen mainScreen]];
+  [self undoLastWindowActionWithScreens:[NSScreen screens] mainScreen:[NSScreen mainScreen]];
 }
 
 - (void)redoLastWindowAction
 {
+  [self redoLastWindowActionWithScreens:[NSScreen screens] mainScreen:[NSScreen mainScreen]];
+}
+
+- (void)undoLastWindowActionWithScreens:(NSArray<NSScreen *> *)screens mainScreen:(NSScreen *)mainScreen
+{
+  [self moveWithHistoryItem:[self historyForCurrentApplication].previousHistoryItem
+                     action:kSpectacleWindowActionUndo
+                    screens:screens
+                 mainScreen:mainScreen];
+}
+
+- (void)redoLastWindowActionWithScreens:(NSArray<NSScreen *> *)screens mainScreen:(NSScreen *)mainScreen
+{
   [self moveWithHistoryItem:[self historyForCurrentApplication].nextHistoryItem
                      action:kSpectacleWindowActionRedo
-                    screens:[NSScreen screens]
-                 mainScreen:[NSScreen mainScreen]];
+                    screens:screens
+                 mainScreen:mainScreen];
 }
 
 - (SpectacleHistory *)historyForCurrentApplication
@@ -169,16 +184,19 @@
                                                                      frontmostWindowElement:historyItem.accessibilityElement
                                                                                     screens:screens
                                                                                  mainScreen:mainScreen];
+  CGRect frameOfScreen = CGRectNull;
   CGRect visibleFrameOfScreen = CGRectNull;
   if (screenDetectionResult.destinationScreen) {
+    frameOfScreen = NSRectToCGRect(screenDetectionResult.destinationScreen.frame);
     visibleFrameOfScreen = NSRectToCGRect(screenDetectionResult.destinationScreen.visibleFrame);
   }
-  if (![self moveWithHistoryItem:historyItem visibleFrameOfScreen:visibleFrameOfScreen action:action]) {
+  if (![self moveWithHistoryItem:historyItem frameOfScreen:frameOfScreen visibleFrameOfScreen:visibleFrameOfScreen action:action]) {
     _failureFeedback();
   }
 }
 
 - (BOOL)moveWithHistoryItem:(SpectacleHistoryItem *)historyItem
+              frameOfScreen:(CGRect)frameOfScreen
        visibleFrameOfScreen:(CGRect)visibleFrameOfScreen
                      action:(SpectacleWindowAction *)action
 {
@@ -191,7 +209,7 @@
     return NO;
   }
   [_windowMover moveWindowRect:windowRect
-                 frameOfScreen:CGRectNull
+                 frameOfScreen:frameOfScreen
           visibleFrameOfScreen:visibleFrameOfScreen
         frontmostWindowElement:frontmostWindowElement
                         action:action];

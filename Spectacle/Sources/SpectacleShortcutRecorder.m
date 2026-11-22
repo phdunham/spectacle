@@ -12,10 +12,10 @@ static const NSTrackingAreaOptions kTrackingAreaOptions = (NSTrackingMouseEntere
                                                            | NSTrackingActiveWhenFirstResponder
                                                            | NSTrackingEnabledDuringMouseDrag);
 
-static const NSEventModifierFlags kCocoaModifierFlagsMask = (NSControlKeyMask
-                                                             | NSAlternateKeyMask
-                                                             | NSShiftKeyMask
-                                                             | NSCommandKeyMask);
+static const NSEventModifierFlags kCocoaModifierFlagsMask = (NSEventModifierFlagControl
+                                                             | NSEventModifierFlagOption
+                                                             | NSEventModifierFlagShift
+                                                             | NSEventModifierFlagCommand);
 
 @implementation SpectacleShortcutRecorder
 {
@@ -29,6 +29,7 @@ static const NSEventModifierFlags kCocoaModifierFlagsMask = (NSControlKeyMask
 - (instancetype)initWithFrame:(NSRect)frame
 {
   if (self = [super initWithFrame:frame]) {
+    self.clipsToBounds = YES;
     [self _updateTrackingArea];
   }
   return self;
@@ -140,8 +141,20 @@ static const NSEventModifierFlags kCocoaModifierFlagsMask = (NSControlKeyMask
   [self setNeedsDisplay:YES];
 }
 
-- (void)drawRect:(NSRect)rect
+- (void)awakeFromNib
 {
+  [super awakeFromNib];
+  // Since macOS 14 views no longer clip their drawing to their bounds by default.
+  self.clipsToBounds = YES;
+}
+
+- (void)drawRect:(NSRect)dirtyRect
+{
+  // Always draw the whole control from its bounds. The rect passed to drawRect: is only the
+  // area that needs redrawing; on macOS 14 and later it can be far larger than this view (it is
+  // no longer clipped to the bounds), and using it as the control's shape painted a huge rounded
+  // rectangle over the whole Preferences window.
+  NSRect rect = self.bounds;
   CGFloat radius = NSHeight(rect) / 2.0f;
   [self _drawBorderInRect:rect withRadius:radius];
   [self _drawBackgroundInRect:rect withRadius:radius];
@@ -198,7 +211,7 @@ static const NSEventModifierFlags kCocoaModifierFlagsMask = (NSControlKeyMask
   NSBezierPath *roundedPath = [NSBezierPath bezierPathWithRoundedRect:rect xRadius:radius yRadius:radius];
   [NSGraphicsContext.currentContext saveGraphicsState];
   [roundedPath addClip];
-  [[NSColor windowFrameColor] set];
+  [[NSColor separatorColor] set];
   [NSBezierPath fillRect:rect];
   [NSGraphicsContext.currentContext restoreGraphicsState];
 }
@@ -332,7 +345,7 @@ static NSMutableDictionary<NSString *, id> *stringAttributesWithShadow(void)
   NSShadow *textShadow = [NSShadow new];
   NSMutableDictionary<NSString *, id> *stringAttributes = [NSMutableDictionary new];
   paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
-  paragraphStyle.alignment = NSCenterTextAlignment;
+  paragraphStyle.alignment = NSTextAlignmentCenter;
   textShadow.shadowColor = [NSColor whiteColor];
   textShadow.shadowOffset = NSMakeSize(0.0f, -1.0);
   textShadow.shadowBlurRadius = 0.0f;
