@@ -9,10 +9,16 @@ Easily organize windows without using a mouse.
 Changes from upstream Spectacle 1.2 (this fork is version 1.3.0):
 
 - Builds with current Xcode and the macOS SDK; requires **macOS 14 Sonoma or later** (tested on macOS 27).
-- No third-party dependencies: Carthage, Sparkle (whose update feed no longer exists), Specta, Expecta, OCHamcrest and OCMockito were removed. The tests use XCTest.
+- No third-party dependencies: Carthage, Sparkle (whose update feed no longer exists), Specta, Expecta, OCHamcrest and OCMockito were removed.
+- **Rewritten in Swift 6** (complete concurrency checking); no Objective-C, JavaScript or `.xib` files remain:
+  - the window layout math (`WindowLayout.swift`) replaced JavaScript run through JavaScriptCore, and was checked against the old JavaScript on 640,000 random cases with identical results;
+  - Preferences and the permission dialog are SwiftUI; the menu-bar menu is built in code; the shortcut recorder and the System Settings illustration are AppKit views (SwiftUI can't capture raw key presses);
+  - global shortcuts still use Carbon's `RegisterEventHotKey`, the only way to get system-wide hot keys without extra permissions;
+  - the translations (Spanish, Finnish, French, Italian, Portuguese) moved from the `.xib` string files into each language's `Localizable.strings`.
+- Tests are Swift Testing, carrying over every expectation of the original specs (including all 105 original window calculation results and 412 key binding/translation checks).
 - The Xcode project is generated from `project.yml` with [XcodeGen](https://github.com/yonaskolb/XcodeGen).
 - Fixed: windows of many apps (Chrome and other Chromium/Electron apps, Microsoft Office, Firefox, ...) ending up at the wrong size or position for Fullscreen, Left Half, etc. Spectacle now turns off the app's `AXEnhancedUserInterface` setting while it resizes the window, then turns it back on.
-- Fixed: changing a shortcut in Preferences, or using "Restore Defaults", disabled that shortcut until Spectacle was restarted.
+- Fixed: changing a shortcut in Preferences, or using "Restore Defaults", disabled that shortcut until Spectacle was restarted; clearing a shortcut and recording a new one left it without an action.
 - "Launch Spectacle at login" uses `SMAppService` (the old API stopped working on macOS 13).
 - The accessibility prompt opens System Settings > Privacy & Security > Accessibility and closes itself once access is granted. Its buttons are now easy to see in Light and Dark Mode (blue "Open System Settings", grey "Quit Spectacle"; Return opens Settings, Escape quits). The old macOS 10.14 screenshot is replaced by a drawing of the current System Settings > Privacy & Security > Accessibility page, which switches between Light and Dark Mode with the system. To preview the dialog when access is already granted, run `open /Applications/Spectacle.app --args -SpectacleShowAccessibilityDialog YES`.
 - Fixed: on macOS 14 and later the Preferences window was covered by a huge white rounded shape, because the shortcut fields drew outside their own bounds.
@@ -135,18 +141,21 @@ Rectangle, Magnet and similar apps use many of the same default shortcuts (⌥�
 
     $ xcodebuild test -project Spectacle.xcodeproj -scheme Spectacle -derivedDataPath build/DerivedData
 
-The suite (`SpectacleTests/`) covers:
+The tests (`SpectacleTests/`, Swift Testing) cover:
 
-- every window calculation (halves, quarters, thirds, center, fullscreen, larger/smaller, next/previous display) and the cycling between 1/2, 2/3 and 1/3, on many screen sizes;
-- the full move flow (screen detection, coordinate conversion, calculation, window movers) for every placement action on every display of several multi-display layouts, including displays above, below and left of the main one, a portrait display, Dock positions and a notched menu bar;
-- windows that resist resizing (minimum sizes, Terminal-style size increments);
-- undo/redo history, kept separately per app;
-- shortcut parsing, display strings, storage, migration and registration;
-- Light and Dark Mode: the accessibility dialog and the Preferences window are loaded from their real nibs and checked for readable label colors, the default button, standard button styling, and shortcut fields that never draw outside their own bounds.
+- every window calculation, with every result of the original specs (`OriginalLayoutExpectationTests.swift`) and properties checked on many screen sizes: results inside the screen on whole points, halves tiling the screen, quarters in the corners, 1/2 → 2/3 → 1/3 cycling, thirds, larger/smaller and moving between displays (`WindowLayoutTests.swift`);
+- coordinate conversion, undo history, screen detection and the window movers, including windows that resist resizing (minimum sizes, Terminal-style size steps) (`WindowPipelineTests.swift`);
+- what a shortcut does end to end, for every placement action on every display of seven display layouts (displays above, below and left of the main one, a portrait display, Dock positions, a notched menu bar), plus failure beeps, undo/redo and per-app history (`WindowPositionManagerTests.swift`);
+- shortcuts: key bindings and symbols (`KeyBindingAndTranslationTests.swift`), the shortcut model, defaults, storage and migration, hot key registration and validation (`ShortcutTests.swift`);
+- the interface, in Light and Dark Mode: the permission dialog's buttons and texts, the System Settings illustration, the shortcut recorder (including that it never draws outside its bounds), Preferences, the status menu, and when shortcuts are switched off (`InterfaceTests.swift`).
 
-One live test moves a real TextEdit window through the Accessibility API. It is skipped by default. To run it, give the test host (`build/DerivedData/Build/Products/Debug/Spectacle.app`) Accessibility access, then run:
+Two optional tests are skipped unless you ask for them:
 
-    $ TEST_RUNNER_SPECTACLE_LIVE_TESTS=1 xcodebuild test -project Spectacle.xcodeproj -scheme Spectacle -derivedDataPath build/DerivedData -only-testing:SpectacleTests/SpectacleLiveAccessibilityTests
+- `LiveAccessibilityTests` moves a real TextEdit window through the Accessibility API. Give the test host (`build/DerivedData/Build/Products/Debug/Spectacle.app`) Accessibility access, then run:
+
+      $ TEST_RUNNER_SPECTACLE_LIVE_TESTS=1 xcodebuild test -project Spectacle.xcodeproj -scheme Spectacle -derivedDataPath build/DerivedData
+
+- Snapshots: `TEST_RUNNER_SPECTACLE_SNAPSHOT_DIR=/some/folder` writes PNGs of the System Settings illustration in Light and Dark Mode.
 
 # License
 
