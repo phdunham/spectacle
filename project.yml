@@ -24,18 +24,9 @@ configFiles:
 settings:
   base:
     MACOSX_DEPLOYMENT_TARGET: "14.0"
-    CLANG_ENABLE_OBJC_ARC: YES
-    CLANG_ENABLE_MODULES: YES
-    GCC_C_LANGUAGE_STANDARD: gnu17
-    CLANG_WARN_STRICT_PROTOTYPES: YES
-    CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF: YES
-    CLANG_WARN_COMMA: YES
-    CLANG_WARN_UNREACHABLE_CODE: YES
-    GCC_WARN_UNDECLARED_SELECTOR: YES
-    GCC_WARN_UNUSED_FUNCTION: YES
-    GCC_WARN_UNUSED_VARIABLE: YES
-    GCC_WARN_64_TO_32_BIT_CONVERSION: YES
-    ENABLE_STRICT_OBJC_MSGSEND: YES
+    # The app and its tests are Swift 6 with complete concurrency checking.
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
   configs:
     Debug:
       ONLY_ACTIVE_ARCH: YES
@@ -46,15 +37,9 @@ targets:
     platform: macOS
     sources:
       - path: Spectacle/Sources
-      - path: Spectacle/Supporting Files
-        excludes:
-          - Info.plist
       - path: Spectacle/Resources/Images.xcassets
       - path: Spectacle/Resources/Localizations
       - path: Spectacle/Resources/Property Lists
-      - path: Spectacle/Resources/Window Position Calculations
-        type: folder
-        buildPhase: resources
     settings:
       base:
         PRODUCT_NAME: Spectacle
@@ -88,7 +73,6 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
         TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Spectacle.app/Contents/MacOS/Spectacle"
         BUNDLE_LOADER: "$(TEST_HOST)"
-        HEADER_SEARCH_PATHS: "$(SRCROOT)/Spectacle/Sources"
 
 schemes:
   Spectacle:

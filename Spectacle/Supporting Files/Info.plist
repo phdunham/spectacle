@@ -26,8 +26,6 @@
 	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>© 2017 Eric Czarny (original, no longer supported). Unofficial fork © 2026 Paul Dunham.</string>
-	<key>NSMainNibFile</key>
-	<string>Spectacle</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

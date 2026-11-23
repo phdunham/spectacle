@@ -36,13 +36,14 @@ Run the whole suite before opening a pull request:
 
     $ xcodebuild test -project Spectacle.xcodeproj -scheme Spectacle -derivedDataPath build/DerivedData
 
-The tests use XCTest and live in `SpectacleTests/`. They run hosted in the app, but Spectacle skips its normal start-up (hot keys, status item, permission dialog) while tests run. Some guidelines:
+The tests use Swift Testing (`import Testing`, `@Test`, `#expect`) and live in `SpectacleTests/`. They run hosted in the app (`@testable import Spectacle`), but Spectacle skips its normal start-up (hot keys, status item, dialogs) while tests run. Some guidelines:
 
-* **Window placement:** add a case to the calculation tests for new math, and to `SpectacleWindowPositionManagerTests` for anything that changes where windows end up. Those tests run the real pipeline with fake screens (`SpectacleFakeScreen`) and fake windows (`SpectacleFakeWindowElement`, which can simulate minimum sizes and size increments).
-* **Coordinates:** expectations are easiest to write in Cocoa coordinates (bottom-left origin, like `NSScreen.visibleFrame`) and convert with `SPTAccessibilityRect`.
-* **Global state:** tests that set `+[SpectacleAccessibilityElement setPrimaryScreenFrameOverride:]` must reset it in `tearDown`. Never write to the user's real defaults or `~/Library/Application Support/Spectacle`; `SpectacleShortcutJSONStorage` accepts a file URL for tests.
-* **Light and Dark Mode:** UI changes should keep `SpectacleAppearanceTests`, `SpectaclePreferencesWindowTests` and `SpectacleAccessibilitySettingsIllustrationTests` passing, and add to them where it makes sense. Prefer system or dynamic colors over fixed ones. Custom views must draw from their own bounds, not the rect passed to `drawRect:` (macOS 14 and later no longer clip views to their bounds by default).
-* **Real windows:** `SpectacleLiveAccessibilityTests` moves a real TextEdit window and is skipped unless you opt in; see the README for how to run it. Run it when you change how windows are moved (`SpectacleAccessibilityElement`, the window movers).
+* **Window placement:** the layout math is in `WindowLayout.swift`; add cases to `WindowLayoutTests.swift`. For anything that changes where windows end up, add to `WindowPositionManagerTests.swift`, which runs the real pipeline with fake screens (`FakeScreen`) and fake windows (`FakeWindow`, which can simulate minimum sizes, size steps, sheets and dialogs). Don't change `OriginalLayoutExpectationTests.swift` unless the layout is meant to change.
+* **Coordinates:** expectations are easiest to write in Cocoa coordinates (bottom-left origin, like `NSScreen.visibleFrame`) and convert with `accessibilityRect(_:primaryHeight:)`.
+* **Parallel tests and global state:** Swift Testing runs tests in parallel. Wrap code that converts coordinates in `withPrimaryScreen(_:_:)`, which sets the primary screen only for the duration of the call. Never write to the user's real defaults or `~/Library/Application Support/Spectacle`: use `UserDefaults(suiteName:)` and `JSONShortcutStorage(fileURL:)`. Unregister any hot keys a test registers.
+* **Light and Dark Mode:** UI changes should keep `InterfaceTests.swift` passing, and add to it where it makes sense. Prefer system or dynamic colors over fixed ones. Custom AppKit views must draw from their bounds, not the rect passed to `draw(_:)` (macOS 14 and later no longer clip views to their bounds by default).
+* **Alerts:** anything that would show a modal alert must let tests replace it (see `PreferencesModel.confirmRestoreDefaults` and `ShortcutRecorder.reportRejectedShortcut`); a modal alert blocks the test run.
+* **Real windows:** run `LiveAccessibilityTests` (see the README) when you change how windows are moved (`AccessibilityElement`, the window movers).
 
 Each bug fix should come with a test that fails without the fix.
 
@@ -55,7 +56,14 @@ Each bug fix should come with a test that fails without the fix.
 
 ## Coding style
 
-Match the existing Objective-C style: two spaces for indentation, braces on their own line for methods, and descriptive names (`SpectacleWindowPositionManager`, `moveFrontmostWindowElement:action:`). New source files go in `Spectacle/Sources/` with a `Spectacle` prefix. Avoid APIs deprecated in the current macOS SDK.
+The app is Swift 6 with complete concurrency checking; keep it free of warnings.
+
+* Two spaces for indentation; Swift API naming.
+* Pure logic (layout math, key bindings) in value types or `enum` namespaces, so it can be tested without AppKit.
+* Anything touching AppKit, the Accessibility API or hot keys is `@MainActor`.
+* User-facing text goes through `NSLocalizedString` or SwiftUI's `LocalizedStringKey`, keyed by the English text, with translations in `Spectacle/Resources/Localizations/*.lproj/Localizable.strings`.
+
+Source files go in `Spectacle/Sources/`. Avoid APIs deprecated in the current macOS SDK.
 
 ## Versioning
 

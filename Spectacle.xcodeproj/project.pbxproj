@@ -7,96 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		013832DA3799CE8E88B114BB /* SpectacleLowerLeftWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EE1748D92C6A127F3281EC /* SpectacleLowerLeftWindowCalculationTests.m */; };
-		038EA457AA762CF3AF09802D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46DE0C226CD5E4D08D3D6F14 /* InfoPlist.strings */; };
-		0ABE9FD8506E2B7CBEB2E6A4 /* SpectacleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E761D04241ADE33B87EB11F3 /* SpectacleAppDelegate.m */; };
-		0C33BDB4A09389A5BDCF34FB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F84D13F62D08975B1D28D54E /* Credits.rtf */; };
-		0E6DFBB668FBD5CDADE3E499 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBCB38E187FD562E9CCAF7FF /* Localizable.strings */; };
-		0F5A0A8B2D4071965B4A58ED /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 568E7270301ED748CAD64ADB /* Credits.rtf */; };
-		0FB09D63855684C5EFE45590 /* SpectacleTestDoubles.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAB93E1C891A7B05EF27EC0 /* SpectacleTestDoubles.m */; };
-		1243B29FD71A3289800F63C1 /* SpectacleRightHalfWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5403CD1C0AA544B0CE94DF3B /* SpectacleRightHalfWindowCalculationTests.m */; };
-		152673E112E5AF86489F92BB /* Window Position Calculations in Resources */ = {isa = PBXBuildFile; fileRef = FE2EB15DB1EE0A762F8FEFCB /* Window Position Calculations */; };
-		153942CBAD70BA455339BC03 /* SpectacleShortcutKeyBindingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DC9FDC20DBC027C67C26B4 /* SpectacleShortcutKeyBindingsTests.m */; };
-		159E10B5834EFE36CEE34261 /* SpectacleLoginItemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F82AE3136BEC22B90A667C /* SpectacleLoginItemHelper.m */; };
-		17B9364A431D6056AC93F98F /* SpectacleScreenDetectionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A0496C6837A1724D339A56D7 /* SpectacleScreenDetectionResult.m */; };
-		18F6623B55151F3B1559CCF5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F2D17CA7600D63984A9B2430 /* Credits.rtf */; };
-		1CC524CFD1833536AB891F4E /* SpectacleTestSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378A932560E4D45C3039945 /* SpectacleTestSupport.m */; };
-		1F42DF8A467D8902CB54F657 /* SpectacleNextDisplayWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EE7380FE01116D4E117EE9 /* SpectacleNextDisplayWindowCalculationTests.m */; };
-		24D1ABD9CB642EC958EC48DB /* SpectacleShortcutUserDefaultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 068BD6AD5D64BA1770CB5498 /* SpectacleShortcutUserDefaultsStorage.m */; };
-		25B15B7D52E583430912054A /* SpectacleTopHalfWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 381132E424CDF887439087BA /* SpectacleTopHalfWindowCalculationTests.m */; };
-		2806AB99A178957A2518A701 /* SpectacleScreenDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD88D46273BBD341279E999 /* SpectacleScreenDetector.m */; };
-		28277A6248B48BA70E3A2F7D /* SpectacleShortcutTranslations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5F2F063AD7AF9159BF59B3 /* SpectacleShortcutTranslations.m */; };
-		287CC19D41EC78F38FB21822 /* SpectacleAccessibilityElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BB7B0AC382F83CD229E540 /* SpectacleAccessibilityElement.m */; };
-		28A410D3584E7B5769EC0DF6 /* SpectacleWindowPositionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E40B1230435E3F6EA9034012 /* SpectacleWindowPositionManagerTests.m */; };
-		28D8A7AD69C8D53ECBFAC3B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B513013E518DF8D418AFE846 /* InfoPlist.strings */; };
-		330019AEE5A21285517A3231 /* SpectaclePreferencesWindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEAF0CE2B62DF85003C0B8E /* SpectaclePreferencesWindowTests.m */; };
-		36699791C7B4DDB19A1FB84D /* SpectacleLiveAccessibilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1149A97EC5A180E629574A /* SpectacleLiveAccessibilityTests.m */; };
-		3912BB3833BABE3684E7311E /* SpectacleSmallerWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C49B5E740E212D6A5AAEA5B /* SpectacleSmallerWindowCalculationTests.m */; };
-		3BEE8E3559C56AE8E700A2DE /* SpectacleShortcutStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CCC5469AA6FF72416A6057 /* SpectacleShortcutStorageTests.m */; };
-		3C3FA157B58504BD469DA002 /* SpectacleShortcutKeyBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C3DC8887C1B8F1F1F5F44D /* SpectacleShortcutKeyBindings.m */; };
-		3C7AFF5280D4948710B70D68 /* SpectacleShortcutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B2E161B895000F66E7AB7 /* SpectacleShortcutTests.m */; };
-		429CBCC17AF093420F6E3FFD /* Spectacle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E73A5840690F24FBC11B8E2 /* Spectacle.xib */; };
-		451AA3C1D5B6B63142711167 /* SpectacleMigratingShortcutStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6D753A16126C657F253A06 /* SpectacleMigratingShortcutStorage.m */; };
-		454E96B7EC472B8D2EEAD93F /* SpectacleHistoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D57CEE65D0277CC2F6E9F367 /* SpectacleHistoryItem.m */; };
-		479AAF659C54BC7B7AD992E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B25AF6213C8E5DA2F6DC5541 /* Localizable.strings */; };
-		4B018F71A00C6F5325378674 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A180F32E30F5FEB5971BDA23 /* Localizable.strings */; };
-		515F1014E6F24795530768FD /* SpectacleWindowPositionCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5F17E38BEA4975FA76E872 /* SpectacleWindowPositionCalculator.m */; };
-		562DBBFFA2648F9FE4210E26 /* SpectacleWindowPositionCalculationRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C45C5539531096231169D3 /* SpectacleWindowPositionCalculationRegistry.m */; };
-		5C92781DB3BA3B35EEEFF21B /* SpectacleBottomHalfWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503DD823DD6E59430F5EB827 /* SpectacleBottomHalfWindowCalculationTests.m */; };
-		64C94FA98C7A0C966D935612 /* SpectacleAppearanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A051B043CB5ADC9A3179DFC /* SpectacleAppearanceTests.m */; };
-		65872E30604070F4C4942686 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17296C3552487A73C67B84E9 /* InfoPlist.strings */; };
-		68FAA04C9667DF495DFC766C /* SpectacleShortcutJSONStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4CFCE77AE75EE167978F4 /* SpectacleShortcutJSONStorage.m */; };
-		759A75D54F5C56C6CD009773 /* SpectacleAccessibilitySettingsIllustration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D06A8A83BECF727C9630092 /* SpectacleAccessibilitySettingsIllustration.m */; };
-		763CB165E2AD61AC53EC0B4D /* SpectacleDefaultShortcutsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5977E08F31D14041140BD103 /* SpectacleDefaultShortcutsTests.m */; };
-		7712A97DF13E215601764CFB /* SpectacleStandardWindowMover.m in Sources */ = {isa = PBXBuildFile; fileRef = 795A6FBA33953A41AB80DBBC /* SpectacleStandardWindowMover.m */; };
-		789A666645D8D5DEBEF003CB /* SpectacleWindowPositionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE9A1E6D8B73E30F7409776 /* SpectacleWindowPositionManager.m */; };
-		7A52DC8363DA80F5B4CFB87A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 422ECFB3AC96BA29A10CF4D4 /* InfoPlist.strings */; };
-		7ADAE9EAAE228C92B6555512 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B55C46EC1117DC45AADA032 /* InfoPlist.strings */; };
-		7D564C17F1DC7EF64F16EEA7 /* SpectacleUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A70E168F3F0619B15A4486 /* SpectacleUtilities.m */; };
-		7E2897B216C4977ACE698D8E /* SpectaclePreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B335B66610B23B0C1E3D187 /* SpectaclePreferencesWindow.xib */; };
-		8119A12E1E7722DBFA746334 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C2A65C2D8FDC521447EA6CD5 /* Credits.rtf */; };
-		83EA318B530463D521AB2A89 /* SpectacleWindowAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7172FA3646CD3FC52697EA14 /* SpectacleWindowAction.m */; };
-		862D52D0DA1B0F855EE1FFF0 /* SpectaclePreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5371F224B104C58300AAE96F /* SpectaclePreferencesController.m */; };
-		87AFABD124F6981C43B9126B /* SpectacleLowerRightWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C063BF7F4654595E5166D7C1 /* SpectacleLowerRightWindowCalculationTests.m */; };
-		932422B8FAEE745AB4D9763A /* SpectacleFullscreenWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C5CE168C726D4CA31473F2 /* SpectacleFullscreenWindowCalculationTests.m */; };
-		9465AFD3342B667D9121B663 /* SpectacleCoordinateConversionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6DA7149392578D18AB9EA4 /* SpectacleCoordinateConversionTests.m */; };
-		9F67B95CB5707CA6DD5AD58D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97B071AAD0DB6CBDC4310C94 /* Localizable.strings */; };
-		A2F385153F2D189F61B4D160 /* SpectacleShortcutRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F665917ADEB15025FAE5707 /* SpectacleShortcutRecorder.m */; };
-		A653DAB701BBBD9F8C6F99FE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9D59C25D4E32CAA6E1D49F15 /* Credits.rtf */; };
-		A671BEA10FAFEE72945CA2A0 /* SpectacleNextThirdWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B9736DC3B7E445E09105CC /* SpectacleNextThirdWindowCalculationTests.m */; };
-		A891F828BC932CD276A599BC /* SpectaclePreviousDisplayWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 278D7325142BA3D362CBFF27 /* SpectaclePreviousDisplayWindowCalculationTests.m */; };
-		A8D65F5CE185B45FE57E3E67 /* SpectacleShortcutHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A741F1B0F3E7976E71174C /* SpectacleShortcutHolder.m */; };
+		07F43C49750DCAA235E433D8 /* WindowHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F25BCAEE3D6D40092CE87 /* WindowHistory.swift */; };
+		10898324FE6A1C9F053ACA67 /* AppSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B4FDC4AC9904378265E39 /* AppSupport.swift */; };
+		158A82EE66375142DC492331 /* WindowMovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC110533C20F32804A5887 /* WindowMovers.swift */; };
+		18872A9B39B713B59975EBD5 /* AccessibilityPermissionWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5318032CC3BFE89615F6463B /* AccessibilityPermissionWindow.swift */; };
+		1C551B228EC78E0096F25C48 /* WindowPositionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A1BB9E2102DDD25A1122F9 /* WindowPositionManager.swift */; };
+		2C8AEE13989437536A4A4EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BD49B5F2050EA484F96F86 /* AppDelegate.swift */; };
+		2D65E845741BF041F9C8DC62 /* StatusMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E3583FB4E3A71C74FC328 /* StatusMenu.swift */; };
+		318D5FA199FC13CE6C1EE79D /* WindowLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE760312B49B961C3BF71F4 /* WindowLayoutTests.swift */; };
+		35DB41E1861FBC107CC9B1E4 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078CAA8ED243BECB60695A5B /* AccessibilityElement.swift */; };
+		37747703521F54C95D58F3E6 /* WindowPositionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165A466BA258FD10FDC312C0 /* WindowPositionManagerTests.swift */; };
+		49AF93469D045C574C3A3A24 /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12093C66FC861FA9781A8E43 /* ShortcutManager.swift */; };
+		57062716DF94317E42BAA0E4 /* ShortcutValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079AF1F1E83DAAAF26705477 /* ShortcutValidation.swift */; };
+		572236B9B2B3CA7E02CF93DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCBA82C6BE35AF4D9C5C9647 /* InfoPlist.strings */; };
+		5DF71AB5A3B57B67D5C97F7C /* WindowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE78AC19316A8BB6197942C2 /* WindowAction.swift */; };
+		6729F2833838BB8B9E105CC6 /* OriginalLayoutExpectationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B715D95E60C65918D68DF /* OriginalLayoutExpectationTests.swift */; };
+		67F128088EDE083C09DB1B6A /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA23927210DDD1A7CE62B7A /* TestSupport.swift */; };
+		7868F74F48749B2F34DDE827 /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D40F04181410B021900E3F5 /* Shortcut.swift */; };
+		7DAC3F8D32871DD5236A75EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3C5E4412FC06AEFF9F11E67 /* Localizable.strings */; };
+		81574F79A236244990D0CBE7 /* ScreenDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F9D7360E49E1B10E93ECF /* ScreenDetector.swift */; };
+		87D58FD9FD9CAB62E2A420CF /* WindowPipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA27E4A2C452B43CF9062C0 /* WindowPipelineTests.swift */; };
+		A475736FFB646BF43D4761E5 /* KeyBindingAndTranslationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7315F7D2DEB9468E3DC8DEA9 /* KeyBindingAndTranslationTests.swift */; };
+		A4F73489260200CD1657B253 /* KeyTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBE4CF3AD818111209496FC /* KeyTranslation.swift */; };
+		ACA4222D9D5558F46BAB3DC7 /* LiveAccessibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C49719EB187AC1F51744A /* LiveAccessibilityTests.swift */; };
 		ACD001137F7B2834EED6021D /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2E3CA8D6AD3457988A9F23 /* Defaults.plist */; };
-		B236F777023CA6E3A6D97E0D /* SpectacleShortcutValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = D64640ED6ABF7C4E60E64714 /* SpectacleShortcutValidation.m */; };
-		B4B9EE4C1B8DAE4EF6AA1548 /* SpectacleFilledButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3B7161BADFF66C17062AC6 /* SpectacleFilledButton.m */; };
-		B8DB693F3C2360F2717395E8 /* SpectacleLargerWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC05D34BEC80BBB7ECCFAA16 /* SpectacleLargerWindowCalculationTests.m */; };
-		BB4F13986800852FEB8C2EB6 /* SpectacleWindowPositionCalculationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0559935A0069D655DE47C5B6 /* SpectacleWindowPositionCalculationResult.m */; };
-		BF17372A2151F7A13FCCDE68 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF406A1BE250E4F53A89B887 /* Localizable.strings */; };
-		C7E106C54E4ED56706FF39B9 /* SpectacleHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2DC0C0F99AE2AB5DEB07A8 /* SpectacleHistory.m */; };
-		C9C2BC3E50822ACA0C97D7DB /* SpectacleShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF61A90D40C8528F14A984A /* SpectacleShortcut.m */; };
-		CDA021800B2EFE7080F8ED16 /* SpectacleShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3BA4093F950AC201A091E /* SpectacleShortcutManager.m */; };
-		D215FFDDE3F6FEEA1CE2C958 /* SpectacleAccessibilitySettingsIllustrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26178FE7CC4D9FFF0F8CEF /* SpectacleAccessibilitySettingsIllustrationTests.m */; };
-		D53564429F2D33F1BF633733 /* SpectacleRegisteredShortcutValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C3FB96627FD109E6BE5050 /* SpectacleRegisteredShortcutValidator.m */; };
-		D6030D2D0B1305CE63E9D8BF /* SpectacleScreenDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 449E090526395AAB8A5FC0A9 /* SpectacleScreenDetectorTests.m */; };
-		D7B03A241259AC3AEB2165AC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C11831247BC4D72392434BAA /* Credits.rtf */; };
-		D9532EF986A213B122758519 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B88B6947E8663E33252B3C6B /* InfoPlist.strings */; };
-		DC5109C85867058C03077F14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3363B8D408617CE2E2802F /* main.m */; };
-		DC6264C7188F0625289D498F /* SpectacleBestEffortWindowMover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB51813980A6E8DC9A0D7F /* SpectacleBestEffortWindowMover.m */; };
+		B4F0771FC0D71907069CE778 /* ShortcutRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391E4EF519E106BFEAA50426 /* ShortcutRecorder.swift */; };
+		BB78175EA4BA4A18045D8464 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1DB75936BFA463585A30F5CF /* Credits.rtf */; };
+		CB1EACACE296F5181EB82F8D /* ShortcutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDDC71435C51DB8CDA4E3DA /* ShortcutTests.swift */; };
+		CE8AAA87FA0E2374896F922C /* InterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107475B0521594B9109F7F8 /* InterfaceTests.swift */; };
+		D51B464AEE705EC1D57F2CC7 /* KeyBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B240CA1403881FC0177854 /* KeyBinding.swift */; };
+		D7116CDA39E5F516EC12200A /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD375F43169D1C09E5C1B8C /* PreferencesWindow.swift */; };
+		D72D47E2ACAC43438DF92C66 /* WindowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4429F501C91FA5F2CC40C1 /* WindowLayout.swift */; };
+		DA70F8B98CED5310F03D7DC2 /* ShortcutStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E7B0D029B47D95640346B3 /* ShortcutStorage.swift */; };
 		DF5A98BB0C1E2DFCAF8A5B99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CA33B4B80EB5BE5BE50E2F /* Images.xcassets */; };
-		DFC901EE7F2CE9B937FC4699 /* SpectacleCenterWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FC0E47D23D9EE1AC4633C4 /* SpectacleCenterWindowCalculationTests.m */; };
-		E15DEBBFD9525335D178FA1C /* SpectacleShortcutTranslationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 080C2DC40068883D803EDC43 /* SpectacleShortcutTranslationsTests.m */; };
-		E178211143375CA3D97EA009 /* SpectacleHistoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76994CDAC86B02C2486236F2 /* SpectacleHistoryTests.m */; };
-		E22C2E6D4BD7C9FB60C5A5E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C93F393D7623E6DF235C5ED8 /* Localizable.strings */; };
-		E235A00F05B90FD49A6D9292 /* SpectacleUpperLeftWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC1DCF27D9469F485EDDDD4 /* SpectacleUpperLeftWindowCalculationTests.m */; };
-		EA6F84E8EA4D2D2E7893F8C3 /* SpectacleWindowMoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE24B3CE41A90D6053DBDB /* SpectacleWindowMoverTests.m */; };
-		ECDF0F2DCBBF1DAF78CE9C54 /* SpectacleDefaultShortcutHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F681CEDE9C2A6AD30515F2 /* SpectacleDefaultShortcutHelpers.m */; };
-		EE930283B5B57E0F086957F6 /* SpectacleUpperRightWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4254A78322CAA32013B86A1 /* SpectacleUpperRightWindowCalculationTests.m */; };
-		F11AEBCEFAEC285613D43CE7 /* SpectacleQuantizedWindowMover.m in Sources */ = {isa = PBXBuildFile; fileRef = 17559C60868F19637B80F897 /* SpectacleQuantizedWindowMover.m */; };
-		F7F79B2FE3E5BE94A02BEB41 /* SpectacleWindowCalculationInvariantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E660B462413B8F2A53EE5 /* SpectacleWindowCalculationInvariantTests.m */; };
-		F91DEBF286E418A88C232952 /* SpectaclePreviousThirdWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DFB59DE443E5EF728C1A2 /* SpectaclePreviousThirdWindowCalculationTests.m */; };
-		FC62F0BC6CE2624B8E2593C5 /* SpectacleShortcutManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAAEC41CE31F340636AE5D8 /* SpectacleShortcutManagerTests.m */; };
-		FD039797E4FE60F2E1FAC9F4 /* SpectacleLeftHalfWindowCalculationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 080942810E668402D46B8088 /* SpectacleLeftHalfWindowCalculationTests.m */; };
-		FEF2A3FE87C3176005DF3990 /* SpectacleJavaScriptEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6340C41F42C3C8BF89E34655 /* SpectacleJavaScriptEnvironment.m */; };
+		EED2BFE34E2211A15C649089 /* AccessibilitySettingsIllustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447C7F1A1B023E8526EFFAD2 /* AccessibilitySettingsIllustration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,197 +56,71 @@
 /* Begin PBXFileReference section */
 		0163BA6F360106FEFF836B38 /* Spectacle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spectacle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CA33B4B80EB5BE5BE50E2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		043B101E2C580D1E86CF3131 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
-		0559935A0069D655DE47C5B6 /* SpectacleWindowPositionCalculationResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowPositionCalculationResult.m; sourceTree = "<group>"; };
-		068BD6AD5D64BA1770CB5498 /* SpectacleShortcutUserDefaultsStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutUserDefaultsStorage.m; sourceTree = "<group>"; };
-		080942810E668402D46B8088 /* SpectacleLeftHalfWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLeftHalfWindowCalculationTests.m; sourceTree = "<group>"; };
-		080C2DC40068883D803EDC43 /* SpectacleShortcutTranslationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutTranslationsTests.m; sourceTree = "<group>"; };
-		0849527FDA60FDDF9A2299A9 /* SpectacleShortcut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcut.h; sourceTree = "<group>"; };
-		0AA7527A8D9A72E8BFFB91ED /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
-		0C1149A97EC5A180E629574A /* SpectacleLiveAccessibilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLiveAccessibilityTests.m; sourceTree = "<group>"; };
-		0C57324634C4A480FD55C9FD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
-		0CF4CFCE77AE75EE167978F4 /* SpectacleShortcutJSONStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutJSONStorage.m; sourceTree = "<group>"; };
-		0DD3BA4093F950AC201A091E /* SpectacleShortcutManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutManager.m; sourceTree = "<group>"; };
-		0E969837671C95835B5F5D50 /* SpectacleJavaScriptEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleJavaScriptEnvironment.h; sourceTree = "<group>"; };
-		0F665917ADEB15025FAE5707 /* SpectacleShortcutRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutRecorder.m; sourceTree = "<group>"; };
-		10949450B9E3A92AFBB88A9D /* SpectacleScreenDetectionResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleScreenDetectionResult.h; sourceTree = "<group>"; };
-		10C3DC8887C1B8F1F1F5F44D /* SpectacleShortcutKeyBindings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutKeyBindings.m; sourceTree = "<group>"; };
-		17296C3552487A73C67B84E9 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		17559C60868F19637B80F897 /* SpectacleQuantizedWindowMover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleQuantizedWindowMover.m; sourceTree = "<group>"; };
-		19026AEA4E65D1167774548B /* SpectacleQuantizedWindowMover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleQuantizedWindowMover.h; sourceTree = "<group>"; };
-		1F26178FE7CC4D9FFF0F8CEF /* SpectacleAccessibilitySettingsIllustrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleAccessibilitySettingsIllustrationTests.m; sourceTree = "<group>"; };
-		22ACE3786CE832929BA27435 /* SpectacleWindowMover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowMover.h; sourceTree = "<group>"; };
-		2378A932560E4D45C3039945 /* SpectacleTestSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleTestSupport.m; sourceTree = "<group>"; };
-		25C074D423AB8EEA90E6C8D9 /* SpectacleHistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleHistory.h; sourceTree = "<group>"; };
-		278D7325142BA3D362CBFF27 /* SpectaclePreviousDisplayWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectaclePreviousDisplayWindowCalculationTests.m; sourceTree = "<group>"; };
-		2D5F2F063AD7AF9159BF59B3 /* SpectacleShortcutTranslations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutTranslations.m; sourceTree = "<group>"; };
-		2E3E660B462413B8F2A53EE5 /* SpectacleWindowCalculationInvariantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowCalculationInvariantTests.m; sourceTree = "<group>"; };
-		381132E424CDF887439087BA /* SpectacleTopHalfWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleTopHalfWindowCalculationTests.m; sourceTree = "<group>"; };
-		3D06A8A83BECF727C9630092 /* SpectacleAccessibilitySettingsIllustration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleAccessibilitySettingsIllustration.m; sourceTree = "<group>"; };
-		422ECFB3AC96BA29A10CF4D4 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		43C45C5539531096231169D3 /* SpectacleWindowPositionCalculationRegistry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowPositionCalculationRegistry.m; sourceTree = "<group>"; };
-		449E090526395AAB8A5FC0A9 /* SpectacleScreenDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleScreenDetectorTests.m; sourceTree = "<group>"; };
-		44C5CE168C726D4CA31473F2 /* SpectacleFullscreenWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleFullscreenWindowCalculationTests.m; sourceTree = "<group>"; };
-		4593C0E36D557B2B426D31E7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Spectacle.strings; sourceTree = "<group>"; };
-		46DE0C226CD5E4D08D3D6F14 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		48CC5ADA3F1F12BDFEC61F60 /* SpectacleTestDoubles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleTestDoubles.h; sourceTree = "<group>"; };
-		4BAAEC41CE31F340636AE5D8 /* SpectacleShortcutManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutManagerTests.m; sourceTree = "<group>"; };
-		4BCB0A3E184CD8DA22F47180 /* SpectacleShortcutRecorderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutRecorderDelegate.h; sourceTree = "<group>"; };
-		4BEAF0CE2B62DF85003C0B8E /* SpectaclePreferencesWindowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectaclePreferencesWindowTests.m; sourceTree = "<group>"; };
-		4D668DB0DBC2B6A12CF5CF0A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Spectacle.strings; sourceTree = "<group>"; };
-		503DD823DD6E59430F5EB827 /* SpectacleBottomHalfWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleBottomHalfWindowCalculationTests.m; sourceTree = "<group>"; };
-		5371F224B104C58300AAE96F /* SpectaclePreferencesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectaclePreferencesController.m; sourceTree = "<group>"; };
-		5403CD1C0AA544B0CE94DF3B /* SpectacleRightHalfWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleRightHalfWindowCalculationTests.m; sourceTree = "<group>"; };
-		54489635299FB83852061B49 /* SpectacleFilledButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleFilledButton.h; sourceTree = "<group>"; };
-		568E7270301ED748CAD64ADB /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = pt.lproj/Credits.rtf; sourceTree = "<group>"; };
-		570B4F28D096386390FD5E62 /* SpectacleShortcutJSONStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutJSONStorage.h; sourceTree = "<group>"; };
-		5977E08F31D14041140BD103 /* SpectacleDefaultShortcutsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleDefaultShortcutsTests.m; sourceTree = "<group>"; };
-		5BBE83A3A22BE7054590CCAC /* SpectacleMigratingShortcutStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleMigratingShortcutStorage.h; sourceTree = "<group>"; };
-		5E2DC0C0F99AE2AB5DEB07A8 /* SpectacleHistory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleHistory.m; sourceTree = "<group>"; };
-		5EB6EF12A0BEE8167E72A8AF /* SpectacleLoginItemHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleLoginItemHelper.h; sourceTree = "<group>"; };
-		60EE7380FE01116D4E117EE9 /* SpectacleNextDisplayWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleNextDisplayWindowCalculationTests.m; sourceTree = "<group>"; };
-		62C9042D0C2E232300810424 /* SpectacleShortcutUserDefaultsStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutUserDefaultsStorage.h; sourceTree = "<group>"; };
-		6340C41F42C3C8BF89E34655 /* SpectacleJavaScriptEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleJavaScriptEnvironment.m; sourceTree = "<group>"; };
-		69EE1748D92C6A127F3281EC /* SpectacleLowerLeftWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLowerLeftWindowCalculationTests.m; sourceTree = "<group>"; };
-		6B129BA0DA220573701EB50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Spectacle.xib; sourceTree = "<group>"; };
-		6C3B7161BADFF66C17062AC6 /* SpectacleFilledButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleFilledButton.m; sourceTree = "<group>"; };
-		7172FA3646CD3FC52697EA14 /* SpectacleWindowAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowAction.m; sourceTree = "<group>"; };
-		72C3FB96627FD109E6BE5050 /* SpectacleRegisteredShortcutValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleRegisteredShortcutValidator.m; sourceTree = "<group>"; };
-		75CA60E504AE652FBD0633BD /* SpectacleHistoryItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleHistoryItem.h; sourceTree = "<group>"; };
-		76994CDAC86B02C2486236F2 /* SpectacleHistoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleHistoryTests.m; sourceTree = "<group>"; };
-		795A6FBA33953A41AB80DBBC /* SpectacleStandardWindowMover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleStandardWindowMover.m; sourceTree = "<group>"; };
-		7C49B5E740E212D6A5AAEA5B /* SpectacleSmallerWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleSmallerWindowCalculationTests.m; sourceTree = "<group>"; };
-		7C87570813A12D5FBCC54870 /* SpectacleShortcutHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutHolder.h; sourceTree = "<group>"; };
-		7EA04214EAB04EE6AD54ACF0 /* SpectacleStandardWindowMover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleStandardWindowMover.h; sourceTree = "<group>"; };
-		8A051B043CB5ADC9A3179DFC /* SpectacleAppearanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleAppearanceTests.m; sourceTree = "<group>"; };
-		8DCB51813980A6E8DC9A0D7F /* SpectacleBestEffortWindowMover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleBestEffortWindowMover.m; sourceTree = "<group>"; };
-		90189DEFFCF4DAD7B582E74B /* SpectacleTestSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleTestSupport.h; sourceTree = "<group>"; };
-		90FC0E47D23D9EE1AC4633C4 /* SpectacleCenterWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleCenterWindowCalculationTests.m; sourceTree = "<group>"; };
-		97B071AAD0DB6CBDC4310C94 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9B55C46EC1117DC45AADA032 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9C4B2E161B895000F66E7AB7 /* SpectacleShortcutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutTests.m; sourceTree = "<group>"; };
-		9C6F68F65F087C4B1345380C /* SpectacleShortcutStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutStorage.h; sourceTree = "<group>"; };
-		9D59C25D4E32CAA6E1D49F15 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
-		9ECB1E914180C6DDBCA22461 /* SpectacleWindowPositionCalculationRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowPositionCalculationRegistry.h; sourceTree = "<group>"; };
-		A0496C6837A1724D339A56D7 /* SpectacleScreenDetectionResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleScreenDetectionResult.m; sourceTree = "<group>"; };
-		A05D582E80CB51CA95D3AA14 /* SpectacleShortcutRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutRecorder.h; sourceTree = "<group>"; };
-		A180F32E30F5FEB5971BDA23 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A28C6BB2409F08D685B460F9 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Spectacle.strings; sourceTree = "<group>"; };
-		A4FFD5A5D62EC5FB1EC1D061 /* SpectacleWindowPositionCalculationResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowPositionCalculationResult.h; sourceTree = "<group>"; };
-		A72DFB59DE443E5EF728C1A2 /* SpectaclePreviousThirdWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectaclePreviousThirdWindowCalculationTests.m; sourceTree = "<group>"; };
-		AAD88D46273BBD341279E999 /* SpectacleScreenDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleScreenDetector.m; sourceTree = "<group>"; };
+		078CAA8ED243BECB60695A5B /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
+		079AF1F1E83DAAAF26705477 /* ShortcutValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutValidation.swift; sourceTree = "<group>"; };
+		0D40F04181410B021900E3F5 /* Shortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcut.swift; sourceTree = "<group>"; };
+		12093C66FC861FA9781A8E43 /* ShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
+		165A466BA258FD10FDC312C0 /* WindowPositionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowPositionManagerTests.swift; sourceTree = "<group>"; };
+		1F5C8B7BADC45A0B125D80B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		202C268216B8316FEED2F8DD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27F10555EA3967A63B644F0D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = es; path = es.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2FA27E4A2C452B43CF9062C0 /* WindowPipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowPipelineTests.swift; sourceTree = "<group>"; };
+		31BD49B5F2050EA484F96F86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36FA430FE78BD1D71BB43659 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		391E4EF519E106BFEAA50426 /* ShortcutRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutRecorder.swift; sourceTree = "<group>"; };
+		3C95DC7D03E4F46060C7F2B8 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3D7372CDBE5BC7841A08D0DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DDDC71435C51DB8CDA4E3DA /* ShortcutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutTests.swift; sourceTree = "<group>"; };
+		3F4429F501C91FA5F2CC40C1 /* WindowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowLayout.swift; sourceTree = "<group>"; };
+		42A1BB9E2102DDD25A1122F9 /* WindowPositionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowPositionManager.swift; sourceTree = "<group>"; };
+		43D7C9E4BCEA25285D213A57 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		447C7F1A1B023E8526EFFAD2 /* AccessibilitySettingsIllustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySettingsIllustration.swift; sourceTree = "<group>"; };
+		47BC110533C20F32804A5887 /* WindowMovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowMovers.swift; sourceTree = "<group>"; };
+		4C1F25BCAEE3D6D40092CE87 /* WindowHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHistory.swift; sourceTree = "<group>"; };
+		5318032CC3BFE89615F6463B /* AccessibilityPermissionWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityPermissionWindow.swift; sourceTree = "<group>"; };
+		552377D093AB8951A628DA04 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = it; path = it.lproj/Credits.rtf; sourceTree = "<group>"; };
+		596B715D95E60C65918D68DF /* OriginalLayoutExpectationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalLayoutExpectationTests.swift; sourceTree = "<group>"; };
+		5D7F9D7360E49E1B10E93ECF /* ScreenDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDetector.swift; sourceTree = "<group>"; };
+		5E1C815CC026FE78617C2BCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		639601935A151024B58F2793 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72E7B0D029B47D95640346B3 /* ShortcutStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutStorage.swift; sourceTree = "<group>"; };
+		7315F7D2DEB9468E3DC8DEA9 /* KeyBindingAndTranslationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBindingAndTranslationTests.swift; sourceTree = "<group>"; };
+		742C222F20EA15B42C47A7C7 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7CE760312B49B961C3BF71F4 /* WindowLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowLayoutTests.swift; sourceTree = "<group>"; };
+		8107475B0521594B9109F7F8 /* InterfaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceTests.swift; sourceTree = "<group>"; };
+		8DBE4CF3AD818111209496FC /* KeyTranslation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyTranslation.swift; sourceTree = "<group>"; };
+		8F6B4FDC4AC9904378265E39 /* AppSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSupport.swift; sourceTree = "<group>"; };
+		912C3A0EF6FEEBF5333B2747 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = pt; path = pt.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9B801B44717F1030C2CCAEE7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9DD375F43169D1C09E5C1B8C /* PreferencesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		9FEBC2C90FC126AE9FF7F3A4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A61E3583FB4E3A71C74FC328 /* StatusMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenu.swift; sourceTree = "<group>"; };
 		ADAB76DE9E7DBAB460FB6BDA /* SpectacleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectacleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE3363B8D408617CE2E2802F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF2E3CA8D6AD3457988A9F23 /* Defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Defaults.plist; sourceTree = "<group>"; };
-		AFF61A90D40C8528F14A984A /* SpectacleShortcut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcut.m; sourceTree = "<group>"; };
-		B25AF6213C8E5DA2F6DC5541 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B25D5033DF66EFDA6E79A4B3 /* SpectacleDefaultShortcutHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleDefaultShortcutHelpers.h; sourceTree = "<group>"; };
-		B4254A78322CAA32013B86A1 /* SpectacleUpperRightWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleUpperRightWindowCalculationTests.m; sourceTree = "<group>"; };
-		B513013E518DF8D418AFE846 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B5DBA44F9C92A705A07FBC40 /* SpectacleShortcutManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutManager.h; sourceTree = "<group>"; };
-		B88B6947E8663E33252B3C6B /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B961121E4EFB5D3110B01C8B /* SpectacleShortcutTranslations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutTranslations.h; sourceTree = "<group>"; };
-		BA1531A02E9884B287E4E39C /* SpectacleAccessibilityElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleAccessibilityElement.h; sourceTree = "<group>"; };
-		BBAB93E1C891A7B05EF27EC0 /* SpectacleTestDoubles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleTestDoubles.m; sourceTree = "<group>"; };
-		BC05D34BEC80BBB7ECCFAA16 /* SpectacleLargerWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLargerWindowCalculationTests.m; sourceTree = "<group>"; };
-		C063BF7F4654595E5166D7C1 /* SpectacleLowerRightWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLowerRightWindowCalculationTests.m; sourceTree = "<group>"; };
-		C07CD4A3D99DD888787C03BC /* SpectacleWindowAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowAction.h; sourceTree = "<group>"; };
-		C0F681CEDE9C2A6AD30515F2 /* SpectacleDefaultShortcutHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleDefaultShortcutHelpers.m; sourceTree = "<group>"; };
-		C11831247BC4D72392434BAA /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C19A9092BAE8942FE3BA88D0 /* SpectacleScreenDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleScreenDetector.h; sourceTree = "<group>"; };
-		C2A65C2D8FDC521447EA6CD5 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = it.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C7A741F1B0F3E7976E71174C /* SpectacleShortcutHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutHolder.m; sourceTree = "<group>"; };
-		C7CCC5469AA6FF72416A6057 /* SpectacleShortcutStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutStorageTests.m; sourceTree = "<group>"; };
-		C93F393D7623E6DF235C5ED8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CC2ACC6B84215E0B50523F36 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
-		CD5F17E38BEA4975FA76E872 /* SpectacleWindowPositionCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowPositionCalculator.m; sourceTree = "<group>"; };
-		CF6D753A16126C657F253A06 /* SpectacleMigratingShortcutStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleMigratingShortcutStorage.m; sourceTree = "<group>"; };
-		CF6DA7149392578D18AB9EA4 /* SpectacleCoordinateConversionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleCoordinateConversionTests.m; sourceTree = "<group>"; };
-		D0A70E168F3F0619B15A4486 /* SpectacleUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleUtilities.m; sourceTree = "<group>"; };
-		D1D5539C658325F6864604F5 /* SpectacleWindowPositionCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowPositionCalculator.h; sourceTree = "<group>"; };
-		D27D6DE9DA55A83B3A759EB4 /* SpectacleShortcutValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutValidator.h; sourceTree = "<group>"; };
-		D2B9736DC3B7E445E09105CC /* SpectacleNextThirdWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleNextThirdWindowCalculationTests.m; sourceTree = "<group>"; };
-		D33193467F0D3A6B328DE343 /* SpectacleShortcutKeyBindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutKeyBindings.h; sourceTree = "<group>"; };
-		D3651AFBA5AF00814BF75215 /* SpectacleUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleUtilities.h; sourceTree = "<group>"; };
-		D3BCE189BDAE014AE1900ADB /* SpectacleShortcutStorageMigrationDestination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutStorageMigrationDestination.h; sourceTree = "<group>"; };
-		D57CEE65D0277CC2F6E9F367 /* SpectacleHistoryItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleHistoryItem.m; sourceTree = "<group>"; };
-		D64640ED6ABF7C4E60E64714 /* SpectacleShortcutValidation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutValidation.m; sourceTree = "<group>"; };
-		D8F82AE3136BEC22B90A667C /* SpectacleLoginItemHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleLoginItemHelper.m; sourceTree = "<group>"; };
-		DAFA49070DBFFEA12B64EEF5 /* SpectacleWindowPositionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleWindowPositionManager.h; sourceTree = "<group>"; };
-		DF0B9761B3D708BAAFAC32F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SpectaclePreferencesWindow.xib; sourceTree = "<group>"; };
-		DF260C5F74AEE1DED5D894E1 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/SpectaclePreferencesWindow.strings; sourceTree = "<group>"; };
-		DF406A1BE250E4F53A89B887 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DFA0AEA63C90762AE46958D2 /* SpectaclePreferencesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectaclePreferencesController.h; sourceTree = "<group>"; };
-		E0AE24B3CE41A90D6053DBDB /* SpectacleWindowMoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowMoverTests.m; sourceTree = "<group>"; };
-		E40B1230435E3F6EA9034012 /* SpectacleWindowPositionManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowPositionManagerTests.m; sourceTree = "<group>"; };
-		E44EAD397F4F36F178FC2693 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Spectacle.strings; sourceTree = "<group>"; };
-		E761D04241ADE33B87EB11F3 /* SpectacleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleAppDelegate.m; sourceTree = "<group>"; };
-		E7DC9FDC20DBC027C67C26B4 /* SpectacleShortcutKeyBindingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleShortcutKeyBindingsTests.m; sourceTree = "<group>"; };
+		BE78AC19316A8BB6197942C2 /* WindowAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowAction.swift; sourceTree = "<group>"; };
+		C6A2D9F30BC472362D1C70F9 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFA23927210DDD1A7CE62B7A /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
+		D24C49719EB187AC1F51744A /* LiveAccessibilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAccessibilityTests.swift; sourceTree = "<group>"; };
+		D2DAEB99976CE47B9DF56B9F /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fi; path = fi.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D9B240CA1403881FC0177854 /* KeyBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBinding.swift; sourceTree = "<group>"; };
+		E0ACE8E03331A36211C3BD10 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EAC961239B0E3DDA6CBD6E99 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
-		EC8C64A8CC08B2FDC51C7A5D /* SpectacleShortcutValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleShortcutValidation.h; sourceTree = "<group>"; };
-		ECE9A1E6D8B73E30F7409776 /* SpectacleWindowPositionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleWindowPositionManager.m; sourceTree = "<group>"; };
-		ED604653CAC4A6F05A0898F5 /* SpectacleMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleMacros.h; sourceTree = "<group>"; };
-		F2D17CA7600D63984A9B2430 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = es.lproj/Credits.rtf; sourceTree = "<group>"; };
-		F6616830EA93F3ACB07CEA0C /* SpectacleBestEffortWindowMover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleBestEffortWindowMover.h; sourceTree = "<group>"; };
-		F6CC8F6B6CB2175E7C229173 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Spectacle.strings; sourceTree = "<group>"; };
-		F7486833C4C67402072D4727 /* SpectacleRegisteredShortcutValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleRegisteredShortcutValidator.h; sourceTree = "<group>"; };
-		F7BB7B0AC382F83CD229E540 /* SpectacleAccessibilityElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleAccessibilityElement.m; sourceTree = "<group>"; };
-		F84D13F62D08975B1D28D54E /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = fi.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FB0942BE90918AF30CC521FB /* SpectacleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleAppDelegate.h; sourceTree = "<group>"; };
-		FBCB38E187FD562E9CCAF7FF /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FD40506FE9CC225F9B702D89 /* SpectacleAccessibilitySettingsIllustration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpectacleAccessibilitySettingsIllustration.h; sourceTree = "<group>"; };
-		FDC1DCF27D9469F485EDDDD4 /* SpectacleUpperLeftWindowCalculationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectacleUpperLeftWindowCalculationTests.m; sourceTree = "<group>"; };
-		FE2EB15DB1EE0A762F8FEFCB /* Window Position Calculations */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Window Position Calculations"; path = "Spectacle/Resources/Window Position Calculations"; sourceTree = SOURCE_ROOT; };
+		EB18BB71BD1873E4DB7C2C46 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		244F8162BFC463981F5C89BF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE3363B8D408617CE2E2802F /* main.m */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		3D1FAE5F1418E67CD2D858F0 /* SpectacleTests */ = {
 			isa = PBXGroup;
 			children = (
-				1F26178FE7CC4D9FFF0F8CEF /* SpectacleAccessibilitySettingsIllustrationTests.m */,
-				8A051B043CB5ADC9A3179DFC /* SpectacleAppearanceTests.m */,
-				503DD823DD6E59430F5EB827 /* SpectacleBottomHalfWindowCalculationTests.m */,
-				90FC0E47D23D9EE1AC4633C4 /* SpectacleCenterWindowCalculationTests.m */,
-				CF6DA7149392578D18AB9EA4 /* SpectacleCoordinateConversionTests.m */,
-				5977E08F31D14041140BD103 /* SpectacleDefaultShortcutsTests.m */,
-				44C5CE168C726D4CA31473F2 /* SpectacleFullscreenWindowCalculationTests.m */,
-				76994CDAC86B02C2486236F2 /* SpectacleHistoryTests.m */,
-				BC05D34BEC80BBB7ECCFAA16 /* SpectacleLargerWindowCalculationTests.m */,
-				080942810E668402D46B8088 /* SpectacleLeftHalfWindowCalculationTests.m */,
-				0C1149A97EC5A180E629574A /* SpectacleLiveAccessibilityTests.m */,
-				69EE1748D92C6A127F3281EC /* SpectacleLowerLeftWindowCalculationTests.m */,
-				C063BF7F4654595E5166D7C1 /* SpectacleLowerRightWindowCalculationTests.m */,
-				60EE7380FE01116D4E117EE9 /* SpectacleNextDisplayWindowCalculationTests.m */,
-				D2B9736DC3B7E445E09105CC /* SpectacleNextThirdWindowCalculationTests.m */,
-				4BEAF0CE2B62DF85003C0B8E /* SpectaclePreferencesWindowTests.m */,
-				278D7325142BA3D362CBFF27 /* SpectaclePreviousDisplayWindowCalculationTests.m */,
-				A72DFB59DE443E5EF728C1A2 /* SpectaclePreviousThirdWindowCalculationTests.m */,
-				5403CD1C0AA544B0CE94DF3B /* SpectacleRightHalfWindowCalculationTests.m */,
-				449E090526395AAB8A5FC0A9 /* SpectacleScreenDetectorTests.m */,
-				E7DC9FDC20DBC027C67C26B4 /* SpectacleShortcutKeyBindingsTests.m */,
-				4BAAEC41CE31F340636AE5D8 /* SpectacleShortcutManagerTests.m */,
-				C7CCC5469AA6FF72416A6057 /* SpectacleShortcutStorageTests.m */,
-				9C4B2E161B895000F66E7AB7 /* SpectacleShortcutTests.m */,
-				080C2DC40068883D803EDC43 /* SpectacleShortcutTranslationsTests.m */,
-				7C49B5E740E212D6A5AAEA5B /* SpectacleSmallerWindowCalculationTests.m */,
-				48CC5ADA3F1F12BDFEC61F60 /* SpectacleTestDoubles.h */,
-				BBAB93E1C891A7B05EF27EC0 /* SpectacleTestDoubles.m */,
-				90189DEFFCF4DAD7B582E74B /* SpectacleTestSupport.h */,
-				2378A932560E4D45C3039945 /* SpectacleTestSupport.m */,
-				381132E424CDF887439087BA /* SpectacleTopHalfWindowCalculationTests.m */,
-				FDC1DCF27D9469F485EDDDD4 /* SpectacleUpperLeftWindowCalculationTests.m */,
-				B4254A78322CAA32013B86A1 /* SpectacleUpperRightWindowCalculationTests.m */,
-				2E3E660B462413B8F2A53EE5 /* SpectacleWindowCalculationInvariantTests.m */,
-				E0AE24B3CE41A90D6053DBDB /* SpectacleWindowMoverTests.m */,
-				E40B1230435E3F6EA9034012 /* SpectacleWindowPositionManagerTests.m */,
+				8107475B0521594B9109F7F8 /* InterfaceTests.swift */,
+				7315F7D2DEB9468E3DC8DEA9 /* KeyBindingAndTranslationTests.swift */,
+				D24C49719EB187AC1F51744A /* LiveAccessibilityTests.swift */,
+				596B715D95E60C65918D68DF /* OriginalLayoutExpectationTests.swift */,
+				3DDDC71435C51DB8CDA4E3DA /* ShortcutTests.swift */,
+				CFA23927210DDD1A7CE62B7A /* TestSupport.swift */,
+				7CE760312B49B961C3BF71F4 /* WindowLayoutTests.swift */,
+				2FA27E4A2C452B43CF9062C0 /* WindowPipelineTests.swift */,
+				165A466BA258FD10FDC312C0 /* WindowPositionManagerTests.swift */,
 			);
 			path = SpectacleTests;
 			sourceTree = "<group>";
@@ -312,7 +130,6 @@
 			children = (
 				E937DF1022892A4ED8F86DC8 /* Resources */,
 				5543C2B6A1249A2FC4DFD112 /* Sources */,
-				244F8162BFC463981F5C89BF /* Supporting Files */,
 			);
 			path = Spectacle;
 			sourceTree = "<group>";
@@ -320,76 +137,26 @@
 		5543C2B6A1249A2FC4DFD112 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BA1531A02E9884B287E4E39C /* SpectacleAccessibilityElement.h */,
-				F7BB7B0AC382F83CD229E540 /* SpectacleAccessibilityElement.m */,
-				FD40506FE9CC225F9B702D89 /* SpectacleAccessibilitySettingsIllustration.h */,
-				3D06A8A83BECF727C9630092 /* SpectacleAccessibilitySettingsIllustration.m */,
-				FB0942BE90918AF30CC521FB /* SpectacleAppDelegate.h */,
-				E761D04241ADE33B87EB11F3 /* SpectacleAppDelegate.m */,
-				F6616830EA93F3ACB07CEA0C /* SpectacleBestEffortWindowMover.h */,
-				8DCB51813980A6E8DC9A0D7F /* SpectacleBestEffortWindowMover.m */,
-				B25D5033DF66EFDA6E79A4B3 /* SpectacleDefaultShortcutHelpers.h */,
-				C0F681CEDE9C2A6AD30515F2 /* SpectacleDefaultShortcutHelpers.m */,
-				54489635299FB83852061B49 /* SpectacleFilledButton.h */,
-				6C3B7161BADFF66C17062AC6 /* SpectacleFilledButton.m */,
-				25C074D423AB8EEA90E6C8D9 /* SpectacleHistory.h */,
-				5E2DC0C0F99AE2AB5DEB07A8 /* SpectacleHistory.m */,
-				75CA60E504AE652FBD0633BD /* SpectacleHistoryItem.h */,
-				D57CEE65D0277CC2F6E9F367 /* SpectacleHistoryItem.m */,
-				0E969837671C95835B5F5D50 /* SpectacleJavaScriptEnvironment.h */,
-				6340C41F42C3C8BF89E34655 /* SpectacleJavaScriptEnvironment.m */,
-				5EB6EF12A0BEE8167E72A8AF /* SpectacleLoginItemHelper.h */,
-				D8F82AE3136BEC22B90A667C /* SpectacleLoginItemHelper.m */,
-				ED604653CAC4A6F05A0898F5 /* SpectacleMacros.h */,
-				5BBE83A3A22BE7054590CCAC /* SpectacleMigratingShortcutStorage.h */,
-				CF6D753A16126C657F253A06 /* SpectacleMigratingShortcutStorage.m */,
-				DFA0AEA63C90762AE46958D2 /* SpectaclePreferencesController.h */,
-				5371F224B104C58300AAE96F /* SpectaclePreferencesController.m */,
-				19026AEA4E65D1167774548B /* SpectacleQuantizedWindowMover.h */,
-				17559C60868F19637B80F897 /* SpectacleQuantizedWindowMover.m */,
-				F7486833C4C67402072D4727 /* SpectacleRegisteredShortcutValidator.h */,
-				72C3FB96627FD109E6BE5050 /* SpectacleRegisteredShortcutValidator.m */,
-				10949450B9E3A92AFBB88A9D /* SpectacleScreenDetectionResult.h */,
-				A0496C6837A1724D339A56D7 /* SpectacleScreenDetectionResult.m */,
-				C19A9092BAE8942FE3BA88D0 /* SpectacleScreenDetector.h */,
-				AAD88D46273BBD341279E999 /* SpectacleScreenDetector.m */,
-				0849527FDA60FDDF9A2299A9 /* SpectacleShortcut.h */,
-				AFF61A90D40C8528F14A984A /* SpectacleShortcut.m */,
-				7C87570813A12D5FBCC54870 /* SpectacleShortcutHolder.h */,
-				C7A741F1B0F3E7976E71174C /* SpectacleShortcutHolder.m */,
-				570B4F28D096386390FD5E62 /* SpectacleShortcutJSONStorage.h */,
-				0CF4CFCE77AE75EE167978F4 /* SpectacleShortcutJSONStorage.m */,
-				D33193467F0D3A6B328DE343 /* SpectacleShortcutKeyBindings.h */,
-				10C3DC8887C1B8F1F1F5F44D /* SpectacleShortcutKeyBindings.m */,
-				B5DBA44F9C92A705A07FBC40 /* SpectacleShortcutManager.h */,
-				0DD3BA4093F950AC201A091E /* SpectacleShortcutManager.m */,
-				A05D582E80CB51CA95D3AA14 /* SpectacleShortcutRecorder.h */,
-				0F665917ADEB15025FAE5707 /* SpectacleShortcutRecorder.m */,
-				4BCB0A3E184CD8DA22F47180 /* SpectacleShortcutRecorderDelegate.h */,
-				9C6F68F65F087C4B1345380C /* SpectacleShortcutStorage.h */,
-				D3BCE189BDAE014AE1900ADB /* SpectacleShortcutStorageMigrationDestination.h */,
-				B961121E4EFB5D3110B01C8B /* SpectacleShortcutTranslations.h */,
-				2D5F2F063AD7AF9159BF59B3 /* SpectacleShortcutTranslations.m */,
-				62C9042D0C2E232300810424 /* SpectacleShortcutUserDefaultsStorage.h */,
-				068BD6AD5D64BA1770CB5498 /* SpectacleShortcutUserDefaultsStorage.m */,
-				EC8C64A8CC08B2FDC51C7A5D /* SpectacleShortcutValidation.h */,
-				D64640ED6ABF7C4E60E64714 /* SpectacleShortcutValidation.m */,
-				D27D6DE9DA55A83B3A759EB4 /* SpectacleShortcutValidator.h */,
-				7EA04214EAB04EE6AD54ACF0 /* SpectacleStandardWindowMover.h */,
-				795A6FBA33953A41AB80DBBC /* SpectacleStandardWindowMover.m */,
-				D3651AFBA5AF00814BF75215 /* SpectacleUtilities.h */,
-				D0A70E168F3F0619B15A4486 /* SpectacleUtilities.m */,
-				C07CD4A3D99DD888787C03BC /* SpectacleWindowAction.h */,
-				7172FA3646CD3FC52697EA14 /* SpectacleWindowAction.m */,
-				22ACE3786CE832929BA27435 /* SpectacleWindowMover.h */,
-				9ECB1E914180C6DDBCA22461 /* SpectacleWindowPositionCalculationRegistry.h */,
-				43C45C5539531096231169D3 /* SpectacleWindowPositionCalculationRegistry.m */,
-				A4FFD5A5D62EC5FB1EC1D061 /* SpectacleWindowPositionCalculationResult.h */,
-				0559935A0069D655DE47C5B6 /* SpectacleWindowPositionCalculationResult.m */,
-				D1D5539C658325F6864604F5 /* SpectacleWindowPositionCalculator.h */,
-				CD5F17E38BEA4975FA76E872 /* SpectacleWindowPositionCalculator.m */,
-				DAFA49070DBFFEA12B64EEF5 /* SpectacleWindowPositionManager.h */,
-				ECE9A1E6D8B73E30F7409776 /* SpectacleWindowPositionManager.m */,
+				078CAA8ED243BECB60695A5B /* AccessibilityElement.swift */,
+				5318032CC3BFE89615F6463B /* AccessibilityPermissionWindow.swift */,
+				447C7F1A1B023E8526EFFAD2 /* AccessibilitySettingsIllustration.swift */,
+				31BD49B5F2050EA484F96F86 /* AppDelegate.swift */,
+				8F6B4FDC4AC9904378265E39 /* AppSupport.swift */,
+				D9B240CA1403881FC0177854 /* KeyBinding.swift */,
+				8DBE4CF3AD818111209496FC /* KeyTranslation.swift */,
+				9DD375F43169D1C09E5C1B8C /* PreferencesWindow.swift */,
+				5D7F9D7360E49E1B10E93ECF /* ScreenDetector.swift */,
+				0D40F04181410B021900E3F5 /* Shortcut.swift */,
+				12093C66FC861FA9781A8E43 /* ShortcutManager.swift */,
+				391E4EF519E106BFEAA50426 /* ShortcutRecorder.swift */,
+				72E7B0D029B47D95640346B3 /* ShortcutStorage.swift */,
+				079AF1F1E83DAAAF26705477 /* ShortcutValidation.swift */,
+				A61E3583FB4E3A71C74FC328 /* StatusMenu.swift */,
+				BE78AC19316A8BB6197942C2 /* WindowAction.swift */,
+				4C1F25BCAEE3D6D40092CE87 /* WindowHistory.swift */,
+				3F4429F501C91FA5F2CC40C1 /* WindowLayout.swift */,
+				47BC110533C20F32804A5887 /* WindowMovers.swift */,
+				42A1BB9E2102DDD25A1122F9 /* WindowPositionManager.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -397,26 +164,9 @@
 		7AD3FBDC1D2FD58D48284A43 /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
-				3E73A5840690F24FBC11B8E2 /* Spectacle.xib */,
-				6B335B66610B23B0C1E3D187 /* SpectaclePreferencesWindow.xib */,
-				C11831247BC4D72392434BAA /* Credits.rtf */,
-				F2D17CA7600D63984A9B2430 /* Credits.rtf */,
-				F84D13F62D08975B1D28D54E /* Credits.rtf */,
-				9D59C25D4E32CAA6E1D49F15 /* Credits.rtf */,
-				C2A65C2D8FDC521447EA6CD5 /* Credits.rtf */,
-				568E7270301ED748CAD64ADB /* Credits.rtf */,
-				B88B6947E8663E33252B3C6B /* InfoPlist.strings */,
-				46DE0C226CD5E4D08D3D6F14 /* InfoPlist.strings */,
-				9B55C46EC1117DC45AADA032 /* InfoPlist.strings */,
-				422ECFB3AC96BA29A10CF4D4 /* InfoPlist.strings */,
-				17296C3552487A73C67B84E9 /* InfoPlist.strings */,
-				B513013E518DF8D418AFE846 /* InfoPlist.strings */,
-				FBCB38E187FD562E9CCAF7FF /* Localizable.strings */,
-				DF406A1BE250E4F53A89B887 /* Localizable.strings */,
-				B25AF6213C8E5DA2F6DC5541 /* Localizable.strings */,
-				A180F32E30F5FEB5971BDA23 /* Localizable.strings */,
-				C93F393D7623E6DF235C5ED8 /* Localizable.strings */,
-				97B071AAD0DB6CBDC4310C94 /* Localizable.strings */,
+				1DB75936BFA463585A30F5CF /* Credits.rtf */,
+				DCBA82C6BE35AF4D9C5C9647 /* InfoPlist.strings */,
+				C3C5E4412FC06AEFF9F11E67 /* Localizable.strings */,
 			);
 			path = Localizations;
 			sourceTree = "<group>";
@@ -453,7 +203,6 @@
 				7AD3FBDC1D2FD58D48284A43 /* Localizations */,
 				E85EEE8EBF62F205F317CA5D /* Property Lists */,
 				03CA33B4B80EB5BE5BE50E2F /* Images.xcassets */,
-				FE2EB15DB1EE0A762F8FEFCB /* Window Position Calculations */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -556,29 +305,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7B03A241259AC3AEB2165AC /* Credits.rtf in Resources */,
-				18F6623B55151F3B1559CCF5 /* Credits.rtf in Resources */,
-				8119A12E1E7722DBFA746334 /* Credits.rtf in Resources */,
-				A653DAB701BBBD9F8C6F99FE /* Credits.rtf in Resources */,
-				0C33BDB4A09389A5BDCF34FB /* Credits.rtf in Resources */,
-				0F5A0A8B2D4071965B4A58ED /* Credits.rtf in Resources */,
+				BB78175EA4BA4A18045D8464 /* Credits.rtf in Resources */,
 				ACD001137F7B2834EED6021D /* Defaults.plist in Resources */,
 				DF5A98BB0C1E2DFCAF8A5B99 /* Images.xcassets in Resources */,
-				D9532EF986A213B122758519 /* InfoPlist.strings in Resources */,
-				038EA457AA762CF3AF09802D /* InfoPlist.strings in Resources */,
-				65872E30604070F4C4942686 /* InfoPlist.strings in Resources */,
-				7A52DC8363DA80F5B4CFB87A /* InfoPlist.strings in Resources */,
-				7ADAE9EAAE228C92B6555512 /* InfoPlist.strings in Resources */,
-				28D8A7AD69C8D53ECBFAC3B9 /* InfoPlist.strings in Resources */,
-				0E6DFBB668FBD5CDADE3E499 /* Localizable.strings in Resources */,
-				BF17372A2151F7A13FCCDE68 /* Localizable.strings in Resources */,
-				E22C2E6D4BD7C9FB60C5A5E0 /* Localizable.strings in Resources */,
-				4B018F71A00C6F5325378674 /* Localizable.strings in Resources */,
-				479AAF659C54BC7B7AD992E3 /* Localizable.strings in Resources */,
-				9F67B95CB5707CA6DD5AD58D /* Localizable.strings in Resources */,
-				429CBCC17AF093420F6E3FFD /* Spectacle.xib in Resources */,
-				7E2897B216C4977ACE698D8E /* SpectaclePreferencesWindow.xib in Resources */,
-				152673E112E5AF86489F92BB /* Window Position Calculations in Resources */,
+				572236B9B2B3CA7E02CF93DD /* InfoPlist.strings in Resources */,
+				7DAC3F8D32871DD5236A75EF /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,39 +342,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287CC19D41EC78F38FB21822 /* SpectacleAccessibilityElement.m in Sources */,
-				759A75D54F5C56C6CD009773 /* SpectacleAccessibilitySettingsIllustration.m in Sources */,
-				0ABE9FD8506E2B7CBEB2E6A4 /* SpectacleAppDelegate.m in Sources */,
-				DC6264C7188F0625289D498F /* SpectacleBestEffortWindowMover.m in Sources */,
-				ECDF0F2DCBBF1DAF78CE9C54 /* SpectacleDefaultShortcutHelpers.m in Sources */,
-				B4B9EE4C1B8DAE4EF6AA1548 /* SpectacleFilledButton.m in Sources */,
-				C7E106C54E4ED56706FF39B9 /* SpectacleHistory.m in Sources */,
-				454E96B7EC472B8D2EEAD93F /* SpectacleHistoryItem.m in Sources */,
-				FEF2A3FE87C3176005DF3990 /* SpectacleJavaScriptEnvironment.m in Sources */,
-				159E10B5834EFE36CEE34261 /* SpectacleLoginItemHelper.m in Sources */,
-				451AA3C1D5B6B63142711167 /* SpectacleMigratingShortcutStorage.m in Sources */,
-				862D52D0DA1B0F855EE1FFF0 /* SpectaclePreferencesController.m in Sources */,
-				F11AEBCEFAEC285613D43CE7 /* SpectacleQuantizedWindowMover.m in Sources */,
-				D53564429F2D33F1BF633733 /* SpectacleRegisteredShortcutValidator.m in Sources */,
-				17B9364A431D6056AC93F98F /* SpectacleScreenDetectionResult.m in Sources */,
-				2806AB99A178957A2518A701 /* SpectacleScreenDetector.m in Sources */,
-				C9C2BC3E50822ACA0C97D7DB /* SpectacleShortcut.m in Sources */,
-				A8D65F5CE185B45FE57E3E67 /* SpectacleShortcutHolder.m in Sources */,
-				68FAA04C9667DF495DFC766C /* SpectacleShortcutJSONStorage.m in Sources */,
-				3C3FA157B58504BD469DA002 /* SpectacleShortcutKeyBindings.m in Sources */,
-				CDA021800B2EFE7080F8ED16 /* SpectacleShortcutManager.m in Sources */,
-				A2F385153F2D189F61B4D160 /* SpectacleShortcutRecorder.m in Sources */,
-				28277A6248B48BA70E3A2F7D /* SpectacleShortcutTranslations.m in Sources */,
-				24D1ABD9CB642EC958EC48DB /* SpectacleShortcutUserDefaultsStorage.m in Sources */,
-				B236F777023CA6E3A6D97E0D /* SpectacleShortcutValidation.m in Sources */,
-				7712A97DF13E215601764CFB /* SpectacleStandardWindowMover.m in Sources */,
-				7D564C17F1DC7EF64F16EEA7 /* SpectacleUtilities.m in Sources */,
-				83EA318B530463D521AB2A89 /* SpectacleWindowAction.m in Sources */,
-				562DBBFFA2648F9FE4210E26 /* SpectacleWindowPositionCalculationRegistry.m in Sources */,
-				BB4F13986800852FEB8C2EB6 /* SpectacleWindowPositionCalculationResult.m in Sources */,
-				515F1014E6F24795530768FD /* SpectacleWindowPositionCalculator.m in Sources */,
-				789A666645D8D5DEBEF003CB /* SpectacleWindowPositionManager.m in Sources */,
-				DC5109C85867058C03077F14 /* main.m in Sources */,
+				35DB41E1861FBC107CC9B1E4 /* AccessibilityElement.swift in Sources */,
+				18872A9B39B713B59975EBD5 /* AccessibilityPermissionWindow.swift in Sources */,
+				EED2BFE34E2211A15C649089 /* AccessibilitySettingsIllustration.swift in Sources */,
+				2C8AEE13989437536A4A4EE8 /* AppDelegate.swift in Sources */,
+				10898324FE6A1C9F053ACA67 /* AppSupport.swift in Sources */,
+				D51B464AEE705EC1D57F2CC7 /* KeyBinding.swift in Sources */,
+				A4F73489260200CD1657B253 /* KeyTranslation.swift in Sources */,
+				D7116CDA39E5F516EC12200A /* PreferencesWindow.swift in Sources */,
+				81574F79A236244990D0CBE7 /* ScreenDetector.swift in Sources */,
+				7868F74F48749B2F34DDE827 /* Shortcut.swift in Sources */,
+				49AF93469D045C574C3A3A24 /* ShortcutManager.swift in Sources */,
+				B4F0771FC0D71907069CE778 /* ShortcutRecorder.swift in Sources */,
+				DA70F8B98CED5310F03D7DC2 /* ShortcutStorage.swift in Sources */,
+				57062716DF94317E42BAA0E4 /* ShortcutValidation.swift in Sources */,
+				2D65E845741BF041F9C8DC62 /* StatusMenu.swift in Sources */,
+				5DF71AB5A3B57B67D5C97F7C /* WindowAction.swift in Sources */,
+				07F43C49750DCAA235E433D8 /* WindowHistory.swift in Sources */,
+				D72D47E2ACAC43438DF92C66 /* WindowLayout.swift in Sources */,
+				158A82EE66375142DC492331 /* WindowMovers.swift in Sources */,
+				1C551B228EC78E0096F25C48 /* WindowPositionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,40 +369,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D215FFDDE3F6FEEA1CE2C958 /* SpectacleAccessibilitySettingsIllustrationTests.m in Sources */,
-				64C94FA98C7A0C966D935612 /* SpectacleAppearanceTests.m in Sources */,
-				5C92781DB3BA3B35EEEFF21B /* SpectacleBottomHalfWindowCalculationTests.m in Sources */,
-				DFC901EE7F2CE9B937FC4699 /* SpectacleCenterWindowCalculationTests.m in Sources */,
-				9465AFD3342B667D9121B663 /* SpectacleCoordinateConversionTests.m in Sources */,
-				763CB165E2AD61AC53EC0B4D /* SpectacleDefaultShortcutsTests.m in Sources */,
-				932422B8FAEE745AB4D9763A /* SpectacleFullscreenWindowCalculationTests.m in Sources */,
-				E178211143375CA3D97EA009 /* SpectacleHistoryTests.m in Sources */,
-				B8DB693F3C2360F2717395E8 /* SpectacleLargerWindowCalculationTests.m in Sources */,
-				FD039797E4FE60F2E1FAC9F4 /* SpectacleLeftHalfWindowCalculationTests.m in Sources */,
-				36699791C7B4DDB19A1FB84D /* SpectacleLiveAccessibilityTests.m in Sources */,
-				013832DA3799CE8E88B114BB /* SpectacleLowerLeftWindowCalculationTests.m in Sources */,
-				87AFABD124F6981C43B9126B /* SpectacleLowerRightWindowCalculationTests.m in Sources */,
-				1F42DF8A467D8902CB54F657 /* SpectacleNextDisplayWindowCalculationTests.m in Sources */,
-				A671BEA10FAFEE72945CA2A0 /* SpectacleNextThirdWindowCalculationTests.m in Sources */,
-				330019AEE5A21285517A3231 /* SpectaclePreferencesWindowTests.m in Sources */,
-				A891F828BC932CD276A599BC /* SpectaclePreviousDisplayWindowCalculationTests.m in Sources */,
-				F91DEBF286E418A88C232952 /* SpectaclePreviousThirdWindowCalculationTests.m in Sources */,
-				1243B29FD71A3289800F63C1 /* SpectacleRightHalfWindowCalculationTests.m in Sources */,
-				D6030D2D0B1305CE63E9D8BF /* SpectacleScreenDetectorTests.m in Sources */,
-				153942CBAD70BA455339BC03 /* SpectacleShortcutKeyBindingsTests.m in Sources */,
-				FC62F0BC6CE2624B8E2593C5 /* SpectacleShortcutManagerTests.m in Sources */,
-				3BEE8E3559C56AE8E700A2DE /* SpectacleShortcutStorageTests.m in Sources */,
-				3C7AFF5280D4948710B70D68 /* SpectacleShortcutTests.m in Sources */,
-				E15DEBBFD9525335D178FA1C /* SpectacleShortcutTranslationsTests.m in Sources */,
-				3912BB3833BABE3684E7311E /* SpectacleSmallerWindowCalculationTests.m in Sources */,
-				0FB09D63855684C5EFE45590 /* SpectacleTestDoubles.m in Sources */,
-				1CC524CFD1833536AB891F4E /* SpectacleTestSupport.m in Sources */,
-				25B15B7D52E583430912054A /* SpectacleTopHalfWindowCalculationTests.m in Sources */,
-				E235A00F05B90FD49A6D9292 /* SpectacleUpperLeftWindowCalculationTests.m in Sources */,
-				EE930283B5B57E0F086957F6 /* SpectacleUpperRightWindowCalculationTests.m in Sources */,
-				F7F79B2FE3E5BE94A02BEB41 /* SpectacleWindowCalculationInvariantTests.m in Sources */,
-				EA6F84E8EA4D2D2E7893F8C3 /* SpectacleWindowMoverTests.m in Sources */,
-				28A410D3584E7B5769EC0DF6 /* SpectacleWindowPositionManagerTests.m in Sources */,
+				CE8AAA87FA0E2374896F922C /* InterfaceTests.swift in Sources */,
+				A475736FFB646BF43D4761E5 /* KeyBindingAndTranslationTests.swift in Sources */,
+				ACA4222D9D5558F46BAB3DC7 /* LiveAccessibilityTests.swift in Sources */,
+				6729F2833838BB8B9E105CC6 /* OriginalLayoutExpectationTests.swift in Sources */,
+				CB1EACACE296F5181EB82F8D /* ShortcutTests.swift in Sources */,
+				67F128088EDE083C09DB1B6A /* TestSupport.swift in Sources */,
+				318D5FA199FC13CE6C1EE79D /* WindowLayoutTests.swift in Sources */,
+				87D58FD9FD9CAB62E2A420CF /* WindowPipelineTests.swift in Sources */,
+				37747703521F54C95D58F3E6 /* WindowPositionManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,30 +392,43 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3E73A5840690F24FBC11B8E2 /* Spectacle.xib */ = {
+		1DB75936BFA463585A30F5CF /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6B129BA0DA220573701EB50E /* Base */,
-				4593C0E36D557B2B426D31E7 /* es */,
-				E44EAD397F4F36F178FC2693 /* fi */,
-				4D668DB0DBC2B6A12CF5CF0A /* fr */,
-				F6CC8F6B6CB2175E7C229173 /* it */,
-				A28C6BB2409F08D685B460F9 /* pt */,
+				1F5C8B7BADC45A0B125D80B3 /* en */,
+				27F10555EA3967A63B644F0D /* es */,
+				D2DAEB99976CE47B9DF56B9F /* fi */,
+				9B801B44717F1030C2CCAEE7 /* fr */,
+				552377D093AB8951A628DA04 /* it */,
+				912C3A0EF6FEEBF5333B2747 /* pt */,
 			);
-			name = Spectacle.xib;
+			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		6B335B66610B23B0C1E3D187 /* SpectaclePreferencesWindow.xib */ = {
+		C3C5E4412FC06AEFF9F11E67 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DF0B9761B3D708BAAFAC32F3 /* Base */,
-				CC2ACC6B84215E0B50523F36 /* es */,
-				DF260C5F74AEE1DED5D894E1 /* fi */,
-				0C57324634C4A480FD55C9FD /* fr */,
-				0AA7527A8D9A72E8BFFB91ED /* it */,
-				043B101E2C580D1E86CF3131 /* pt */,
+				5E1C815CC026FE78617C2BCD /* en */,
+				EB18BB71BD1873E4DB7C2C46 /* es */,
+				36FA430FE78BD1D71BB43659 /* fi */,
+				E0ACE8E03331A36211C3BD10 /* fr */,
+				43D7C9E4BCEA25285D213A57 /* it */,
+				3C95DC7D03E4F46060C7F2B8 /* pt */,
 			);
-			name = SpectaclePreferencesWindow.xib;
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DCBA82C6BE35AF4D9C5C9647 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D7372CDBE5BC7841A08D0DF /* en */,
+				202C268216B8316FEED2F8DD /* es */,
+				C6A2D9F30BC472362D1C70F9 /* fi */,
+				639601935A151024B58F2793 /* fr */,
+				742C222F20EA15B42C47A7C7 /* it */,
+				9FEBC2C90FC126AE9FF7F3A4 /* pt */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -766,7 +472,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -788,7 +494,8 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -830,7 +537,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -845,7 +552,8 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -871,7 +579,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Spectacle/Sources";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -905,7 +612,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Spectacle/Sources";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
